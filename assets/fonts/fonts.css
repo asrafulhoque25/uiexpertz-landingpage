@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Sharp Grotesk Light 25';
+    src: url('SharpGrotesk-Light25.woff') format('woff'),
+        url('SharpGrotesk-Light25.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sharp Grotesk SemiBold 25';
+    src: url('SharpGrotesk-SemiBold25.woff') format('woff'),
+        url('SharpGrotesk-SemiBold25.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sharp Grotesk Medium 25';
+    src: url('SharpGrotesk-Medium25.woff') format('woff'),
+        url('SharpGrotesk-Medium25.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sharp Grotesk Book 20';
+    src: url('SharpGrotesk-Book20.woff') format('woff'),
+        url('SharpGrotesk-Book20.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sharp Grotesk SemiBold 20';
+    src: url('SharpGrotesk-SemiBold20.woff') format('woff'),
+        url('SharpGrotesk-SemiBold20.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sharp Grotesk Medium 20';
+    src: url('SharpGrotesk-Medium20.woff') format('woff'),
+        url('SharpGrotesk-Medium20.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sharp Grotesk Light 20';
+    src: url('SharpGrotesk-Light20.woff') format('woff'),
+        url('SharpGrotesk-Light20.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sharp Grotesk Bold 20';
+    src: url('SharpGrotesk-Bold20.woff') format('woff'),
+        url('SharpGrotesk-Bold20.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
