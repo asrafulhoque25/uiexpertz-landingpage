@@ -28,7 +28,7 @@ body {
 // container resize
 .container {
     @media (min-width: 1400px) {
-        max-width: 1134px;
+        max-width: 1590px;
     }
 }
 
@@ -139,7 +139,6 @@ body {
     font-size: var(--btn-flow-size);
     display: inline-flex;
     align-items: center;
-    font-weight: 600;
     padding: 7px 24px !important;
     color: var(--nevi-blue);
     transition: all 0.3s;
