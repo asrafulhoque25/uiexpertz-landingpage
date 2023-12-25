@@ -240,8 +240,11 @@ body {
     height: 60px;
     padding: 0 40px;
 
+    svg {
+        transition: all 0.3s linear;
+    }
     svg *{
-        transition: all 0.4s linear;
+        transition: all 0.3s linear;
     }
 
     &::after {
@@ -261,10 +264,12 @@ body {
     &:hover {
         border-color: var(--clr-black);
         color: #fff;
-
+        font-weight: 400;
+        svg{
+            transform: rotate(45deg);
+        }
         svg *{
             fill: var(--primary-2);
-          
         }
         &::after {
             opacity: 1;
