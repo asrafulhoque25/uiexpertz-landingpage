@@ -231,47 +231,48 @@ body {
         line-height: 96px; 
     }
 
-    .common-btn{
-        position: relative;
+}
+}
+.common-btn{
+    position: relative;
+    transition: all 0.2s linear;
+    z-index: 10;
+    height: 60px;
+    padding: 0 40px;
+
+    svg *{
+        transition: all 0.4s linear;
+    }
+
+    &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        content: "";
+        width: 0px;
+        height: 100%;
+        background-color: var(--nevi-blue);
+        opacity: 0;
+        visibility: hidden;
         transition: all 0.2s linear;
-        z-index: 10;
-        height: 60px;
-        padding: 0 40px;
+        z-index: -1;
+        
+    }
+    &:hover {
+        border-color: var(--clr-black);
+        color: #fff;
 
         svg *{
-            transition: all 0.4s linear;
+            fill: var(--primary-2);
+            transform: rotate(90);
         }
-    
         &::after {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            content: "";
-            width: 0px;
-            height: 100%;
-            background-color: var(--nevi-blue);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.2s linear;
-            z-index: -1;
-            
-        }
-        &:hover {
-            border-color: var(--clr-black);
-            color: #fff;
-
-            svg *{
-                fill: var(--primary-2);
-            }
-            &::after {
-                opacity: 1;
-                visibility: visible;
-                width: 100%;
-                border-radius: 100px;
-            }
+            opacity: 1;
+            visibility: visible;
+            width: 100%;
+            border-radius: 100px;
         }
     }
-}
 }
 /* banner  - END*/
 
