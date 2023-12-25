@@ -1,4 +1,3 @@
-
 /* fonts import */
 
 /* fonts import -END */
@@ -32,6 +31,7 @@ body {
         max-width: 1134px;
     }
 }
+
 // container resize - end
 
 /* helper , base classes */
@@ -40,10 +40,12 @@ body {
 .text-clr-neviBlue {
     color: var(--nevi-blue);
 }
-.text-clr-primary2{
+
+.text-clr-primary2 {
     color: var(--primary-2);
 }
-.text-clr-primary{
+
+.text-clr-primary {
     color: var(--primary);
 }
 
@@ -51,13 +53,49 @@ body {
 .bg-clr-neviBlue {
     background-color: var(--nevi-blue);
 }
-.bg-clr-primary2{
+
+.bg-clr-primary2 {
     background-color: var(--primary-2);
 }
-.bg-clr-primary{
+
+.bg-clr-primary {
     background-color: var(--primary);
 }
 
+/* Font family */
+.ff-sg-light-25 {
+    font-family: 'Sharp Grotesk Light 25';
+}
+
+.ff-sg-semibold-25 {
+    font-family: 'Sharp Grotesk SemiBold 25';
+}
+
+.ff-sg-medium-25 {
+    font-family: 'Sharp Grotesk Medium 25';
+}
+
+.ff-sg-book-20 {
+    font-family: 'Sharp Grotesk Book 20';
+}
+
+.ff-sg-semibold-20 {
+    font-family: 'Sharp Grotesk SemiBold 20';
+}
+
+.ff-sg-medium-20 {
+    font-family: 'Sharp Grotesk Medium 20';
+}
+
+.ff-sg-light-20 {
+    font-family: 'Sharp Grotesk Light 20';
+}
+
+.ff-sg-bold-20 {
+    font-family: 'Sharp Grotesk Bold 20';
+}
+
+/* Font family */
 
 
 .fs-20 {
@@ -72,6 +110,7 @@ body {
 .fw-medium {
     font-weight: 500;
 }
+
 .fw-semi-bold {
     font-weight: 600;
 }
@@ -84,6 +123,7 @@ body {
     border-radius: 10px;
 }
 
+
 /* helper , base classes  - END*/
 
 
@@ -94,3 +134,4 @@ body {
     }
 }
 /* navbar  - END*/
+
