@@ -18,7 +18,13 @@
 $(window).on('load', function () {
 
     // code should be execute here
-
+    // button effect
+    // execute : on hover
+    $(function () {
+        document.querySelectorAll('.button-effect').forEach(function (button) {
+            button.innerHTML = '<div><span>' + button.textContent.split(' ').join('</span> <span>') + '</span></div>'
+        });
+    });
 });
 
 

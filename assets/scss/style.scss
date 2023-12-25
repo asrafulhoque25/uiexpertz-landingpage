@@ -13,7 +13,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #fff;
-    font-family: 'Sharp Grotesk' !important;
+    font-family: 'Sharp Grotesk Book 20' !important;
 }
 
 :root {
@@ -129,9 +129,94 @@ body {
 
 /* navbar  - start*/
 .navbar{
-    .btn-info{
-        
+
+
+  
+.btn-flow {
+    --btn-flow-size: 16px;
+    --btn-flow-height: 42px;
+    height: var(--btn-flow-height);
+    font-size: var(--btn-flow-size);
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    padding: 7px 24px !important;
+    color: var(--nevi-blue);
+    transition: all 0.3s;
+
+    &.btn-flow-fill {
+        background-color: var(--nevi-blue) !important;
+        color: #fff;
+
+        &:hover {
+            background-color: transparent !important;
+            color: var(--nevi-blue) !important;
+        }
     }
+}
+
+.button-effect {
+    --background: var(--theme-yellow);
+    --font-size: var(--btn-flow-size);
+    --text: currentColor;
+    --duration: 0.44s;
+    --move-hover: -4px;
+    // --shadow: 0 2px 8px -1px #{rgba(#0998a8, 0.32)};
+    // --shadow-hover: 0 4px 20px -2px #{rgba(#0998a8, 0.5)};
+    // --font-shadow: var(--font-size);
+    line-height: var(--font-size);
+    outline: none;
+    text-decoration: none;
+    transform: translateY(var(--y));
+    // transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+    transition: all 0.3s;
+
+    div {
+        display: flex;
+        overflow: hidden;
+        text-shadow: 0 var(--font-shadow) 0 var(--text);
+
+        span {
+            display: block;
+            backface-visibility: hidden;
+            font-style: normal;
+            transition: transform var(--duration) ease;
+            transform: translateY(var(--m));
+            $i: 1;
+
+            + span {
+                margin-left: 5px;
+            }
+
+            @while $i < 12 {
+                &:nth-child(#{$i}) {
+                    transition-delay: $i / 20 + s;
+                }
+
+                $i: $i + 1;
+            }
+        }
+    }
+
+    &:hover {
+        --shadow: var(--shadow-hover);
+
+        span {
+            --m: calc(var(--font-size) * -1);
+        }
+    }
+
+    &.reverse {
+        --font-shadow: calc(var(--font-size) * -1);
+
+        &:hover {
+            span {
+                --m: calc(var(--font-size));
+            }
+        }
+    }
+}
+
 }
 /* navbar  - END*/
 
