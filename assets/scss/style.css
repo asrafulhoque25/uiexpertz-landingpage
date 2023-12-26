@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fff;
-  font-family: 'Sharp Grotesk' !important; }
+  font-family: 'Sharp Grotesk Book 20' !important; }
 
 :root {
   --nevi-blue: #00154C;
@@ -41,6 +41,36 @@ body {
 .bg-clr-primary {
   background-color: var(--primary); }
 
+/* Font family */
+.ff-sg-light-25 {
+  font-family: 'Sharp Grotesk Light 25'; }
+
+.ff-sg-semibold-25 {
+  font-family: 'Sharp Grotesk SemiBold 25'; }
+
+.ff-sg-medium-25 {
+  font-family: 'Sharp Grotesk Medium 25'; }
+
+.ff-sg-book-20 {
+  font-family: 'Sharp Grotesk Book 20'; }
+
+.ff-sg-semibold-20 {
+  font-family: 'Sharp Grotesk SemiBold 20'; }
+
+.ff-sg-medium-20 {
+  font-family: 'Sharp Grotesk Medium 20'; }
+
+.ff-sg-light-20 {
+  font-family: 'Sharp Grotesk Light 20'; }
+
+.ff-sg-bold-20 {
+  font-family: 'Sharp Grotesk Bold 20'; }
+
+/* Font family */
+.fs-20 {
+  font-size: 20px;
+  line-height: 30px; }
+
 .fs-14 {
   font-size: 14px;
   line-height: 22px; }
@@ -58,5 +88,78 @@ body {
   border-radius: 10px; }
 
 /* helper , base classes  - END*/
+/* navbar  - start*/
+.navbar .btn-flow {
+  --btn-flow-size: 16px;
+  --btn-flow-height: 42px;
+  height: var(--btn-flow-height);
+  font-size: var(--btn-flow-size);
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  padding: 7px 24px !important;
+  color: var(--nevi-blue);
+  transition: all 0.3s; }
+  .navbar .btn-flow.btn-flow-fill {
+    background-color: var(--nevi-blue) !important;
+    color: #fff; }
+    .navbar .btn-flow.btn-flow-fill:hover {
+      background-color: transparent !important;
+      color: var(--nevi-blue) !important; }
+.navbar .button-effect {
+  --background: var(--theme-yellow);
+  --font-size: var(--btn-flow-size);
+  --text: currentColor;
+  --duration: 0.44s;
+  --move-hover: -4px;
+  line-height: var(--font-size);
+  outline: none;
+  text-decoration: none;
+  transform: translateY(var(--y));
+  transition: all 0.3s; }
+  .navbar .button-effect div {
+    display: flex;
+    overflow: hidden;
+    text-shadow: 0 var(--font-shadow) 0 var(--text); }
+    .navbar .button-effect div span {
+      display: block;
+      backface-visibility: hidden;
+      font-style: normal;
+      transition: transform var(--duration) ease;
+      transform: translateY(var(--m)); }
+      .navbar .button-effect div span + span {
+        margin-left: 5px; }
+      .navbar .button-effect div span:nth-child(1) {
+        transition-delay: 0.05s; }
+      .navbar .button-effect div span:nth-child(2) {
+        transition-delay: 0.1s; }
+      .navbar .button-effect div span:nth-child(3) {
+        transition-delay: 0.15s; }
+      .navbar .button-effect div span:nth-child(4) {
+        transition-delay: 0.2s; }
+      .navbar .button-effect div span:nth-child(5) {
+        transition-delay: 0.25s; }
+      .navbar .button-effect div span:nth-child(6) {
+        transition-delay: 0.3s; }
+      .navbar .button-effect div span:nth-child(7) {
+        transition-delay: 0.35s; }
+      .navbar .button-effect div span:nth-child(8) {
+        transition-delay: 0.4s; }
+      .navbar .button-effect div span:nth-child(9) {
+        transition-delay: 0.45s; }
+      .navbar .button-effect div span:nth-child(10) {
+        transition-delay: 0.5s; }
+      .navbar .button-effect div span:nth-child(11) {
+        transition-delay: 0.55s; }
+  .navbar .button-effect:hover {
+    --shadow: var(--shadow-hover); }
+    .navbar .button-effect:hover span {
+      --m: calc(var(--font-size) * -1); }
+  .navbar .button-effect.reverse {
+    --font-shadow: calc(var(--font-size) * -1); }
+    .navbar .button-effect.reverse:hover span {
+      --m: calc(var(--font-size)); }
+
+/* navbar  - END*/
 
 /*# sourceMappingURL=style.css.map */
