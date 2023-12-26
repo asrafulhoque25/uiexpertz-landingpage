@@ -52,24 +52,24 @@
         background: var(--nevi-blue);
 
 
-        $border: 10px;
+
         background-clip: padding-box;
-        border: solid $border transparent;
+        border: solid 10px transparent;
 
-        position: relative !important;
+        position: relative !;
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-            z-index: -1;
-            margin: -$border;
-            border-radius: inherit;
-            background: linear-gradient(132deg, rgba(241, 255, 72, 1) 0%, rgba(246, 250, 202, 1) 35%, rgba(215, 164, 228, 1) 68%, rgba(197, 192, 255, 1) 100%);
-        }
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0px;
+        //     right: 0px;
+        //     bottom: 0px;
+        //     left: 0px;
+        //     z-index: -1;
+        //     margin: -$border;
+        //     border-radius: inherit;
+        //     background: linear-gradient(132deg, rgba(241, 255, 72, 1) 0%, rgba(246, 250, 202, 1) 35%, rgba(215, 164, 228, 1) 68%, rgba(197, 192, 255, 1) 100%);
+        // }
 
         p {
             font-size: 28px;
@@ -80,24 +80,38 @@
 
 }
 
+.services-item::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    margin: -10px;
+    border-radius: inherit;
+    background: linear-gradient(132deg, rgba(241, 255, 72, 1) 0%, rgba(246, 250, 202, 1) 35%, rgba(215, 164, 228, 1) 68%, rgba(197, 192, 255, 1) 100%);
+}
+
 .services-item-two-column-wrap {
     gap: 30px;
 }
 
 // Animation
-.services-wrapper {
-    animation: animated-slide 60s linear infinite;
-}
+// .services-item-left-column .services-wrapper,
+// .services-item-right-column .services-wrapper {
+//     animation: animated-slide 60s linear infinite;
+// }
 
-@keyframes animated-slide {
-    0% {
-        transform: translateY(0);
-    }
+// @keyframes animated-slide {
+//     0% {
+//         transform: translateY(0);
+//     }
 
-    100% {
-        transform: translateY(calc(-335px * 3));
-    }
-}
+//     100% {
+//         transform: translateY(calc(-335px * 3));
+//     }
+// }
 
 
 
