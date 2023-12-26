@@ -279,36 +279,115 @@ body {
         }
     }
 }
-/* banner  - END*/
 
-.fill {
-    
-    width: fit-content;
-    text-align: center;
-    -webkit-text-fill-color: transparent;
-    // -webkit-text-stroke: 2px black;
-    -webkit-text-stroke-width: 1px;
-    // -webkit-text-stroke-color: #f90000;
+/* tooltip animation  */
+
+.wrapper {
+    background: #ececec;
+    color: #555;
+    font-family: sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    padding: 15px 90px;
+    margin-top: 70px;
     position: relative;
-    cursor: pointer;
-    overflow: hidden;
+    text-align: center;
+    -webkit-transform: translateZ(0); /* webkit flicker fix */
+    -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
   }
-  .fill::before {
-    position: absolute;
-    content: attr(data-text);
-    top: 0;
-    left: 0px;
-    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 0% 100%, 0 100%, 0 100%);
-
-/* Initial clip to hide the text */
-    -webkit-text-fill-color: #00154C;
-    transition: clip-path 1s cubic-bezier(1,.02,.83,.67); /* Transition for the clip-path */
   
+  .wrapper .tooltip1 {
+    background: #333;
+    bottom: 100%;
+    color: #fff;
+    display: block;
+    left: -20px;
+    margin-bottom: 15px;
+    opacity: 0;
+    padding: 20px;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    -webkit-transform: translateY(10px);
+       -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+         -o-transform: translateY(10px);
+            transform: translateY(10px);
+    -webkit-transition: all .25s ease-out;
+       -moz-transition: all .25s ease-out;
+        -ms-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+       -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+        -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+         -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
   }
-  .fill.active::before {
+  
+  .wrapper .tooltip1 p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* This bridges the gap so you can mouse into the tooltip without it disappearing */
+  
+  
+  /* CSS Triangles - see Trevor's post */
+  
     
-    clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
-    -webkit-text-stroke-width: 0px;
-    -webkit-text-stroke: none; 
-    /* Reveal the text smoothly */
+  .wrapper{
+    .tooltip1 {
+        display: none;
+      }
+    &:hover {
+        .tooltip1 {
+            display: block;
+            opacity: 1;
+            pointer-events: auto;
+            -webkit-transform: translateY(0px);
+               -moz-transform: translateY(0px);
+                -ms-transform: translateY(0px);
+                 -o-transform: translateY(0px);
+                    transform: translateY(0px);
+          }
+    }
   }
+  
+  /* IE can just show/hide with no transition */
+  .lte8 .wrapper 
+  
+  .lte8 .wrapper:hover 
+
+/* tooltip animation  */
+/* text animation  */
+.fill {
+   width: fit-content;
+   text-align: center;
+   -webkit-text-fill-color: transparent;
+   // -webkit-text-stroke: 2px black;
+   -webkit-text-stroke-width: 1px;
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+ }
+ .fill::before {
+   position: absolute;
+   content: attr(data-text);
+   top: 0;
+   left: 0px;
+   clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 0% 100%, 0 100%, 0 100%);
+   -webkit-text-fill-color: #00154C;
+   transition: clip-path 1s cubic-bezier(1,.02,.83,.67); 
+ 
+ }
+ .fill.active::before {
+   clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
+   -webkit-text-stroke-width: 0px;
+   -webkit-text-stroke: none; 
+}
+/* text animation */
+
+
+
+/* banner  - END*/
