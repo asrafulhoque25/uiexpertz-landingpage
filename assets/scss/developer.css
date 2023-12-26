@@ -1,13 +1,11 @@
 /* ==================================
 = Services area style -/ Start
 ================================== */
-.services-area {
-  padding-block: 20px; }
-  .services-area .services-heading h2 {
-    font-size: 68px;
-    line-height: 1.26em;
-    font-weight: 600;
-    margin-bottom: 30px; }
+.services-area .services-heading h2 {
+  font-size: 68px;
+  line-height: 1.26em;
+  font-weight: 600;
+  margin-bottom: 30px; }
 
 .services-area-btn a {
   font-family: 'Sharp Grotesk SemiBold 20' !important; }
@@ -23,54 +21,69 @@
 
 .services-wrapper {
   gap: 35px; }
-  .services-wrapper .services-item {
-    padding: 50px;
-    border-radius: 24px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 35px;
-    height: 305px;
+
+.services-item {
+  padding: 50px;
+  border-radius: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 35px;
+  height: 305px;
+  background: #3B58A3 !important;
+  z-index: 22;
+  background-clip: padding-box;
+  border: solid 10px transparent;
+  position: relative !important;
+  transition: all 100ms linear; }
+  .services-item:hover {
+    background: linear-gradient(132deg, #f1ff48 0%, #f6faca 35%, #d7a4e4 68%, #c5c0ff 100%) !important; }
+  .services-item::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    z-index: -1;
+    margin: -10px;
+    border-radius: inherit;
     background: var(--nevi-blue);
-    background-clip: padding-box;
-    border: solid 10px transparent;
-    position: relative !important; }
-    .services-wrapper .services-item::before {
-      content: '';
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      z-index: -1;
-      margin: -10px;
-      border-radius: inherit;
-      background: linear-gradient(132deg, #f1ff48 0%, #f6faca 35%, #d7a4e4 68%, #c5c0ff 100%); }
-    .services-wrapper .services-item p {
-      font-size: 28px;
-      line-height: 1.5em; }
+    padding: 10px; }
+  .services-item p {
+    font-size: 28px;
+    line-height: 1.5em; }
 
 .services-item-two-column-wrap {
-  gap: 30px; }
+  gap: 30px;
+  position: relative; }
+  .services-item-two-column-wrap::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 382px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, #00154C 0%, rgba(0, 21, 76, 0.8) 52.08%, rgba(0, 21, 76, 0) 100%); }
+  .services-item-two-column-wrap::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 382px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #00154C 0%, rgba(0, 21, 76, 0.8) 52.08%, rgba(0, 21, 76, 0) 100%);
+    z-index: 9; }
 
-/*
-.services-wrapper {
-    animation: animated-slide 60s linear infinite;
-}
-
-@keyframes animated-slide {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(calc(-335px * 3));
-    }
-}
-*/
 /* ==================================
 = Services area style -/ End
+================================== */
+/* ==================================
+= Call to action -/ Start
+================================== */
+/* ==================================
+= Call to action -/ End
 ================================== */
 
 /*# sourceMappingURL=developer.css.map */

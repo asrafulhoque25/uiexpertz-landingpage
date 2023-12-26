@@ -9,40 +9,41 @@
 <html lang="zxx" class="no-js">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Required meta tags for responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Favicon and touch icons -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <meta name="misapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
+    <meta name="misapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Twitter Card data -->
-    <meta name="twitter:card" content="">
-    <meta name="twitter:site" content="@twitter_username">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:site" content="@twitter_username" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
     <!-- Open Graph data -->
-    <meta property="og:title" content="">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta property="og:description" content="">
-    <meta property="og:site_name" content="R">
-    <meta property="fb:admins" content="Facebook numeric ID">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="R" />
+    <meta property="fb:admins" content="Facebook numeric ID" />
     <!-- gmail verification -->
-    <meta name="google-site-verification" content="">
+    <meta name="google-site-verification" content="" />
     <!-- Website title -->
     <title>Home</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- Fonts CSS -->
-    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
     <!-- Main CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <!-- jQuery (necessary for jQuery plugins) -->
     <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
 </head>
 
 <body>
@@ -52,7 +53,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
+                    <img src="assets/img/logo.svg" alt="logo" class="img-fluid" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -74,7 +75,8 @@
                         </li>
                     </ul>
                     <div class="d-flex">
-                        <a class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase fw-medium btn-flow btn-flow-fill is-shadow button-effect reverse" href="#">Let’s talk</a>
+                        <a class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase fw-medium btn-flow btn-flow-fill is-shadow button-effect reverse"
+                            href="#">Let’s talk</a>
                     </div>
                 </div>
             </div>
@@ -82,32 +84,87 @@
     </header>
     <!--/ header -->
 
-
     <!--banner -->
-    <section class="banner">
+    <section class="banner position-relative">
+            <img src="assets/img/banner-shape1.png" class="img-fluid bannerShape1 " alt="">
+            <img src="assets/img/banner-shape2.png" class="img-fluid bannerShape2 " alt="">
         <div class="container">
             <div class="banner-content-wrap">
-                <h1 class="fill banner-title text-clr-neviBlue fw-semi-bold text-center mb-5 ff-sg-semibold-25" data-text="Our focus is on creating joyfulll simple">Our focus is on creating joyfulll simple</h1>
-               <div class="d-flex justify-content-center">
-                <a href="#" class="common-btn bg-clr-primary2 text-uppercase rounded-pill fs-6 fw-semi-bold text-decoration-none d-flex align-items-center justify-content-center gap-2 text-clr-neviBlue ">Let’s talk
+                <div class="tooltip-wrapper position-relative" id="js-scene">
+                    <div class="position-relative">
+                        <h1 class="fill banner-title text-clr-neviBlue fw-semi-bold text-center mb-5 ff-sg-semibold-25"
+                            data-text="Our focus is on creating joyfulll simple">
+                            Our focus is on creating joyfulll simple
+                        </h1>
+                        <div class="items__inner">
+                            <!-- DRAWINGS-->
+                            <div class="items__layer horse layer" data-depth="0.62">
+                                <div class="items__item">
+                                    <div class="tooltip1 d-flex align-items-center gap-3 moving-image">
+                                        <img src="assets/img/happyClient.png" class="img-fluid" alt="" />
+                                        <div>
+                                            <h3 class="text-clr-neviBlue fw-semi-bold mb-1 ff-sg-semibold-25">
+                                                5200+
+                                            </h3>
+                                            <p class="text-clr-neviBlue mb-0 fs-6 fw-light">
+                                                Happy Clients
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+              
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="#"
+                    class="common-btn bg-clr-primary2 text-uppercase rounded-pill fs-6 fw-semi-bold text-decoration-none d-flex align-items-center justify-content-center gap-2 text-clr-neviBlue">Let’s
+                    talk
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.24269 9.24264H7.74009V3.32062L1.28774 9.77297L0.227081 8.71231L6.67943 2.25996H0.757411V0.757359H9.24269V9.24264Z" fill="#00154C"/>
-                        </svg>
+                        <path
+                            d="M9.24269 9.24264H7.74009V3.32062L1.28774 9.77297L0.227081 8.71231L6.67943 2.25996H0.757411V0.757359H9.24269V9.24264Z"
+                            fill="#00154C" />
+                    </svg>
                 </a>
-               </div>
+            </div>
+            <div class="banner-slider">
+                <div class="banner-slider-item">
+                    <div class="banner-slider-image">
+                        <img src="assets/img/bannerslider1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="banner-slider-image">
+                        <img src="assets/img/bannerslider2.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="banner-slider-image">
+                        <img src="assets/img/bannerslider3.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="banner-slider-image">
+                        <img src="assets/img/bannerslider4.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="banner-slider-image">
+                        <img src="assets/img/bannerslider2.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="banner-slider-image">
+                        <img src="assets/img/bannerslider1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!--/ banner -->
-
+    <div class="banner1">,sdfkjlsdfl</div>
+    <div class="banner2">skdfjsl;kjflskdjfl;kjfl</div>
 
     <!-- Main Coding End -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
     <!-- Script JS -->
     <script src="assets/js/script.js"></script>
-
+ 
     <!-- <h1 class="wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="300ms">
         Hello
     </h1> -->
