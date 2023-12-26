@@ -32,21 +32,23 @@
     justify-content: space-between;
     gap: 35px;
     height: 305px;
-    background: var(--nevi-blue);
+    background: linear-gradient(132deg, #f1ff48 0%, #f6faca 35%, #d7a4e4 68%, #c5c0ff 100%) !important;
+    z-index: 22;
     background-clip: padding-box;
     border: solid 10px transparent;
     position: relative !important; }
     .services-wrapper .services-item::before {
       content: '';
       position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
       z-index: -1;
       margin: -10px;
       border-radius: inherit;
-      background: linear-gradient(132deg, #f1ff48 0%, #f6faca 35%, #d7a4e4 68%, #c5c0ff 100%); }
+      background: var(--nevi-blue);
+      padding: 10px; }
     .services-wrapper .services-item p {
       font-size: 28px;
       line-height: 1.5em; }
