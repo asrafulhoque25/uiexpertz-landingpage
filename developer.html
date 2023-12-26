@@ -39,6 +39,10 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fonts CSS -->
     <link rel="stylesheet" href="assets/fonts/fonts.css">
+
+    <!-- Splide slider css  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/splide.min.css">
+
     <!-- Developer CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/developer.css">
     <!-- Main CSS -->
@@ -117,57 +121,80 @@
                 <div class="col-lg-8">
                     <div class="d-flex align-items-center services-item-two-column-wrap">
                         <div class="services-item-left-column w-100">
-                            <div class="services-wrapper d-flex flex-column ">
-                                <div class="services-item">
-                                    <div class="">
-                                        <img src="assets/img/service-ui-ux-design.svg" alt="Ui ux design"
-                                            class="img-fluid">
-                                    </div>
-                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
-                                </div>
-                                <div class="services-item">
-                                    <div class="">
-                                        <img src="assets/img/service-ui-ux-design.svg" alt="Ui ux design"
-                                            class="img-fluid">
-                                    </div>
-                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
-                                </div>
-                                <div class="services-item">
-                                    <div class="">
-                                        <img src="assets/img/service-ui-ux-design.svg" alt="Ui ux design"
-                                            class="img-fluid">
-                                    </div>
-                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
-                                </div>
 
+                            <div class="first-slider-wrapper">
+                                <div class="splide" id="slider1" role="group" aria-label="Splide Basic HTML Example">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="services-item">
+                                                    <div class="">
+                                                        <img src="assets/img/service-ui-ux-design.svg"
+                                                            alt="Ui ux design" class="img-fluid">
+                                                    </div>
+                                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="services-item">
+                                                    <div class="">
+                                                        <img src="assets/img/service-ui-ux-design.svg"
+                                                            alt="Ui ux design" class="img-fluid">
+                                                    </div>
+                                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="services-item">
+                                                    <div class="">
+                                                        <img src="assets/img/service-ui-ux-design.svg"
+                                                            alt="Ui ux design" class="img-fluid">
+                                                    </div>
+                                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
-                        <div class="services-item-right-column w-100">
+                        <div class="services-item-right-column w-100 marquee-reverse">
 
-                            <div class="services-wrapper d-flex flex-column">
-                                <div class="services-item">
-                                    <div class="">
-                                        <img src="assets/img/service-search-engine-optimization.svg" alt="Ui ux design"
-                                            class="img-fluid">
+                            <div class="first-slider-wrapper">
+                                <div class="splide" id="slider2" role="group" aria-label="Splide Basic HTML Example">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="services-item">
+                                                    <div class="">
+                                                        <img src="assets/img/service-search-engine-optimization.svg"
+                                                            alt="Ui ux design" class="img-fluid">
+                                                    </div>
+                                                    <p class="ff-sg-light-25 text-white">Search engine optimization</p>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="services-item">
+                                                    <div class="">
+                                                        <img src="assets/img/service-wordpress-development.svg"
+                                                            alt="Ui ux design" class="img-fluid">
+                                                    </div>
+                                                    <p class="ff-sg-light-25 text-white">Wordpress development</p>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="services-item">
+                                                    <div class="">
+                                                        <img src="assets/img/service-ui-ux-design.svg"
+                                                            alt="Ui ux design" class="img-fluid">
+                                                    </div>
+                                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <p class="ff-sg-light-25 text-white">Search engine optimization</p>
                                 </div>
-                                <div class="services-item">
-                                    <div class="">
-                                        <img src="assets/img/service-wordpress-development.svg" alt="Ui ux design"
-                                            class="img-fluid">
-                                    </div>
-                                    <p class="ff-sg-light-25 text-white">Wordpress development</p>
-                                </div>
-                                <div class="services-item">
-                                    <div class="">
-                                        <img src="assets/img/service-ui-ux-design.svg" alt="Ui ux design"
-                                            class="img-fluid">
-                                    </div>
-                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
-                                </div>
-
-
                             </div>
 
                         </div>
@@ -179,13 +206,33 @@
     <!-- Services area -/End -->
 
 
+    <div class="py-5 my-5"></div>
+
+
+    <!-- Call to action -/Start -->
+    <section class="call-to-action">
+        <div class="container">
+            <div class="cta-inner-wrap">
+                <h3>
+                    Build at speed, build with precision
+                </h3>
+            </div>
+        </div>
+    </section>
+    <!-- Call to action -/End -->
+
+
 
 
 
     <!-- Main Coding End -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Splide slider js  -->
+    <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/js/splide.min.js"></script>
+
     <!-- Script JS -->
     <script src="assets/js/script.js"></script>
 
