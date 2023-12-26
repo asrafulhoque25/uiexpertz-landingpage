@@ -1,52 +1,83 @@
+/* ==================================
+= Services area style -/ Start
+================================== */
+.services-area {
+  padding-block: 20px; }
+  .services-area .services-heading h2 {
+    font-size: 68px;
+    line-height: 1.26em;
+    font-weight: 600;
+    margin-bottom: 30px; }
+
+.services-area-btn a {
+  font-family: 'Sharp Grotesk SemiBold 20' !important; }
+  .services-area-btn a svg * {
+    fill: #fff; }
+  .services-area-btn a:hover {
+    background: var(--primary-2) !important;
+    color: var(--nevi-blue) !important; }
+    .services-area-btn a:hover svg * {
+      fill: var(--nevi-blue) !important; }
+  .services-area-btn a::after {
+    background-color: var(--primary-2) !important; }
+
+.services-wrapper {
+  gap: 35px; }
+  .services-wrapper .services-item {
+    padding: 50px;
+    border-radius: 24px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 35px;
+    height: 305px;
+    background: linear-gradient(132deg, #f1ff48 0%, #f6faca 35%, #d7a4e4 68%, #c5c0ff 100%) !important;
+    z-index: 22;
+    background-clip: padding-box;
+    border: solid 10px transparent;
+    position: relative !important; }
+    .services-wrapper .services-item::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+      z-index: -1;
+      margin: -10px;
+      border-radius: inherit;
+      background: var(--nevi-blue);
+      padding: 10px; }
+    .services-wrapper .services-item p {
+      font-size: 28px;
+      line-height: 1.5em; }
+
+.services-item-two-column-wrap {
+  gap: 30px; }
+
 /*
-Error: Invalid CSS after "...tion: relative ": expected ";", was "!;"
-        on line 59 of H:\Ashik\projects\uiexpertz-landingpage\assets\scss\developer.scss
+.services-wrapper {
+    animation: animated-slide 60s linear infinite;
+}
 
-54: 
-55: 
-56:         background-clip: padding-box;
-57:         border: solid 10px transparent;
-58: 
-59:         position: relative !;
-60: 
-61:         // &::before {
-62:         //     content: '';
-63:         //     position: absolute;
-64:         //     top: 0px;
+@keyframes animated-slide {
+    0% {
+        transform: translateY(0);
+    }
 
-Backtrace:
-H:\Ashik\projects\uiexpertz-landingpage\assets\scss\developer.scss:59
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:804:in `block in try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `call'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+    100% {
+        transform: translateY(calc(-335px * 3));
+    }
+}
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...tion: relative \": expected \";\", was \"!;\"\A         on line 59 of H:\Ashik\projects\uiexpertz-landingpage\assets\scss\developer.scss\A \A 54: \A 55: \A 56:         background-clip: padding-box;\A 57:         border: solid 10px transparent;\A 58: \A 59:         position: relative !;\A 60: \A 61:         // &::before {\A 62:         //     content: '';\A 63:         //     position: absolute;\A 64:         //     top: 0px;"; }
+/* ==================================
+= Services area style -/ End
+================================== */
