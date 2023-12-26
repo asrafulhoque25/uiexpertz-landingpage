@@ -27,7 +27,12 @@ $(window).on('load', function () {
     });
 });
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    const element = document.querySelector('.fill');
+    setTimeout(function() {
+      element.classList.add('active');
+    }, 1000);
+  });
 
 /**
  * ========================================================

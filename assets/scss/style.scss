@@ -281,3 +281,34 @@ body {
 }
 /* banner  - END*/
 
+.fill {
+    
+    width: fit-content;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    // -webkit-text-stroke: 2px black;
+    -webkit-text-stroke-width: 1px;
+    // -webkit-text-stroke-color: #f90000;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .fill::before {
+    position: absolute;
+    content: attr(data-text);
+    top: 0;
+    left: 0px;
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 0% 100%, 0 100%, 0 100%);
+
+/* Initial clip to hide the text */
+    -webkit-text-fill-color: #00154C;
+    transition: clip-path 1s cubic-bezier(1,.02,.83,.67); /* Transition for the clip-path */
+  
+  }
+  .fill.active::before {
+    
+    clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke: none; 
+    /* Reveal the text smoothly */
+  }
