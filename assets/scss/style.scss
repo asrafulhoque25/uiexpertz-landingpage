@@ -217,12 +217,6 @@ body {
 /* navbar  - END*/
 
 /* banner  - start*/
-.banner1{
-    height: 100vh;
-}
-.banner2{
-    height: 100vh;
-}
 .banner {
     background-image: url(../img/bannerbg.png);
     background-repeat: no-repeat;
@@ -376,6 +370,7 @@ body {
 
 .banner-slider{
     padding-top: 140px;
+    padding-bottom: 100px;
     .splide__track{
         height: 294px;
     }
