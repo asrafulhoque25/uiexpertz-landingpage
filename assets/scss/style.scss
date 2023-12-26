@@ -132,6 +132,7 @@ body {
 .navbar {
     position: absolute;
     width: 100%;
+    z-index: 999;
   .btn-flow {
     --btn-flow-size: 16px;
     --btn-flow-height: 42px;
@@ -372,5 +373,15 @@ body {
   -webkit-text-stroke: none;
 }
 /* text animation */
+
+.banner-slider{
+    padding-top: 140px;
+    .splide__track{
+        height: 294px;
+    }
+    .banner-slider-image{
+        text-align: center;
+    }
+}
 
 /* banner  - END*/

@@ -1,18 +1,17 @@
-/**
- * @Script js for (Template/Project Name)
- *
- * @project     - Project Name
- * @author      -
- * @created_by  - Asraful Hoque
- * @created_at  -
- * @modified_by -
- */
 
-/**
- * ========================================================
- * this function execute when window properly loaded
- * ===========================================================
- */
+
+
+// banner slider
+new Splide("#bannerSlider", {
+    type: "loop",
+    drag: "free",
+    perPage: 4,
+    gap: "1.875rem",
+    height: "10rem",
+    arrows: false,
+    pagination: false,
+    
+}).mount(window.splide.Extensions);
 
 $(window).on("load", function () {
     // code should be execute here
@@ -28,13 +27,17 @@ $(window).on("load", function () {
     });
 });
 
-// text animation
-document.addEventListener("DOMContentLoaded", function () {
-    const element = document.querySelector(".fill");
-    setTimeout(function () {
-        element.classList.add("active");
+
+   // text animation    
+document.addEventListener("DOMContentLoaded", function() {
+    const element = document.querySelector('.fill');
+    setTimeout(function() {
+      element.classList.add('active');
+
     }, 1000);
 });
+
+
 
 /**
  * ========================================================
@@ -42,55 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
  * ===========================================================
  */
 
-$(document).ready(function () {
-    // testimonial-active
-    $(function () {
-        if ($(".testimonials-active").length) {
-            $(".testimonials-active").owlCarousel({
-                items: 3,
-                margin: 30,
-                nav: true,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 2500,
-                animateOut: "fadeOut",
-                smartSpeed: 2500,
-                navText: [
-                    "<img src='assets/img/arrow-left.svg' class='img-fluid' />",
-                    "<img src='assets/img/arrow-right-s.svg' class='img-fluid' />",
-                ],
-                dots: false,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    767: {
-                        items: 2,
-                    },
-                    1200: {
-                        items: 3,
-                    },
-                },
-            });
-        }
-    });
-
     // tooltip animation
-    var scene = document.getElementById("js-scene");
+    var scene = document.getElementById('js-scene');
     var parallax = new Parallax(scene);
-
-    //shape animation
-
-    // wow js init
-    $(function () {
-        var wow = new WOW({
-            animateClass: "animated",
-            mobile: true,
-        });
-        wow.init();
-    });
-});
 
 // Splide slider activator.
 
@@ -101,10 +58,10 @@ new Splide("#slider1", {
     perPage: 3,
     gap: "1.875rem",
     direction: "ttb",
-    height: "61rem",
+    height: "60rem",
     arrows: false,
     pagination: false,
-    focus: "center",
+    focus  : 'center',
     autoScroll: {
         speed: 0.6,
     },
@@ -116,8 +73,8 @@ new Splide("#slider2", {
     perPage: 3,
     gap: "1.875rem",
     direction: "ttb",
-    height: "61rem",
-    focus: "center",
+    height: "60rem",
+    focus  : 'center',
     arrows: false,
     pagination: false,
     autoScroll: {
@@ -139,4 +96,13 @@ new Splide("#slider3", {
         speed: 0.6,
     },
 }).mount(window.splide.Extensions);
+
+
+
+// document.addEventListener( 'DOMContentLoaded', function () {
+//     new Splide( '#bannerSlider' ).mount();
+//   } );
 /* =========== Services Two Slider ===========*/
+
+/* =========== Services Two Slider ===========*/
+

@@ -1,3 +1,6 @@
+.section-padding-140 {
+  padding-block: 140px; }
+
 /* ==================================
 = Services area style -/ Start
 ================================== */
@@ -82,8 +85,85 @@
 /* ==================================
 = Call to action -/ Start
 ================================== */
+.call-to-action {
+  background: conic-gradient(from 180deg at 31.12% 44.57%, #D4F941 0deg, #C7C2FF 236.9368815422deg, #D4F941 360deg);
+  animation: cta-bg-gradient 30s ease infinite;
+  background-size: 140% 140%; }
+@keyframes cta-bg-gradient {
+  0% {
+    background-position: 0% 100%; }
+  10% {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 100% 0%; }
+  60% {
+    background-position: 100% 100%; }
+  100% {
+    background-position: 0% 100%; } }
+  .call-to-action .cta-inner-wrap {
+    max-width: 1045px;
+    margin: 0 auto; }
+    .call-to-action .cta-inner-wrap .cta-heading {
+      font-size: 78px; }
+
+.cta-left-shape {
+  top: calc(45% - 78px);
+  left: 12%;
+  animation: cta-left-shape 20s ease 0s infinite normal none; }
+
+.cta-right-shape {
+  right: -70px;
+  top: -80px;
+  animation: cta-right-shape 30s ease 0s infinite normal none; }
+
+@keyframes cta-left-shape {
+  0%,
+    100% {
+    transform: translateY(0); }
+  10%,
+    30%,
+    50%,
+    70% {
+    transform: translateY(-8px); }
+  20%,
+    40%,
+    60% {
+    transform: translateY(8px); }
+  80% {
+    transform: translateY(6.4px); }
+  90% {
+    transform: translateY(-6.4px); } }
+@keyframes cta-right-shape {
+  0%,
+    100% {
+    transform: translateY(0); }
+  10%,
+    30%,
+    50%,
+    70% {
+    transform: translateY(-12px); }
+  20%,
+    40%,
+    60% {
+    transform: translateY(12px); }
+  80% {
+    transform: translateY(12.4px); }
+  90% {
+    transform: translateY(-12.4px); } }
 /* ==================================
 = Call to action -/ End
+================================== */
+/* ==================================
+= Text carousel -/ Start
+================================== */
+.text-carousel {
+  padding-block: 54px; }
+  .text-carousel .text-carousel-heading {
+    font-size: 78px;
+    line-height: 1.17em; }
+
+/* ==================================
+= Text carousel -/ End
 ================================== */
 
 /*# sourceMappingURL=developer.css.map */
