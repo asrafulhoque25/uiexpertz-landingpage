@@ -14,6 +14,20 @@
  * ===========================================================
  */
 
+
+
+// banner slider
+new Splide("#bannerSlider", {
+    type: "loop",
+    drag: "free",
+    perPage: 4,
+    gap: "1.875rem",
+    height: "10rem",
+    arrows: false,
+    pagination: false,
+    
+}).mount(window.splide.Extensions);
+
 $(window).on("load", function () {
     // code should be execute here
     // button effect
@@ -82,9 +96,6 @@ $(document).ready(function () {
 
 
 
-    // tooltip animation
-    var scene = document.getElementById('js-scene');
-    var parallax = new Parallax(scene);
 
     //shape animation
 
@@ -92,16 +103,12 @@ $(document).ready(function () {
     
 
 
-    // wow js init
-    $(function () {
-        var wow = new WOW({
-            animateClass: "animated",
-            mobile: true,
-        });
-        wow.init();
-    });
-
 });
+
+
+    // tooltip animation
+    var scene = document.getElementById('js-scene');
+    var parallax = new Parallax(scene);
 
 // Splide slider activator.
 
@@ -134,4 +141,8 @@ new Splide("#slider2", {
     },
 }).mount(window.splide.Extensions);
 
+
+// document.addEventListener( 'DOMContentLoaded', function () {
+//     new Splide( '#bannerSlider' ).mount();
+//   } );
 /* =========== Services Two Slider ===========*/
