@@ -2,12 +2,11 @@
  * @Script js for (Template/Project Name)
  *
  * @project     - Project Name
- * @author      - 
+ * @author      -
  * @created_by  - Asraful Hoque
- * @created_at  - 
+ * @created_at  -
  * @modified_by -
  */
-
 
 /**
  * ========================================================
@@ -15,39 +14,42 @@
  * ===========================================================
  */
 
-$(window).on('load', function () {
-
+$(window).on("load", function () {
     // code should be execute here
     // button effect
     // execute : on hover
     $(function () {
-        document.querySelectorAll('.button-effect').forEach(function (button) {
-            button.innerHTML = '<div><span>' + button.textContent.split(' ').join('</span> <span>') + '</span></div>'
+        document.querySelectorAll(".button-effect").forEach(function (button) {
+            button.innerHTML =
+                "<div><span>" +
+                button.textContent.split(" ").join("</span> <span>") +
+                "</span></div>";
         });
     });
 });
+
 
    // text animation    
 document.addEventListener("DOMContentLoaded", function() {
     const element = document.querySelector('.fill');
     setTimeout(function() {
       element.classList.add('active');
+
     }, 1000);
-  });
+});
 
 
 
 /**
  * ========================================================
- * this function execute when DOM element ready 
+ * this function execute when DOM element ready
  * ===========================================================
  */
 
 $(document).ready(function () {
-
     // testimonial-active
     $(function () {
-        if ($('.testimonials-active').length) {
+        if ($(".testimonials-active").length) {
             $(".testimonials-active").owlCarousel({
                 items: 3,
                 margin: 30,
@@ -55,25 +57,29 @@ $(document).ready(function () {
                 loop: true,
                 autoplay: true,
                 autoplayTimeout: 2500,
-                animateOut: 'fadeOut',
+                animateOut: "fadeOut",
                 smartSpeed: 2500,
-                navText: ["<img src='assets/img/arrow-left.svg' class='img-fluid' />", "<img src='assets/img/arrow-right-s.svg' class='img-fluid' />"],
+                navText: [
+                    "<img src='assets/img/arrow-left.svg' class='img-fluid' />",
+                    "<img src='assets/img/arrow-right-s.svg' class='img-fluid' />",
+                ],
                 dots: false,
                 autoplayHoverPause: true,
                 responsive: {
                     0: {
-                        items: 1
+                        items: 1,
                     },
                     767: {
-                        items: 2
+                        items: 2,
                     },
                     1200: {
-                        items: 3
-                    }
-                }
+                        items: 3,
+                    },
+                },
             });
         }
     });
+
 
 
     // tooltip animation
@@ -85,4 +91,47 @@ $(document).ready(function () {
 
     
 
+
+    // wow js init
+    $(function () {
+        var wow = new WOW({
+            animateClass: "animated",
+            mobile: true,
+        });
+        wow.init();
+    });
+
 });
+
+// Splide slider activator.
+
+/* =========== Services Two Slider ===========*/
+new Splide("#slider1", {
+    type: "loop",
+    drag: "free",
+    perPage: 3,
+    gap: "1.875rem",
+    direction: "ttb",
+    height: "60rem",
+    arrows: false,
+    pagination: false,
+    autoScroll: {
+        speed: 1,
+    },
+}).mount(window.splide.Extensions);
+
+new Splide("#slider2", {
+    type: "loop",
+    drag: "free",
+    perPage: 3,
+    gap: "1.875rem",
+    direction: "ttb",
+    height: "60rem",
+    arrows: false,
+    pagination: false,
+    autoScroll: {
+        speed: -1,
+    },
+}).mount(window.splide.Extensions);
+
+/* =========== Services Two Slider ===========*/
