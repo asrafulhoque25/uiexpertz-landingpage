@@ -122,8 +122,9 @@ new Splide("#slider1", {
     height: "60rem",
     arrows: false,
     pagination: false,
+    focus  : 'center',
     autoScroll: {
-        speed: 1,
+        speed: 0.6,
     },
 }).mount(window.splide.Extensions);
 
@@ -134,15 +135,20 @@ new Splide("#slider2", {
     gap: "1.875rem",
     direction: "ttb",
     height: "60rem",
+    focus  : 'center',
     arrows: false,
     pagination: false,
     autoScroll: {
-        speed: -1,
+        speed: -0.6,
     },
 }).mount(window.splide.Extensions);
+
 
 
 // document.addEventListener( 'DOMContentLoaded', function () {
 //     new Splide( '#bannerSlider' ).mount();
 //   } );
 /* =========== Services Two Slider ===========*/
+
+/* =========== Services Two Slider ===========*/
+
