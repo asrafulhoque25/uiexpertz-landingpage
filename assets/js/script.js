@@ -28,17 +28,13 @@ $(window).on("load", function () {
     });
 });
 
-
-   // text animation    
-document.addEventListener("DOMContentLoaded", function() {
-    const element = document.querySelector('.fill');
-    setTimeout(function() {
-      element.classList.add('active');
-
+// text animation
+document.addEventListener("DOMContentLoaded", function () {
+    const element = document.querySelector(".fill");
+    setTimeout(function () {
+        element.classList.add("active");
     }, 1000);
 });
-
-
 
 /**
  * ========================================================
@@ -80,17 +76,11 @@ $(document).ready(function () {
         }
     });
 
-
-
     // tooltip animation
-    var scene = document.getElementById('js-scene');
+    var scene = document.getElementById("js-scene");
     var parallax = new Parallax(scene);
 
     //shape animation
-
-
-    
-
 
     // wow js init
     $(function () {
@@ -100,7 +90,6 @@ $(document).ready(function () {
         });
         wow.init();
     });
-
 });
 
 // Splide slider activator.
@@ -112,10 +101,10 @@ new Splide("#slider1", {
     perPage: 3,
     gap: "1.875rem",
     direction: "ttb",
-    height: "60rem",
+    height: "61rem",
     arrows: false,
     pagination: false,
-    focus  : 'center',
+    focus: "center",
     autoScroll: {
         speed: 0.6,
     },
@@ -127,12 +116,27 @@ new Splide("#slider2", {
     perPage: 3,
     gap: "1.875rem",
     direction: "ttb",
-    height: "60rem",
-    focus  : 'center',
+    height: "61rem",
+    focus: "center",
     arrows: false,
     pagination: false,
     autoScroll: {
         speed: -0.6,
+    },
+}).mount(window.splide.Extensions);
+
+new Splide("#slider3", {
+    type: "loop",
+    drag: "free",
+    perPage: 3,
+    gap: "1.875rem",
+    height: "6rem",
+    focus: "center",
+    autoWidth: true,
+    arrows: false,
+    pagination: false,
+    autoScroll: {
+        speed: 0.6,
     },
 }).mount(window.splide.Extensions);
 /* =========== Services Two Slider ===========*/
