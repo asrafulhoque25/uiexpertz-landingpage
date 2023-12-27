@@ -196,22 +196,22 @@
                       </div>
                     </div>
                     <div class="slider-content">
-                        <div>
+                        <div class="tab-content-item">
                             <h2 class="text-white fs-78">slide1</h2>
                         </div>
-                        <div>
+                        <div class="tab-content-item">
                             <h2 class="text-white fs-78">slide2</h2>
                         </div>
-                        <div>
+                        <div class="tab-content-item">
                             <h2 class="text-white fs-78">slide3</h2>
                         </div>
-                        <div>
+                        <div class="tab-content-item">
                             <h2 class="text-white fs-78">slide4</h2>
                         </div>
-                        <div>
+                        <div class="tab-content-item">
                             <h2 class="text-white fs-78">slide5</h2>
                         </div>
-                        <div>
+                        <div class="tab-content-item">
                             <h2 class="text-white fs-78">slide6</h2>
                         </div>
                     </div>
@@ -399,45 +399,30 @@
     <!-- Call to action -/End -->
 
     <!-- Main Coding End -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-
-
-    
+   
 <!-- Your HTML remains unchanged -->
 
-<!-- Your HTML remains unchanged -->
-<!-- Your HTML remains unchanged -->
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const slides = document.querySelectorAll('.splide__slide');
-        const sliderContent = document.querySelectorAll('.slider-content div');
-
-        slides.forEach((slide, index) => {
-            slide.addEventListener('click', function() {
-                // Remove 'is-active' class from all slides
-                slides.forEach((s) => s.classList.remove('is-active'));
-
-                // Add 'is-active' class to the clicked slide
-                this.classList.add('is-active');
-
-                // Hide all slider contents
-                sliderContent.forEach((content) => content.style.display = 'none');
-
-                // Show the corresponding slider content based on the clicked slide
-                sliderContent.forEach((content, contentIndex) => {
-                    if (contentIndex === index) {
-                        content.style.display = 'block';
-                    }
-                });
-            });
-        });
-    });
-</script>
+<div class="tabwrap">
+  <div class="tab">
+    <div class="tab-item ">item1</div>
+    <div class="tab-item active">item2</div>
+    <div class="tab-item">item3</div>
+    <div class="tab-item ">item4</div>
+  </div>
+  <div class="tab-content">
+    <div class="tab-content-item">content1</div>
+    <div class="tab-content-item">content2</div>
+    <div class="tab-content-item">content3</div>
+    <div class="tab-content-item">content4</div>
+  </div>
+</div>
 
 
+<!-- in tabwrap div there are 2 part. 1. tab and 2. tab-content . in tab 1st item is has "active" class. when first item active then i want  
+tab-content to add a class name is "d-block". firstly all the tab-content will be display none. when the tab-item active then maintain the serial bottom tab-content-item also add a class "d-block"
 
-    
+ -->
+
     
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>

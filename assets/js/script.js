@@ -1,3 +1,26 @@
+// Get all tab items and content items
+const tabItems = document.querySelectorAll('.splide__slide');
+const tabContentItems = document.querySelectorAll('.tab-content-item');
+
+// Find the index of the active tab item
+let activeIndex = -1;
+tabItems.forEach((item, index) => {
+  if (item.classList.contains('is-active')) {
+    activeIndex = index;
+  }
+});
+
+// Show the corresponding content item based on the active tab item
+if (activeIndex !== -1) {
+  tabContentItems.forEach((contentItem, index) => {
+    if (index === activeIndex) {
+      contentItem.classList.add('d-block');
+    } else {
+      contentItem.classList.remove('d-block');
+    }
+  });
+}
+
 
 // Splide slider activator.
 
@@ -70,6 +93,7 @@ new Splide( '#tabslider', {
     perPage: 3,
     focus  : 'center',
   }).mount();
+
 
 $(window).on("load", function () {
     // code should be execute here

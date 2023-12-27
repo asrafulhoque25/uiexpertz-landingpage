@@ -441,3 +441,17 @@ body {
 .splide__arrow:disabled{
   opacity: 1 !important;
 }
+
+
+
+
+
+/* Initially hide all content items */
+.tab-content-item {
+  display: none;
+}
+
+/* Display block for items with 'd-block' class */
+.tab-content-item.d-block {
+  display: block;
+}
