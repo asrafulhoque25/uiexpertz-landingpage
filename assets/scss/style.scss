@@ -404,6 +404,12 @@ body {
   .splide {
     width: 250px;
     height: 120px;
+
+    .splide__slide {
+      &.is-active{
+        background-color: red !important;
+      }
+    }
   }
   .splide__pagination{
     display: none;
