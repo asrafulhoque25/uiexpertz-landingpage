@@ -25,6 +25,7 @@ body {
   --nevi-blue: #00154c;
   --primary-2: #d4f941;
   --primary: #5648ff;
+  --gray-5: #E3E8F8;
 }
 
 /* reset, root - END */
@@ -51,6 +52,9 @@ body {
 
 .text-clr-primary {
   color: var(--primary);
+}
+.text-clr-gray5 {
+  color: var(--gray-5);
 }
 
 // BG color
@@ -101,6 +105,10 @@ body {
 
 /* Font family */
 
+.fs-78 {
+  font-size: 78px;
+  line-height: 90px;
+}
 .fs-20 {
   font-size: 20px;
   line-height: 30px;
