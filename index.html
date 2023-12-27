@@ -176,16 +176,44 @@
                 </div>`
                 <div class="tabSliderWrap">
                     <div class="splide" id="tabslider" role="group" aria-label="Splide Basic HTML Example">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="assets/img/arrowup.svg" class="img-fluid" alt="">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="assets/img/arrowdown.svg" class="img-fluid" alt="">
+                            </button>
+                      </div>
                       <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"> <div class="text-white">Slide 01</div> </li>
-                                <li class="splide__slide"><div class="text-white">Slide 02</div></li>
-                                <li class="splide__slide"><div class="text-white">Slide 03</div></li>
-                                <li class="splide__slide"><div class="text-white">Slide 04</div></li>
-                                <li class="splide__slide"><div class="text-white">Slide 05</div></li>
-                                <li class="splide__slide"><div class="text-white">Slide 06</div></li>
+                                <li class="splide__slide"> <div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 01</div> </li>
+                                <li class="splide__slide"><div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 02</div></li>
+                                <li class="splide__slide"><div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 03</div></li>
+                                <li class="splide__slide"><div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 04</div></li>
+                                <li class="splide__slide"><div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 05</div></li>
+                                <li class="splide__slide"><div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 06</div></li>
                             </ul>
                       </div>
+                    </div>
+                    <div class="slider-content">
+                        <div>
+                            <h2 class="text-white fs-78">slide1</h2>
+                        </div>
+                        <div>
+                            <h2 class="text-white fs-78">slide2</h2>
+                        </div>
+                        <div>
+                            <h2 class="text-white fs-78">slide3</h2>
+                        </div>
+                        <div>
+                            <h2 class="text-white fs-78">slide4</h2>
+                        </div>
+                        <div>
+                            <h2 class="text-white fs-78">slide5</h2>
+                        </div>
+                        <div>
+                            <h2 class="text-white fs-78">slide6</h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -372,6 +400,42 @@
 
     <!-- Main Coding End -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+    
+<!-- Your HTML remains unchanged -->
+
+<!-- Your HTML remains unchanged -->
+<!-- Your HTML remains unchanged -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.splide__slide');
+        const sliderContent = document.querySelectorAll('.slider-content div');
+
+        slides.forEach((slide, index) => {
+            slide.addEventListener('click', function() {
+                // Remove 'is-active' class from all slides
+                slides.forEach((s) => s.classList.remove('is-active'));
+
+                // Add 'is-active' class to the clicked slide
+                this.classList.add('is-active');
+
+                // Hide all slider contents
+                sliderContent.forEach((content) => content.style.display = 'none');
+
+                // Show the corresponding slider content based on the clicked slide
+                sliderContent.forEach((content, contentIndex) => {
+                    if (contentIndex === index) {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+
 
     
     

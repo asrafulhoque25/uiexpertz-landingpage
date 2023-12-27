@@ -63,15 +63,13 @@ new Splide("#bannerSlider", {
 }).mount(window.splide.Extensions);
 
 // portfolio 
-var splide = new Splide( '#tabslider', {
+new Splide( '#tabslider', {
     direction: 'ttb',
     height   : '10rem',
     wheel    : true,
     perPage: 3,
     focus  : 'center',
-  } );
-  
-  splide.mount();
+  }).mount();
 
 $(window).on("load", function () {
     // code should be execute here
