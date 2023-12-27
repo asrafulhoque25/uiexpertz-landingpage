@@ -240,7 +240,17 @@ body {
         position:absolute;
         right: 250px;
         top: 30%;
+          animation: bannerShape2 20s linear infinite;
     }
+    @keyframes bannerShape2 {
+      0% {
+          transform: rotate(0deg);
+      }
+  
+      100% {
+          transform: rotate(360deg);
+      }
+  }
   .banner-content-wrap {
     max-width: 1100px;
     width: 100%;
@@ -388,3 +398,14 @@ body {
 }
 
 /* banner  - END*/
+
+
+.tabSliderWrap{
+  .splide {
+    width: 250px;
+    height: 120px;
+  }
+  .splide__pagination{
+    display: none;
+  }
+}
