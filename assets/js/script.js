@@ -44,7 +44,7 @@ new Splide("#slider3", {
     arrows: false,
     pagination: false,
     autoScroll: {
-        speed: 0.6,
+        speed: 1.3,
     },
 }).mount(window.splide.Extensions);
 
