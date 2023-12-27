@@ -1,5 +1,52 @@
 
+// Splide slider activator.
 
+/* =========== Services Two Slider ===========*/
+new Splide("#slider1", {
+    type: "loop",
+    drag: "free",
+    perPage: 3,
+    gap: "1.875rem",
+    direction: "ttb",
+    height: "60rem",
+    arrows: false,
+    pagination: false,
+    focus: "center",
+    autoScroll: {
+        speed: 0.6,
+    },
+}).mount(window.splide.Extensions);
+
+
+new Splide("#slider2", {
+    type: "loop",
+    drag: "free",
+    perPage: 3,
+    gap: "1.875rem",
+    direction: "ttb",
+    height: "60rem",
+    focus: "center",
+    arrows: false,
+    pagination: false,
+    autoScroll: {
+        speed: -0.6,
+    },
+}).mount(window.splide.Extensions);
+
+new Splide("#slider3", {
+    type: "loop",
+    drag: "free",
+    perPage: 3,
+    gap: "1.875rem",
+    height: "6rem",
+    focus: "center",
+    autoWidth: true,
+    arrows: false,
+    pagination: false,
+    autoScroll: {
+        speed: 0.6,
+    },
+}).mount(window.splide.Extensions);
 
 // banner slider
 new Splide("#bannerSlider", {
@@ -10,7 +57,6 @@ new Splide("#bannerSlider", {
     height: "10rem",
     arrows: false,
     pagination: false,
-    
 }).mount(window.splide.Extensions);
 
 $(window).on("load", function () {
@@ -27,17 +73,13 @@ $(window).on("load", function () {
     });
 });
 
-
-   // text animation    
-document.addEventListener("DOMContentLoaded", function() {
-    const element = document.querySelector('.fill');
-    setTimeout(function() {
-      element.classList.add('active');
-
+// text animation
+document.addEventListener("DOMContentLoaded", function () {
+    const element = document.querySelector(".fill");
+    setTimeout(function () {
+        element.classList.add("active");
     }, 1000);
 });
-
-
 
 /**
  * ========================================================
@@ -45,44 +87,17 @@ document.addEventListener("DOMContentLoaded", function() {
  * ===========================================================
  */
 
+
     // tooltip animation
     var scene = document.getElementById('js-scene');
     var parallax = new Parallax(scene);
 
 // Splide slider activator.
 
-/* =========== Services Two Slider ===========*/
-new Splide("#slider1", {
-    type: "loop",
-    drag: "free",
-    perPage: 3,
-    gap: "1.875rem",
-    direction: "ttb",
-    height: "60rem",
-    arrows: false,
-    pagination: false,
-    focus  : 'center',
-    autoScroll: {
-        speed: 0.6,
-    },
-}).mount(window.splide.Extensions);
 
-new Splide("#slider2", {
-    type: "loop",
-    drag: "free",
-    perPage: 3,
-    gap: "1.875rem",
-    direction: "ttb",
-    height: "60rem",
-    focus  : 'center',
-    arrows: false,
-    pagination: false,
-    autoScroll: {
-        speed: -0.6,
-    },
-}).mount(window.splide.Extensions);
-
-
+// tooltip animation
+var scene = document.getElementById("js-scene");
+var parallax = new Parallax(scene);
 
 // document.addEventListener( 'DOMContentLoaded', function () {
 //     new Splide( '#bannerSlider' ).mount();
@@ -90,4 +105,3 @@ new Splide("#slider2", {
 /* =========== Services Two Slider ===========*/
 
 /* =========== Services Two Slider ===========*/
-
