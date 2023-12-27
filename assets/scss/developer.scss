@@ -14,6 +14,7 @@
         line-height: 1.26em;
         font-weight: 600;
         margin-bottom: 30px;
+        text-wrap: balance;
     }
 }
 
@@ -251,6 +252,7 @@
 
 .text-carousel {
     padding-block: 35px;
+
     .text-carousel-heading {
         font-size: 78px;
         line-height: 1.17em;
@@ -259,4 +261,57 @@
 
 /* ==================================
 = Text carousel -/ End
+================================== */
+
+
+
+
+
+/* ==================================
+= Testimonial section -/ Start
+================================== */
+
+.testimonial-area {
+    .testimonial-heading {
+        font-size: 68px;
+        margin-bottom: 60px;
+    }
+
+    .testimonial-slider-wrap {
+        .testimonial-slider-item {
+            background: #F2F2F4;
+            border-radius: 36px;
+            padding: 60px;
+            gap: 80px;
+
+
+            .testimonial-content {
+                font-size: 36px;
+                line-height: 1.55em;
+
+                .author-info {
+                    margin-top: 40px;
+                    gap: 20px;
+
+                    .author-name {
+                        font-size: 24px;
+                        line-height: 1.41em;
+                    }
+
+                    span {
+                        font-size: 20px;
+                        line-height: 1.5em;
+                        color: #384973;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+/* ==================================
+= Testimonial section -/ End
 ================================== */
