@@ -1,3 +1,4 @@
+
 // Splide slider activator.
 
 /* =========== Services Two Slider ===========*/
@@ -15,6 +16,7 @@ new Splide("#slider1", {
         speed: 0.6,
     },
 }).mount(window.splide.Extensions);
+
 
 new Splide("#slider2", {
     type: "loop",
@@ -46,18 +48,6 @@ new Splide("#slider3", {
     },
 }).mount(window.splide.Extensions);
 
-// Testimonial slider
-new Splide("#testimonialSlider", {
-    type: "loop",
-    perPage: 1,
-    perMove: 1,
-    gap: "1.875rem",
-    focus: "center",
-    autoplay: true,
-    arrows: true,
-    pagination: false,
-}).mount();
-
 // banner slider
 new Splide("#bannerSlider", {
     type: "loop",
@@ -69,16 +59,16 @@ new Splide("#bannerSlider", {
     pagination: false,
 }).mount(window.splide.Extensions);
 
-// portfolio
-var splide = new Splide("#tabslider", {
-    direction: "ttb",
-    height: "10rem",
-    wheel: true,
+// portfolio 
+var splide = new Splide( '#tabslider', {
+    direction: 'ttb',
+    height   : '10rem',
+    wheel    : true,
     perPage: 3,
-    focus: "center",
-});
-
-splide.mount();
+    focus  : 'center',
+  } );
+  
+  splide.mount();
 
 $(window).on("load", function () {
     // code should be execute here
@@ -108,12 +98,18 @@ document.addEventListener("DOMContentLoaded", function () {
  * ===========================================================
  */
 
-// tooltip animation
-var scene = document.getElementById("js-scene");
-var parallax = new Parallax(scene);
+
+    // tooltip animation
+    var scene = document.getElementById('js-scene');
+    var parallax = new Parallax(scene);
 
 // Splide slider activator.
 
+
 // tooltip animation
 var scene = document.getElementById("js-scene");
 var parallax = new Parallax(scene);
+
+
+
+

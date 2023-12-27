@@ -8,7 +8,8 @@
   font-size: 68px;
   line-height: 1.26em;
   font-weight: 600;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-wrap: balance; }
 
 .services-area-btn a {
   font-family: 'Sharp Grotesk SemiBold 20' !important; }
@@ -164,6 +165,34 @@
 
 /* ==================================
 = Text carousel -/ End
+================================== */
+/* ==================================
+= Testimonial section -/ Start
+================================== */
+.testimonial-area .testimonial-heading {
+  font-size: 68px;
+  margin-bottom: 60px; }
+.testimonial-area .testimonial-slider-wrap .testimonial-slider-item {
+  background: #F2F2F4;
+  border-radius: 36px;
+  padding: 60px;
+  gap: 80px; }
+  .testimonial-area .testimonial-slider-wrap .testimonial-slider-item .testimonial-content {
+    font-size: 36px;
+    line-height: 1.55em; }
+    .testimonial-area .testimonial-slider-wrap .testimonial-slider-item .testimonial-content .author-info {
+      margin-top: 40px;
+      gap: 20px; }
+      .testimonial-area .testimonial-slider-wrap .testimonial-slider-item .testimonial-content .author-info .author-name {
+        font-size: 24px;
+        line-height: 1.41em; }
+      .testimonial-area .testimonial-slider-wrap .testimonial-slider-item .testimonial-content .author-info span {
+        font-size: 20px;
+        line-height: 1.5em;
+        color: #384973; }
+
+/* ==================================
+= Testimonial section -/ End
 ================================== */
 
 /*# sourceMappingURL=developer.css.map */
