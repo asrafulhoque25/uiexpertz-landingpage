@@ -66,6 +66,9 @@ var splide = new Splide( '#tabslider', {
     wheel    : true,
     perPage: 3,
     focus  : 'center',
+    // type   : 'loop',
+    // padding: '5rem',
+    
   } );
   
   splide.mount();
