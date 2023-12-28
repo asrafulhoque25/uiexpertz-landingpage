@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const element = document.querySelector('.fill');
+    if (element) {
+      setTimeout(function() {
+        element.classList.add('active');
+      }, 1000);
+    } else {
+      console.error('Element with class ".fill" not found');
+    }
+  });
+
 $('.btn-info').hover(
     function() {
       $('.icon-scale.is-1').toggleClass('class1-for-img1');
@@ -17,6 +28,11 @@ $(document).ready(function() {
       syncTabs();
   });
   
+
+
+  // curvedSlider
+
+
 // Splide slider activator.
 
 /* =========== Services Two Slider ===========*/
@@ -80,6 +96,8 @@ new Splide( '#tabslider', {
   }).mount();
 
 
+
+
 $(window).on("load", function () {
     // code should be execute here
     // button effect
@@ -110,5 +128,56 @@ new Splide( '#testimonialSlider', {
     autoplay: true,
     arrows: true,
     pagination: false,
-    gap: '2rem',
+    gap: '3rem',
+    speed:2500,
 } ).mount();
+
+
+// product slider
+
+new Splide("#curvedSlider", {
+    type: "loop",
+    drag: "free",
+    perPage: 2,
+    padding: '10rem',
+    gap: "4rem",
+    height: "auto",
+    arrows: false,
+    pagination: false,
+    autoScroll: {
+        speed: -1,
+      },
+    breakpoints: {
+      991: {
+        perPage: 2,
+        gap: "2rem",
+      },
+    },
+  }).mount(window.splide.Extensions);
+
+
+  //partners carousel
+
+  new Splide( '#partnersCarousel', {
+    type   : 'loop',
+    perPage: 5,
+    perMove: 1,
+    arrows: false,
+    pagination: false,
+    height: '27.5rem',
+    drag: 'freeg',
+    autoScroll: {
+        speed: 1,
+    },
+} ).mount(window.splide.Extensions);
+
+
+
+  
+  // animation
+  var scene = document.getElementById('js-scene1');
+  var parallax = new Parallax(scene);
+  var scene = document.getElementById('js-scene2');
+  var parallax = new Parallax(scene);
+
+

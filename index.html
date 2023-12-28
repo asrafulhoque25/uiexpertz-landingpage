@@ -40,9 +40,8 @@
     <!-- Fonts CSS -->
     <link rel="stylesheet" href="assets/fonts/fonts.css" />
 
-
     <!-- Splide slider css  -->
-    <link rel="stylesheet" type="text/css" href="assets/css/splide.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/splide.min.css" />
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/developer.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
@@ -89,31 +88,82 @@
     <!--/ header -->
 
     <!--banner -->
-    <section class="banner ">
+    <section class="banner overflow-hidden" id="js-scene1">
+        <div class="banner-shape">
+            <div class="view-all items__inner">
+                <div class="items__layer horse layer" data-depth=".2">
+                    <div class="items__item">
+                        <div class="d-flex align-items-center gap-3 moving-image">
+                            <img src="assets/img/banner.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <div class="banner-wrapper">
             <div class="banner-content">
-                <h1 class="ff-sg-semibold-25 fs-82 text-white ">We transform
-                    your ideas into innovative</h1>
+                <h1 class="ff-sg-semibold-25 fs-82 text-white fill" data-text="We transform your ideas into innovative">
+                    We transform your ideas into innovative
+                </h1>
 
                 <div class="commonBtn mt-5 d-flex align-items-center gap-0">
                     <img src="assets/img/btnarrow2.svg" class="icon-scale is-1" />
-                    <a class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase ff-sg-medium-20 btn-flow btn-flow-fill is-shadow button-effect reverse" href="#">Let’s talk</a>
+                    <a class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase ff-sg-medium-20 btn-flow btn-flow-fill is-shadow button-effect reverse"
+                        href="#">Let’s talk</a>
                     <img src="assets/img/btnarrow.svg" class="icon-scale is-2" />
                 </div>
             </div>
-            <div>
-                <h3 class="text-white fs-90">5k+</h3>
+            <div class="banner-side-content d-flex align-items-start gap-4">
+                <h3 class="text-white fs-90 ff-sg-thin-25">5k+</h3>
                 <div class="top-notch-content">
-                    <p class="text-white fs-22 ff-sg-book-20">Users use this platform with 
-                        top-notch satisfaction.</p>
+                    <p class="text-white fs-22 ff-sg-book-20">
+                        Users use this platform with top-notch satisfaction.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <!--/ banner -->
 
-
-
+    <!-- curved-slider-wrapper -->
+    <section class="curved-slider-wrapper section-padding-140">
+        <div class="container">
+            <h2 class="spl-title text-center ff-sg-thin-25">
+                Our inventi<span class="position-relative">o<img src="assets/img/star.svg" alt="icon"
+                        class="star-icon position-absolute end-0 img-fluid" /></span>ns
+            </h2>
+        </div>
+        <div class="curved-slider-item">
+            <div class="splide" id="curvedSlider" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="banner-slider-image">
+                                <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="" />
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="banner-slider-image">
+                                <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="" />
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="banner-slider-image">
+                                <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="" />
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="banner-slider-image">
+                                <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- curved-slider-wrapper - End -->
 
     <!-- Services area -/Start -->
     <section class="services-area bg-clr-neviBlue overflow-hidden">
@@ -121,10 +171,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-4">
                     <div class="services-heading">
-                        <h2 class="text-white ff-sg-semibold-25">
-                            Our services
-                        </h2>
-
+                        <h2 class="text-white ff-sg-semibold-25">Suit of
+                            services</h2>
                         <div class="d-flex services-area-btn">
                             <a href="#"
                                 class="common-btn bg-clr-primary rounded-pill fs-6 fw-semi-bold text-decoration-none d-flex align-items-center justify-content-center gap-2 text-white text-uppercase">Let’s
@@ -142,7 +190,6 @@
                 <div class="col-lg-8">
                     <div class="d-flex align-items-center services-item-two-column-wrap overflow-hidden">
                         <div class="services-item-left-column w-100">
-
                             <div class="first-slider-wrapper">
                                 <div class="splide" id="slider1" role="group" aria-label="Splide Basic HTML Example">
                                     <div class="splide__track">
@@ -151,37 +198,41 @@
                                                 <div class="services-item">
                                                     <div class="">
                                                         <img src="assets/img/service-ui-ux-design.svg"
-                                                            alt="Ui ux design" class="img-fluid">
+                                                            alt="Ui ux design" class="img-fluid" />
                                                     </div>
-                                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
+                                                    <p class="ff-sg-light-25 text-white">
+                                                        Ui Ux Design
+                                                    </p>
                                                 </div>
                                             </li>
                                             <li class="splide__slide">
                                                 <div class="services-item">
                                                     <div class="">
                                                         <img src="assets/img/service-ui-ux-design.svg"
-                                                            alt="Ui ux design" class="img-fluid">
+                                                            alt="Ui ux design" class="img-fluid" />
                                                     </div>
-                                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
+                                                    <p class="ff-sg-light-25 text-white">
+                                                        Ui Ux Design
+                                                    </p>
                                                 </div>
                                             </li>
                                             <li class="splide__slide">
                                                 <div class="services-item">
                                                     <div class="">
                                                         <img src="assets/img/service-ui-ux-design.svg"
-                                                            alt="Ui ux design" class="img-fluid">
+                                                            alt="Ui ux design" class="img-fluid" />
                                                     </div>
-                                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
+                                                    <p class="ff-sg-light-25 text-white">
+                                                        Ui Ux Design
+                                                    </p>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="services-item-right-column w-100 marquee-reverse">
-
                             <div class="first-slider-wrapper">
                                 <div class="splide" id="slider2" role="group" aria-label="Splide Basic HTML Example">
                                     <div class="splide__track">
@@ -190,34 +241,39 @@
                                                 <div class="services-item">
                                                     <div class="">
                                                         <img src="assets/img/service-search-engine-optimization.svg"
-                                                            alt="Ui ux design" class="img-fluid">
+                                                            alt="Ui ux design" class="img-fluid" />
                                                     </div>
-                                                    <p class="ff-sg-light-25 text-white">Search engine optimization</p>
+                                                    <p class="ff-sg-light-25 text-white">
+                                                        Search engine optimization
+                                                    </p>
                                                 </div>
                                             </li>
                                             <li class="splide__slide">
                                                 <div class="services-item">
                                                     <div class="">
                                                         <img src="assets/img/service-wordpress-development.svg"
-                                                            alt="Ui ux design" class="img-fluid">
+                                                            alt="Ui ux design" class="img-fluid" />
                                                     </div>
-                                                    <p class="ff-sg-light-25 text-white">Wordpress development</p>
+                                                    <p class="ff-sg-light-25 text-white">
+                                                        Wordpress development
+                                                    </p>
                                                 </div>
                                             </li>
                                             <li class="splide__slide">
                                                 <div class="services-item">
                                                     <div class="">
                                                         <img src="assets/img/service-ui-ux-design.svg"
-                                                            alt="Ui ux design" class="img-fluid">
+                                                            alt="Ui ux design" class="img-fluid" />
                                                     </div>
-                                                    <p class="ff-sg-light-25 text-white">Ui Ux Design</p>
+                                                    <p class="ff-sg-light-25 text-white">
+                                                        Ui Ux Design
+                                                    </p>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -226,6 +282,201 @@
     </section>
     <!-- Services area -/End -->
 
+    <!-- case-studies -->
+    <section class="case-studies section-padding-140 bg-clr-primary overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="case-studies-image position-relative mb-5 mb-lg-0" id="js-scene2">
+                        <img src="assets/img/case-studies-img.png" alt="img" class="img-fluid">
+                        <div class="view-all items__inner">
+                            <div class="items__layer horse layer" data-depth=".5">
+                                <div class="items__item">
+                                    <div class="d-flex align-items-center gap-3 moving-image">
+                                        <a href="#">
+                                            <img src="assets/img/case-study-tag-img.svg" alt="img"
+                                                class="img-fluid position-absolute">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="case-info">
+                        <div class="sec-heading mb-5">
+                            <span class="fs-4 fw-semi-bold text-clr-primary2">
+                                Case studies
+                            </span>
+                            <h2 class="fs-36 fw-medium text-white ff-sg-medium-25 mt-3">
+                                We transform your business with impactful products, understanding your goals &
+                                challenges.
+                            </h2>
+                        </div>
+                        <div class="accourdion-wrapper">
+                            <ul class="accordion-list list-unstyled">
+                                <li class="accordion-list-item mb-2 open">
+                                    <h5
+                                        class="accordion-title fs-4 fw-semi-bold ff-sg-semibold-20 d-flex justify-content-between mb-0">
+                                        Research & process
+                                        <span class="ni ni-minus"></span>
+                                    </h5>
+                                    <div class="accordion-desc ff-sg-book-20 fw-normal">
+                                        <p class="pe-5 pt-3">
+                                            We work with you to gain a deeper understanding of your business, problems
+                                            and goals and how to best deliver a solution
+                                            that will create impact
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="accordion-list-item mb-2">
+                                    <h5
+                                        class="accordion-title fs-4 fw-semi-bold ff-sg-semibold-20 d-flex justify-content-between mb-0">
+                                        Development & testing
+                                        <span class="ni ni-plus"></span>
+                                    </h5>
+                                    <div class="accordion-desc ff-sg-book-20 fw-normal" style="display: none;">
+                                        <p class="pt-3 pe-5">
+                                            We work with you to gain a deeper understanding of your business, problems
+                                            and goals and how to best deliver a solution
+                                            that will create impact
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="accordion-list-item mb-2">
+                                    <h5
+                                        class="accordion-title fs-4 fw-semi-bold ff-sg-semibold-20 d-flex justify-content-between mb-0">
+                                        Launching & looking ahead
+                                        <span class="ni ni-plus"></span>
+                                    </h5>
+                                    <div class="accordion-desc ff-sg-book-20 fw-normal" style="display: none;">
+                                        <p class="pt-3 pe-5">
+                                            We work with you to gain a deeper understanding of your business, problems
+                                            and goals and how to best deliver a solution
+                                            that will create impact
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ case-studies -->
+
+    <!-- Partners logo carousel -/Start -->
+    <section class="partners-carousel-area section-padding-140">
+        <div class="container">
+            <!-- Section heading -->
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="text-center">
+                        <h2 class="section-heading text-clr-neviBlue ff-sg-semibold-25">
+                            Our <span class="text-clr-primary">trusted</span> global partners
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Section heading -->
+        </div>
+        <div class="partners-carousel-wrapper">
+            <div class="splide" id="partnersCarousel" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="d-flex flex-column justify-content-evenly h-100">
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
+                                    <img src="assets/img/partner-logo-1.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
+                                    <img src="assets/img/partner-logo-2.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="d-flex flex-column justify-content-evenly h-100">
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
+                                    <img src="assets/img/partner-logo-2.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
+                                    <img src="assets/img/partner-logo-3.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="d-flex flex-column justify-content-evenly h-100">
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
+                                    <img src="assets/img/partner-logo-5.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
+                                    <img src="assets/img/partner-logo-7.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="d-flex flex-column justify-content-evenly h-100">
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
+                                    <img src="assets/img/partner-logo-1.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
+                                    <img src="assets/img/partner-logo-4.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="d-flex flex-column justify-content-evenly h-100">
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
+                                    <img src="assets/img/partner-logo-6.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
+                                    <img src="assets/img/partner-logo-2.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="d-flex flex-column justify-content-evenly h-100">
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
+                                    <img src="assets/img/partner-logo-7.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
+                                    <img src="assets/img/partner-logo-3.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="d-flex flex-column justify-content-evenly h-100">
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
+                                    <img src="assets/img/partner-logo-3.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                                <div
+                                    class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
+                                    <img src="assets/img/partner-logo-5.svg" alt="Partners Logo" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Partners logo carousel -/End -->
+
     <!-- Text carousel -/Start -->
     <section class="bg-clr-primary text-carousel">
         <div class="splide" id="slider3" role="group" aria-label="Splide Basic HTML Example">
@@ -233,11 +484,13 @@
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="">
-                            <h2 class="text-white ff-sg-light-25 text-carousel-heading">trusted by 4000+</h2>
+                            <h2 class="text-white ff-sg-light-25 text-carousel-heading">
+                                trusted by 4000+
+                            </h2>
                         </div>
                     </li>
                     <li class="splide__slide">
-                        <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center h-100">
                             <span class="d-flex justify-content-center align-items-center h-100">
                                 <svg width="68" height="68" viewBox="0 0 68 68" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -254,11 +507,13 @@
                     </li>
                     <li class="splide__slide">
                         <div class="">
-                            <h2 class="text-white ff-sg-light-25 text-carousel-heading">our trusted agency</h2>
+                            <h2 class="text-white ff-sg-light-25 text-carousel-heading">
+                                our trusted agency
+                            </h2>
                         </div>
                     </li>
                     <li class="splide__slide">
-                        <div class="d-flex justify-content-center align-items-center ">
+                        <div class="d-flex justify-content-center align-items-center h-100">
                             <span class="d-flex justify-content-center align-items-center h-100">
                                 <svg width="68" height="68" viewBox="0 0 68 68" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -275,7 +530,9 @@
                     </li>
                     <li class="splide__slide">
                         <div class="">
-                            <h2 class="text-white ff-sg-light-25 text-carousel-heading">our trusted agency</h2>
+                            <h2 class="text-white ff-sg-light-25 text-carousel-heading">
+                                our trusted agency
+                            </h2>
                         </div>
                     </li>
                     <li class="splide__slide">
@@ -301,39 +558,6 @@
     <!-- Text carousel -/End -->
 
 
-    <!-- Call to action -/Start -->
-    <section class="call-to-action section-padding-140 position-relative">
-        <!-- Left shape -->
-        <div class="cta-left-shape position-absolute">
-            <img src="assets/img/cta-left-shape.svg" alt="Shape" class="img-fluid">
-        </div>
-        <div class="container">
-            <div class="cta-inner-wrap position-relative">
-
-                <div class="cta-right-shape position-absolute">
-                    <img src="assets/img/cta-right-shape.svg" alt="Shape" class="img-fluid">
-                </div>
-
-                <h3 class="ff-sg-semibold-25 text-clr-neviBlue cta-heading text-center">
-                    Build at speed, build with precision
-                </h3>
-
-                <div class="d-flex justify-content-center services-area-btn mt-4 pt-2">
-                    <a href="#"
-                        class="common-btn bg-clr-primary rounded-pill fs-6 fw-semi-bold text-decoration-none d-flex align-items-center justify-content-center gap-2 text-white text-uppercase">Let’s
-                        talk
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9.24269 9.24264H7.74009V3.32062L1.28774 9.77297L0.227081 8.71231L6.67943 2.25996H0.757411V0.757359H9.24269V9.24264Z"
-                                fill="#ffffff" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Call to action -/End -->
-
 
     <!-- Testimonial -/Start  -->
     <section class="testimonial-area section-padding-140 overflow-hidden">
@@ -341,7 +565,9 @@
             <div class="row">
                 <div class="col-md-10 offset-md-1">
                     <div class="text-center">
-                        <h2 class="testimonial-heading ff-sg-semibold-25 text-clr-neviBlue">Client Testimony</h2>
+                        <h2 class="testimonial-heading ff-sg-semibold-25 text-clr-neviBlue">
+                            Client Testimony
+                        </h2>
                     </div>
                     <div class="testimonial-slider-wrap">
                         <!-- Splide  -->
@@ -355,7 +581,6 @@
                                 </button>
                             </div>
 
-
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide" data-splide-interval="5000">
@@ -363,15 +588,15 @@
                                         <div class="testimonial-slider-item d-flex">
                                             <div class="testimonial-image flex-shrink-0">
                                                 <img src="assets/img/testimony-image-1.png" alt="John wick"
-                                                    class="img-fluid">
+                                                    class="img-fluid" />
                                             </div>
                                             <div class="testimonial-content">
                                                 <p class="ff-sg-light-20 text-clr-neviBlue">
-                                                    Thrilled with our site's outcome! Thanks to Uiexpertz, we've seen a
-                                                    4.5x increase in
-                                                    clicks and a 67x boost in impressions within a month. With only 17%
-                                                    of our pages
-                                                    indexed, we anticipate further growth.
+                                                    Thrilled with our site's outcome! Thanks to
+                                                    Uiexpertz, we've seen a 4.5x increase in clicks and
+                                                    a 67x boost in impressions within a month. With only
+                                                    17% of our pages indexed, we anticipate further
+                                                    growth.
                                                 </p>
                                                 <div class="author-info d-flex align-items-center">
                                                     <h4 class="ff-sg-medium-20 author-name text-clr-neviBlue mb-0">
@@ -390,16 +615,15 @@
                                         <div class="testimonial-slider-item d-flex">
                                             <div class="testimonial-image flex-shrink-0">
                                                 <img src="assets/img/testimony-image-1.png" alt="John wick"
-                                                    class="img-fluid">
+                                                    class="img-fluid" />
                                             </div>
                                             <div class="testimonial-content">
                                                 <p class="ff-sg-light-20 text-clr-neviBlue">
-                                                    222 Thrilled with our site's outcome! Thanks to Uiexpertz, we've
-                                                    seen a
-                                                    4.5x increase in
-                                                    clicks and a 67x boost in impressions within a month. With only 17%
-                                                    of our pages
-                                                    indexed, we anticipate further growth.
+                                                    222 Thrilled with our site's outcome! Thanks to
+                                                    Uiexpertz, we've seen a 4.5x increase in clicks and
+                                                    a 67x boost in impressions within a month. With only
+                                                    17% of our pages indexed, we anticipate further
+                                                    growth.
                                                 </p>
                                                 <div class="author-info d-flex align-items-center">
                                                     <h4 class="ff-sg-medium-20 author-name text-clr-neviBlue mb-0">
@@ -418,16 +642,15 @@
                                         <div class="testimonial-slider-item d-flex">
                                             <div class="testimonial-image flex-shrink-0">
                                                 <img src="assets/img/testimony-image-1.png" alt="John wick"
-                                                    class="img-fluid">
+                                                    class="img-fluid" />
                                             </div>
                                             <div class="testimonial-content">
                                                 <p class="ff-sg-light-20 text-clr-neviBlue">
-                                                    333 Thrilled with our site's outcome! Thanks to Uiexpertz, we've
-                                                    seen a
-                                                    4.5x increase in
-                                                    clicks and a 67x boost in impressions within a month. With only 17%
-                                                    of our pages
-                                                    indexed, we anticipate further growth.
+                                                    333 Thrilled with our site's outcome! Thanks to
+                                                    Uiexpertz, we've seen a 4.5x increase in clicks and
+                                                    a 67x boost in impressions within a month. With only
+                                                    17% of our pages indexed, we anticipate further
+                                                    growth.
                                                 </p>
                                                 <div class="author-info d-flex align-items-center">
                                                     <h4 class="ff-sg-medium-20 author-name text-clr-neviBlue mb-0">
@@ -451,44 +674,92 @@
         </div>
     </section>
     <!-- Testimonial -/End -->
+
+    <!-- Call to action -/Start -->
+    <section class="call-to-action section-padding-140 position-relative">
+        <!-- Left shape -->
+        <div class="cta-left-shape position-absolute">
+            <img src="assets/img/cta-left-shape.svg" alt="Shape" class="img-fluid" />
+        </div>
+        <div class="container">
+            <div class="cta-inner-wrap position-relative">
+                <div class="cta-right-shape position-absolute">
+                    <img src="assets/img/cta-right-shape.svg" alt="Shape" class="img-fluid" />
+                </div>
+
+                <h3 class="ff-sg-semibold-25 text-clr-neviBlue cta-heading text-center">
+                    Build at speed, build with precision
+                </h3>
+
+                <div class="d-flex justify-content-center services-area-btn mt-4 pt-2">
+                    <a href="#"
+                        class="common-btn bg-clr-primary rounded-pill fs-6 fw-semi-bold text-decoration-none d-flex align-items-center justify-content-center gap-2 text-white text-uppercase">Let’s
+                        talk
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.24269 9.24264H7.74009V3.32062L1.28774 9.77297L0.227081 8.71231L6.67943 2.25996H0.757411V0.757359H9.24269V9.24264Z"
+                                fill="#ffffff" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to action -/End -->
+
+
     <!-- cost snapshot -->
     <section class="cost-snapshot section-padding-140 bg-clr-neviBlue mb-5">
         <div class="container">
             <div class="cost-snapshot-wrap">
                 <div class="cost-snapshot-title">
                     <h2 class="fs-78 text-white ff-sg-semibold-25">Cost snapshot</h2>
-                    <p class="fs-4 fw-light text-clr-gray5 ff-sg-light-25 mt-3 mb-5">Tailored Solutions for Every Budget
+                    <p class="fs-4 fw-light text-clr-gray5 ff-sg-light-25 mt-3 mb-5">
+                        Tailored Solutions for Every Budget
                     </p>
-                </div>`
+                </div>
+                `
                 <div class="tabSliderWrap">
                     <div class="splide" id="tabslider" role="group" aria-label="Splide Basic HTML Example">
                         <div class="splide__arrows">
                             <button class="splide__arrow splide__arrow--prev">
-                                <img src="assets/img/arrowup.svg" class="img-fluid" alt="">
+                                <img src="assets/img/arrowup.svg" class="img-fluid" alt="" />
                             </button>
                             <button class="splide__arrow splide__arrow--next">
-                                <img src="assets/img/arrowdown.svg" class="img-fluid" alt="">
+                                <img src="assets/img/arrowdown.svg" class="img-fluid" alt="" />
                             </button>
                         </div>
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
-                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 01</div>
+                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">
+                                        Slide 01
+                                    </div>
                                 </li>
                                 <li class="splide__slide">
-                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 02</div>
+                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">
+                                        Slide 02
+                                    </div>
                                 </li>
                                 <li class="splide__slide">
-                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 03</div>
+                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">
+                                        Slide 03
+                                    </div>
                                 </li>
                                 <li class="splide__slide">
-                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 04</div>
+                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">
+                                        Slide 04
+                                    </div>
                                 </li>
                                 <li class="splide__slide">
-                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 05</div>
+                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">
+                                        Slide 05
+                                    </div>
                                 </li>
                                 <li class="splide__slide">
-                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">Slide 06</div>
+                                    <div class="text-white fs-6 fw-medium ff-sg-medium-25">
+                                        Slide 06
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -519,15 +790,14 @@
     </section>
     <!--/ cost snapshot -->
 
-
     <!-- Main Coding End -->
 
     <!-- Your HTML remains unchanged -->
 
     <div class="tabwrap">
         <div class="tab">
-            <div class="tab-item ">item1</div>
-            <div class="tab-item ">item2</div>
+            <div class="tab-item">item1</div>
+            <div class="tab-item">item2</div>
             <div class="tab-item">item3</div>
             <div class="tab-item active">item4</div>
         </div>
@@ -538,7 +808,6 @@
             <div class="tab-content-item">content4</div>
         </div>
     </div>
-
 
     <!-- in tabwrap div there are 2 part. 1. tab and 2. tab-content . in tab 1st item is has "active" class. when first item active then i want  
 tab-content to add a class name is "d-block". firstly all the tab-content will be display none. when the tab-item active then maintain the serial bottom tab-content-item also add a class "d-block"
@@ -551,9 +820,15 @@ tab-content to add a class name is "d-block". firstly all the tab-content will b
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
     <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/jquery-petty-accordion.js"></script>
 
     <!-- Script JS -->
     <script src="assets/js/script.js"></script>
+
+    <script>
+
+    </script>
+
 
     <!-- <h1 class="wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="300ms">
         Hello
