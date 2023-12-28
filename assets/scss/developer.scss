@@ -362,3 +362,131 @@
 /* ==================================
 = Testimonial section -/ End
 ================================== */
+
+
+
+
+
+
+
+
+/* ==================================
+= Partners logo carousel -/ Start
+================================== */
+
+.partners-carousel-area {
+    .section-heading {
+        font-size: 78px;
+        line-height: 1.17em;
+        margin-bottom: 60px;
+    }
+
+    .partners-carousel-wrapper {
+        .carousel-border {
+            border-bottom: 1px solid #AAB4CF;
+        }
+        .carousel-border-right {
+            border-right: 1px solid #AAB4CF;
+        }
+
+        .partners-carousel-item {
+            img {
+                transition: all 300ms ease-in-out;
+                &:hover {
+                    transform: scale(1.3) rotate(-15deg);
+                }
+            }
+        }
+    }
+}
+
+/* ==================================
+= Partners logo carousel -/ End
+================================== */
+
+
+
+.btn-wrapper {
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.button-hover-wrap {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: flex;
+}
+
+
+.main-bg-color {
+    background-color: var(--primary-color-two);
+    color: var(--black);
+}
+.button-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+img {
+    z-index: 0;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.primary-button-2 {
+    transform: translate3d(-58px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.main-bg-color {
+    background-color: #ffff00;
+    color: #000000;
+}
+.primary-button-2 {
+    z-index: 6;
+    border-radius: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 24px;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+a {
+    color: #02ca5f;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: underline;
+}
+a {
+    background-color: transparent;
+}
+* {
+    box-sizing: border-box;
+}
+
+.primary-button-2:hover {
+    box-shadow: 0 0 #000;
+}
+
+.primary-button-2:hover {
+    transform: translate3d(-58px, 0px, 0px) scale3d(0.5, 0.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
