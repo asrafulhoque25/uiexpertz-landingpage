@@ -5,7 +5,10 @@ new Splide( '#testimonialSlider', {
     autoplay: true,
     arrows: true,
     pagination: false,
-    gap: '2rem',
+    gap: '3rem',
+    speed: 2500,
+    // direction: 'ttb',
+    // height: '32rem',
 } ).mount();
 
 
@@ -16,7 +19,7 @@ new Splide( '#partnersCarousel', {
     arrows: false,
     pagination: false,
     height: '27.5rem',
-    drag: 'freeg',
+    drag: 'free',
     autoScroll: {
         speed: 1,
     },
