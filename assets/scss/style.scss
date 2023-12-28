@@ -102,9 +102,16 @@ body {
 .ff-sg-bold-20 {
   font-family: "Sharp Grotesk Bold 20";
 }
+.ff-sg-thin-25 {
+  font-family: 'Sharp Grotesk Thin 25';
+}
 
 /* Font family */
 
+.fs-90 {
+  font-size: 90px;
+  line-height: 100px;
+}
 .fs-82 {
   font-size: 82px;
   line-height: 92px;
@@ -267,6 +274,13 @@ body {
   .top-notch-content{
     margin-bottom: 20px;
     border-bottom: 1px solid #fff;
+    display: inline-block;
+    max-width: 332px;
+    width: 100%;
+  }
+
+  .banner-side-content{
+    padding-bottom: 90px;
   }
 
 
