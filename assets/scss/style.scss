@@ -26,6 +26,7 @@ body {
   --primary-2: #d4f941;
   --primary: #5648ff;
   --gray-5: #E3E8F8;
+  --nevi-blue2: #384973;
 }
 
 /* reset, root - END */
@@ -313,6 +314,9 @@ body {
    transform: scale(1);
    width: 80px;
   }
+  .class1-for-img2{
+z-index: -22;
+  }
 
 }
 
@@ -429,3 +433,110 @@ body {
 
 
 
+
+// case-studies
+.case-studies-image {
+  .view-all {
+    img {
+      left: -100px;
+      bottom: 0;
+
+      @media (max-width: 1200px) {
+        left: -40px;
+      }
+
+      @media (max-width: 991px) {
+        left: 0;
+      }
+    }
+  }
+}
+
+.accordion-list-item {
+  padding: 33px 40px;
+  border-radius: 150px;
+  border: 1.5px solid var(--Diamond-CTA, #F1FF48);
+
+  @media (max-width: 991px) {
+    padding: 25px 30px;
+  }
+
+  &.open {
+    border: 0;
+
+    .ni-minus {
+      background-image: url(../img/minus-icon.svg);
+    }
+
+    border-radius: 24px;
+    background-image: linear-gradient(to right, #F9FCCF, #CBC7FF, #fff);
+
+    .accordion-title {
+      color: var(--nevi-blue);
+    }
+  }
+
+  .accordion-title {
+    cursor: pointer;
+    line-height: 34px;
+    color: #fff;
+
+    @media (max-width: 991px) {
+      font-size: 20px !important;
+    }
+
+    .ni {
+      background-repeat: no-repeat;
+      background-size: 20px;
+      width: 24px;
+
+      &.ni-plus {
+        background-image: url(../img/pluse-icon.svg);
+      }
+    }
+  }
+
+  .accordion-desc {
+    color: var(--nevi-blue2);
+    font-size: 18px;
+    line-height: 28px;
+
+    @media (max-width: 991px) {
+      font-size: 16px;
+    }
+  }
+}
+
+// case-studies - End
+
+
+// curved-slider-wrapper
+.curved-slider-wrapper {
+  .splide__slide {
+    img {
+      transition: all 0.3s ease-in-out;
+      width: 100%;
+    }
+  }
+
+  .splide__slide.is-active {
+    img {
+      transform: perspective(900px) rotateY(30deg) scale(1) rotateX(20deg);
+    }
+  }
+}
+
+.spl-title {
+  color: var(--nevi-blue);
+  font-family: "Sharp Grotesk Light 20";
+  font-size: 152px;
+  line-height: 100%;
+  font-weight: 100;
+  margin-bottom: -30px;
+
+  .star-icon {
+    top: 48px;
+  }
+}
+
+// curved-slider-wrapper - End

@@ -17,6 +17,11 @@ $(document).ready(function() {
       syncTabs();
   });
   
+
+
+  // curvedSlider
+
+
 // Splide slider activator.
 
 /* =========== Services Two Slider ===========*/
@@ -80,6 +85,8 @@ new Splide( '#tabslider', {
   }).mount();
 
 
+
+
 $(window).on("load", function () {
     // code should be execute here
     // button effect
@@ -112,3 +119,26 @@ new Splide( '#testimonialSlider', {
     pagination: false,
     gap: '2rem',
 } ).mount();
+
+
+new Splide("#curvedSlider", {
+    type: "loop",
+    drag: "free",
+    perPage: 3,
+    gap: "4rem",
+    height: "auto",
+    arrows: false,
+    pagination: false,
+    breakpoints: {
+      991: {
+        perPage: 2,
+        gap: "2rem",
+      },
+    },
+  }).mount(window.splide.Extensions);
+
+
+  
+  // animation
+  var scene = document.getElementById('js-scene2');
+  var parallax = new Parallax(scene);
