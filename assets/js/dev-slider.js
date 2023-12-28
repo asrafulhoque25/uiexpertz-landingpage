@@ -7,3 +7,17 @@ new Splide( '#testimonialSlider', {
     pagination: false,
     gap: '2rem',
 } ).mount();
+
+
+new Splide( '#partnersCarousel', {
+    type   : 'loop',
+    perPage: 5,
+    perMove: 1,
+    arrows: false,
+    pagination: false,
+    height: '27.5rem',
+    drag: false,
+    autoScroll: {
+        speed: 1,
+    },
+} ).mount(window.splide.Extensions);
