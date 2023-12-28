@@ -1,27 +1,22 @@
-// Get all tab items and content items
-const tabItems = document.querySelectorAll('.splide__slide');
-const tabContentItems = document.querySelectorAll('.tab-content-item');
-
-// Find the index of the active tab item
-let activeIndex = -1;
-tabItems.forEach((item, index) => {
-  if (item.classList.contains('is-active')) {
-    activeIndex = index;
-  }
-});
-
-// Show the corresponding content item based on the active tab item
-if (activeIndex !== -1) {
-  tabContentItems.forEach((contentItem, index) => {
-    if (index === activeIndex) {
-      contentItem.classList.add('d-block');
-    } else {
-      contentItem.classList.remove('d-block');
+$('.btn-info').hover(
+    function() {
+      $('.icon-scale.is-1').toggleClass('class1-for-img1');
+      $('.icon-scale.is-2').toggleClass('class1-for-img2');
     }
+  );
+
+// Get all tab items and content items
+$(document).ready(function() {
+    function syncTabs() {
+        var activeTabIndex = $('.splide__list .splide__slide.active').index();
+        $('.tab-content .tab-content-item').removeClass('d-block');
+        $('.tab-content .tab-content-item').eq(activeTabIndex).addClass('d-block');
+      }
+  
+      // Synchronize on page load
+      syncTabs();
   });
-}
-
-
+  
 // Splide slider activator.
 
 /* =========== Services Two Slider ===========*/
@@ -74,16 +69,6 @@ new Splide("#slider3", {
 
 
 
-// banner slider
-new Splide("#bannerSlider", {
-    type: "loop",
-    drag: "free",
-    perPage: 4,
-    gap: "1.875rem",
-    height: "10rem",
-    arrows: false,
-    pagination: false,
-}).mount(window.splide.Extensions);
 
 // portfolio 
 new Splide( '#tabslider', {
@@ -109,24 +94,21 @@ $(window).on("load", function () {
     });
 });
 
-// text animation
-document.addEventListener("DOMContentLoaded", function () {
-    const element = document.querySelector(".fill");
-    setTimeout(function () {
-        element.classList.add("active");
-    }, 1000);
-});
-
-/**
- * ========================================================
- * this function execute when DOM element ready
- * ===========================================================
- */
 
 
-    // tooltip animation
-    var scene = document.getElementById('js-scene');
-    var parallax = new Parallax(scene);
 
 // Splide slider activator.
 
+
+
+
+
+new Splide( '#testimonialSlider', {
+    type   : 'loop',
+    perPage: 1,
+    perMove: 1,
+    autoplay: true,
+    arrows: true,
+    pagination: false,
+    gap: '2rem',
+} ).mount();
