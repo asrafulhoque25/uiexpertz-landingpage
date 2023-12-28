@@ -16,7 +16,7 @@ new Splide( '#partnersCarousel', {
     arrows: false,
     pagination: false,
     height: '27.5rem',
-    drag: false,
+    drag: 'freeg',
     autoScroll: {
         speed: 1,
     },
