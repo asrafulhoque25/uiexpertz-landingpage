@@ -105,13 +105,17 @@ body {
 
 /* Font family */
 
-.fs-78 {
-  font-size: 78px;
-  line-height: 90px;
+.fs-82 {
+  font-size: 82px;
+  line-height: 92px;
 }
 .fs-20 {
   font-size: 20px;
   line-height: 30px;
+}
+.fs-22 {
+  font-size: 22px;
+  line-height: 32px;
 }
 .fs-14 {
   font-size: 14px;
@@ -141,83 +145,84 @@ body {
     position: absolute;
     width: 100%;
     z-index: 999;
-  .btn-flow {
-    --btn-flow-size: 16px;
-    --btn-flow-height: 42px;
-    height: var(--btn-flow-height);
-    font-size: var(--btn-flow-size);
-    display: inline-flex;
-    align-items: center;
-    padding: 7px 24px !important;
-    color: var(--nevi-blue);
-    transition: all 0.3s;
 
-    &.btn-flow-fill {
-      background-color: var(--nevi-blue) !important;
-      color: #fff;
 
-      &:hover {
-        background-color: var(--primary-2) !important;
-        color: var(--nevi-blue) !important;
+}
+.btn-flow {
+  --btn-flow-size: 16px;
+  --btn-flow-height: 42px;
+  height: var(--btn-flow-height);
+  font-size: var(--btn-flow-size);
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 24px !important;
+  color: var(--nevi-blue);
+  transition: all 0.3s;
+
+  &.btn-flow-fill {
+    background-color: var(--nevi-blue) !important;
+    color: #fff;
+
+    &:hover {
+      background-color: var(--primary-2) !important;
+      color: var(--nevi-blue) !important;
+    }
+  }
+}
+.button-effect {
+  --background: var(--theme-yellow);
+  --font-size: var(--btn-flow-size);
+  --text: currentColor;
+  --duration: 0.44s;
+  --move-hover: -4px;
+  line-height: var(--font-size);
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  transform: translateY(var(--y));
+  transition: all 0.3s;
+
+  div {
+    display: flex;
+    overflow: hidden;
+    text-shadow: 0 var(--font-shadow) 0 var(--text);
+
+    span {
+      display: block;
+      backface-visibility: hidden;
+      font-style: normal;
+      transition: transform var(--duration) ease;
+      transform: translateY(var(--m));
+      $i: 1;
+
+      + span {
+        margin-left: 5px;
+      }
+
+      @while $i < 12 {
+        &:nth-child(#{$i}) {
+          transition-delay: $i / 20 + s;
+        }
+
+        $i: $i + 1;
       }
     }
   }
 
-  .button-effect {
-    --background: var(--theme-yellow);
-    --font-size: var(--btn-flow-size);
-    --text: currentColor;
-    --duration: 0.44s;
-    --move-hover: -4px;
-    line-height: var(--font-size);
-    border: 0;
-    outline: none;
-    text-decoration: none;
-    transform: translateY(var(--y));
-    transition: all 0.3s;
+  &:hover {
+    --shadow: var(--shadow-hover);
 
-    div {
-      display: flex;
-      overflow: hidden;
-      text-shadow: 0 var(--font-shadow) 0 var(--text);
-
-      span {
-        display: block;
-        backface-visibility: hidden;
-        font-style: normal;
-        transition: transform var(--duration) ease;
-        transform: translateY(var(--m));
-        $i: 1;
-
-        + span {
-          margin-left: 5px;
-        }
-
-        @while $i < 12 {
-          &:nth-child(#{$i}) {
-            transition-delay: $i / 20 + s;
-          }
-
-          $i: $i + 1;
-        }
-      }
+    span {
+      --m: calc(var(--font-size) * -1);
     }
+  }
+
+  &.reverse {
+    --font-shadow: calc(var(--font-size) * -1);
 
     &:hover {
-      --shadow: var(--shadow-hover);
-
       span {
-        --m: calc(var(--font-size) * -1);
-      }
-    }
-
-    &.reverse {
-      --font-shadow: calc(var(--font-size) * -1);
-
-      &:hover {
-        span {
-          --m: calc(var(--font-size));
-        }
+        --m: calc(var(--font-size));
       }
     }
   }
@@ -225,47 +230,82 @@ body {
 /* navbar  - END*/
 
 /* banner  - start*/
-.banner {
-    background-image: url(../img/bannerbg.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    min-height: 100vh;
- 
-    .bannerShape1{
-        position:absolute;
-        left: 210px;
-        top: 25%;
-    }
-      .bannerShape2{
-        position:absolute;
-        right: 250px;
-        top: 30%;
-          animation: bannerShape2 20s linear infinite;
-    }
-    @keyframes bannerShape2 {
-      0% {
-          transform: rotate(0deg);
-      }
+
+.banner{
+  background: linear-gradient(180deg, #4033D9 0%, #5648FF 100%);
+  min-height: 100vh;
+
+  .btn-flow {
+    height: 80px;
+    padding: 20px 50px !important;
+    background-color: var(--primary-2) !important;
+    color: var(--nevi-blue) !important;
+
+    &.btn-flow-fill {
+      color: #fff;
   
-      100% {
-          transform: rotate(360deg);
+      &:hover {
+      background-color: var(--nevi-blue) !important;
+        color: #fff !important;
       }
-  }
-  .banner-content-wrap {
-    max-width: 1100px;
-    width: 100%;
-    margin: auto;
-    padding: 140px 90px;
-   
-
-    .banner-title {
-      color: #00154c;
-      font-size: 82px;
-      line-height: 96px;
     }
-
   }
+
+  .banner-wrapper{
+    max-width: 1750px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .banner-content{
+    padding-top: 214px;
+    padding-bottom: 230px;
+    max-width: 894px;
+    width: 100%;
+  }
+
+  .top-notch-content{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+  }
+
+
+  .commonBtn{
+    width: 266px;
+    overflow: hidden;
+    position: relative;
+    z-index: 22;
+  }
+
+  .btn-info{
+    &:hover{
+      transform: translateX(80px);
+    }
+  }
+  .is-1{
+    transition: .3s all linear;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 20px;
+    z-index: -22;
+    // transform: scale(.4);
+    width: 50px;
+  }
+  .class1-for-img1{
+   visibility: visible;
+   opacity: 1;
+   left: 0;
+   transform: scale(1);
+   width: 80px;
+  }
+
 }
+
+
+
+
+
 .common-btn {
   position: relative;
   transition: all 0.2s linear;
@@ -312,90 +352,7 @@ body {
   }
 }
 
-/* tooltip animation  */
 
-/* This bridges the gap so you can mouse into the tooltip without it disappearing */
-
-/* CSS Triangles - see Trevor's post */
-
-.tooltip-wrapper {
-  display: block;
-  position: relative;
-  text-align: center;
-  -webkit-transform: translateZ(0); /* webkit flicker fix */
-  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
-
-  .tooltip1 {
-    border-radius: 44.5px;
-    background: #fff;
-    box-shadow: 0px 20px 24px 0px rgba(0, 14, 50, 0.1);
-    bottom: 100%;
-    color: var(--nevi-blue);
-    display: block;
-    margin-bottom: 15px;
-    opacity: 0;
-    padding: 4px 33px 4px 4px;
-    pointer-events: none;
-    max-width: 260px;
-    width: 100%;
-    margin-left: auto;
-    width: auto;
-    min-height: 90px;
-    transform: translateY(10px);
-    transition: all 0.25s ease-out;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-    display: none;
-    margin-top: -250px;
-    margin-right: -120px;
-  }
-  &:hover {
-    .tooltip1 {
-      display: block;
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateY(0px);
-    }
-  }
-}
-
-/* tooltip animation  */
-/* text animation  */
-.fill {
-  width: fit-content;
-  text-align: center;
-  -webkit-text-fill-color: transparent;
-  // -webkit-text-stroke: 2px black;
-  -webkit-text-stroke-width: 1px;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
-.fill::before {
-  position: absolute;
-  content: attr(data-text);
-  top: 0;
-  left: 0px;
-  clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 0% 100%, 0 100%, 0 100%);
-  -webkit-text-fill-color: #00154c;
-  transition: clip-path 1s cubic-bezier(1, 0.02, 0.83, 0.67);
-}
-.fill.active::before {
-  clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
-  -webkit-text-stroke-width: 0px;
-  -webkit-text-stroke: none;
-}
-/* text animation */
-
-.banner-slider{
-    padding-top: 140px;
-    padding-bottom: 100px;
-    .splide__track{
-        height: 294px;
-    }
-    .banner-slider-image{
-        text-align: center;
-    }
-}
 
 /* banner  - END*/
 
@@ -455,3 +412,6 @@ body {
 .tab-content-item.d-block {
   display: block;
 }
+
+
+

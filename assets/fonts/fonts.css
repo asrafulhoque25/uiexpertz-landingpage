@@ -69,3 +69,12 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Sharp Grotesk Thin 25';
+    src: url('SharpGrotesk-Thin25.woff2') format('woff2'),
+        url('SharpGrotesk-Thin25.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
