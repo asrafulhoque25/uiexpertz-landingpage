@@ -138,7 +138,8 @@ new Splide( '#testimonialSlider', {
 new Splide("#curvedSlider", {
     type: "loop",
     drag: "free",
-    perPage: 3,
+    perPage: 2,
+    padding: '10rem',
     gap: "4rem",
     height: "auto",
     arrows: false,

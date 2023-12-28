@@ -560,6 +560,12 @@ clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
 
 // curved-slider-wrapper
 .curved-slider-wrapper {
+  .curved-slider-item{
+    margin-top: -60px;
+  }
+  .splide__track{
+    padding: 40px 0px 0px 0;
+  }
   .splide__slide {
     img {
       transition: all 0.3s ease-in-out;
@@ -569,14 +575,14 @@ clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
 
   .splide__slide.is-active {
     img {
-      transform: perspective(900px) rotateY(30deg) scale(1) rotateX(20deg);
+      transform: perspective(900px) rotateY(30deg) scale(1) rotateX(20deg) translateY(-50px);
+      
     }
   }
 }
 
 .spl-title {
   color: var(--nevi-blue);
-  font-family: "Sharp Grotesk Light 20";
   font-size: 152px;
   line-height: 100%;
   font-weight: 100;
