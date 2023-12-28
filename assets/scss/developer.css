@@ -191,6 +191,40 @@
         line-height: 1.5em;
         color: #384973; }
 
+#testimonialSlider .splide__arrow {
+  font-size: 24px;
+  line-height: 1.41em; }
+  #testimonialSlider .splide__arrow.splide__arrow--prev {
+    left: -285px;
+    width: 165px;
+    height: 110px;
+    border-radius: 0;
+    background: url('data:image/svg+xml,<svg width="163" height="109" viewBox="0 0 163 109" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M133.029 2.09227L18.6933 32.828C-4.09428 38.9538 -3.98137 71.3254 18.8484 77.292L133.184 107.174C147.759 110.983 162 99.9858 162 84.9214V24.3037C162 9.17285 147.641 -1.83576 133.029 2.09227Z" stroke="%23AAB4CF" stroke-width="2"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    transition: all 350ms ease-in-out; }
+    #testimonialSlider .splide__arrow.splide__arrow--prev:hover {
+      background: url('data:image/svg+xml,<svg width="163" height="109" viewBox="0 0 163 109" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M163 24.3037C163 8.51499 148.017 -2.97226 132.77 1.12655L18.4337 31.8623C-5.34465 38.2544 -5.22684 72.0335 18.5956 78.2595L132.931 108.141C148.14 112.116 163 100.641 163 84.9214V24.3037Z" fill="url(%23paint0_diamond_2344_11302)"/><defs><radialGradient id="paint0_diamond_2344_11302" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(119.423 4.71429) rotate(145.11) scale(166.112 161.766)"><stop stop-color="%23F1FF48"/><stop offset="0.317708" stop-color="%23F6FACA"/><stop offset="0.635417" stop-color="%23D7A4E4"/><stop offset="1" stop-color="%23C5C0FF"/></radialGradient></defs></svg>');
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: -235px; }
+  #testimonialSlider .splide__arrow.splide__arrow--next {
+    right: -285px;
+    width: 165px;
+    height: 110px;
+    border-radius: 0;
+    background: url('data:image/svg+xml,<svg width="163" height="109" viewBox="0 0 163 109" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 24.3037C1 9.17285 15.3588 -1.83576 29.9709 2.09227L144.307 32.828C167.094 38.9538 166.981 71.3254 144.152 77.292L29.8158 107.174C15.2409 110.983 1 99.9858 1 84.9214V24.3037Z" stroke="%23AAB4CF" stroke-width="2"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    transition: all 350ms ease-in-out; }
+    #testimonialSlider .splide__arrow.splide__arrow--next:hover {
+      background: url('data:image/svg+xml,<svg width="163" height="109" viewBox="0 0 163 109" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 24.3037C0 8.51499 14.9831 -2.97226 30.2305 1.12655L144.566 31.8623C168.345 38.2544 168.227 72.0335 144.404 78.2595L30.0686 108.141C14.8601 112.116 0 100.641 0 84.9214V24.3037Z" fill="url(%23paint0_diamond_2484_982)"/><defs><radialGradient id="paint0_diamond_2484_982" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(43.5767 4.71429) rotate(34.8898) scale(166.112 161.766)"><stop stop-color="%23F1FF48"/><stop offset="0.317708" stop-color="%23F6FACA"/><stop offset="0.635417" stop-color="%23D7A4E4"/><stop offset="1" stop-color="%23C5C0FF"/></radialGradient></defs></svg>');
+      background-repeat: no-repeat;
+      background-size: contain;
+      right: -235px; }
+
 /* ==================================
 = Testimonial section -/ End
 ================================== */
