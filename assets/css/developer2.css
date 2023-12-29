@@ -164,5 +164,5 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Sharp Grotes
 .curved-slider-wrapper .splide__slide img { -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; width: 100%; }
 .curved-slider-wrapper .splide__slide.is-active img { -webkit-transform: perspective(900px) rotateY(30deg) scale(1) rotateX(20deg); transform: perspective(900px) rotateY(30deg) scale(1) rotateX(20deg); }
 
-.spl-title { color: var(--nevi-blue); font-family: "Sharp Grotesk Light 20"; font-size: 152px; line-height: 100%; font-weight: 100; margin-bottom: -30px; }
+.spl-title { color: var(--nevi-blue); font-family: "Sharp Grotesk Light 20"; font-size: 152px; line-height: 100%; font-weight: 100; }
 .spl-title .star-icon { top: 48px; }
