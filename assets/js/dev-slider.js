@@ -22,5 +22,6 @@ new Splide( '#partnersCarousel', {
     drag: 'free',
     autoScroll: {
         speed: 1,
+        pauseOnHover: false,
     },
 } ).mount(window.splide.Extensions);
