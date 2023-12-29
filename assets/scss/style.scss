@@ -8,24 +8,23 @@
   margin: 0;
   box-sizing: border-box;
 }
-#loom-companion-mv3{
-    overflow-y: scroll !important;
-    padding-right: 0px !important;
+#loom-companion-mv3 {
+  overflow-y: scroll !important;
+  padding-right: 0px !important;
 }
 body {
   padding: 0;
   margin: 0;
   background-color: #fff;
   font-family: "Sharp Grotesk Book 20" !important;
-    overflow-y: auto !important;
+  overflow-y: auto !important;
 }
-
 
 :root {
   --nevi-blue: #00154c;
   --primary-2: #d4f941;
   --primary: #5648ff;
-  --gray-5: #E3E8F8;
+  --gray-5: #e3e8f8;
   --nevi-blue2: #384973;
 }
 
@@ -104,7 +103,7 @@ body {
   font-family: "Sharp Grotesk Bold 20";
 }
 .ff-sg-thin-25 {
-  font-family: 'Sharp Grotesk Thin 25';
+  font-family: "Sharp Grotesk Thin 25";
 }
 
 /* Font family */
@@ -150,11 +149,9 @@ body {
 
 /* navbar  - start*/
 .navbar {
-    position: absolute;
-    width: 100%;
-    z-index: 999;
-
-
+  position: absolute;
+  width: 100%;
+  z-index: 999;
 }
 .btn-flow {
   --btn-flow-size: 16px;
@@ -239,10 +236,10 @@ body {
 
 /* banner  - start*/
 
-.banner{
+.banner {
   // background: linear-gradient(180deg, #4033D9 0%, #5648FF 100%);
   min-height: 100vh;
-  background:  linear-gradient(180deg, #4033D9 0%, #5648FF 100%);
+  background: linear-gradient(180deg, #4033d9 0%, #5648ff 100%);
   position: relative;
 
   // &::after{
@@ -257,7 +254,7 @@ body {
   //   background-repeat: no-repeat;
   //   background-position: right center;
   // }
-  .banner-shape{
+  .banner-shape {
     position: absolute;
     top: 0;
     right: 0;
@@ -275,28 +272,28 @@ body {
 
     &.btn-flow-fill {
       color: #fff;
-  
+
       &:hover {
-      background-color: var(--nevi-blue) !important;
+        background-color: var(--nevi-blue) !important;
         color: #fff !important;
       }
     }
   }
 
-  .banner-wrapper{
+  .banner-wrapper {
     max-width: 1750px;
     width: 100%;
     margin-left: auto;
   }
 
-  .banner-content{
+  .banner-content {
     padding-top: 200px;
     padding-bottom: 180px;
     max-width: 894px;
     width: 100%;
   }
 
-  .top-notch-content{
+  .top-notch-content {
     margin-bottom: 20px;
     border-bottom: 1px solid #fff;
     display: inline-block;
@@ -304,49 +301,46 @@ body {
     width: 100%;
   }
 
-  .banner-side-content{
+  .banner-side-content {
     padding-bottom: 90px;
   }
 
-
-  .commonBtn{
+  .commonBtn {
     width: 266px;
     overflow: hidden;
     position: relative;
     z-index: 22;
-  }
+    cursor: pointer;
 
-  .btn-info{
-    &:hover{
-      transform: translateX(80px);
+    &:hover {
+      transition: 0.3s all linear;
+      .btn-info {
+        transform: translateX(80px);
+      }
+    }
+    .is-1 {
+      transition: 0.3s all ease-in-out;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: 20px;
+      z-index: -22;
+      width: 50px;
+    }
+    .class1-for-img1 {
+      visibility: visible;
+      opacity: 1;
+      left: 0;
+      transform: scale(1);
+      width: 80px;
+    }
+    .class1-for-img2 {
+      z-index: -22;
+      transform: scale(0.5);
+      transition: 0.3s all ease-in-out;
     }
   }
-  .is-1{
-    transition: .3s all linear;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    left: 20px;
-    z-index: -22;
-    // transform: scale(.4);
-    width: 50px;
-  }
-  .class1-for-img1{
-   visibility: visible;
-   opacity: 1;
-   left: 0;
-   transform: scale(1);
-   width: 80px;
-  }
-  .class1-for-img2{
-z-index: -22;
-  }
-
 }
-
-
-
-
 
 .common-btn {
   position: relative;
@@ -395,79 +389,106 @@ z-index: -22;
 }
 /* text animation  */
 .fill {
-width: fit-content;
--webkit-text-fill-color: transparent;
-// -webkit-text-stroke: 2px black;
--webkit-text-stroke-width: 1px;
-position: relative;
-overflow: hidden;
+  width: fit-content;
+  -webkit-text-fill-color: transparent;
+  // -webkit-text-stroke: 2px black;
+  -webkit-text-stroke-width: 1px;
+  position: relative;
+  overflow: hidden;
 }
 .fill::before {
-position: absolute;
-content: attr(data-text);
-top: 0;
-left: 0px;
-clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 0% 100%, 0 100%, 0 100%);
--webkit-text-fill-color: #fff;
-transition: clip-path 1s cubic-bezier(1, 0.02, 0.83, 0.67);
+  position: absolute;
+  content: attr(data-text);
+  top: 0;
+  left: 0px;
+  clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 0% 100%, 0 100%, 0 100%);
+  -webkit-text-fill-color: #fff;
+  transition: clip-path 1s cubic-bezier(1, 0.02, 0.83, 0.67);
 }
 .fill.active::before {
-clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
--webkit-text-stroke-width: 0px;
--webkit-text-stroke: none;
+  clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke: none;
 }
 /* text animation */
 
-
-
 /* banner  - END*/
 
-
-.tabSliderWrap{
+.tabSliderWrap {
   .splide {
     width: 250px;
     height: 120px;
   }
-  .splide__pagination{
+  .splide__pagination {
     display: none;
   }
-  .splide__slide{
+  .splide__slide {
     display: flex;
     align-items: center;
     justify-content: end !important;
-    &.is-active{
-    div{
-      background: var(--Diamond-CTA, linear-gradient(to bottom right, #F1FF48 0%, #F6FACA 16%, #D7A4E4 32%, #C5C0FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #F1FF48 0%, #F6FACA 16%, #D7A4E4 32%, #C5C0FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #F1FF48 0%, #F6FACA 16%, #D7A4E4 32%, #C5C0FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #F1FF48 0%, #F6FACA 16%, #D7A4E4 32%, #C5C0FF 50%) top right / 50% 50% no-repeat);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: 36px !important;
-      font-weight: 500;
-      line-height: 52px;
-    }
+    &.is-active {
+      div {
+        background: var(
+          --Diamond-CTA,
+          linear-gradient(
+              to bottom right,
+              #f1ff48 0%,
+              #f6faca 16%,
+              #d7a4e4 32%,
+              #c5c0ff 50%
+            )
+            bottom right / 50% 50% no-repeat,
+          linear-gradient(
+              to bottom left,
+              #f1ff48 0%,
+              #f6faca 16%,
+              #d7a4e4 32%,
+              #c5c0ff 50%
+            )
+            bottom left / 50% 50% no-repeat,
+          linear-gradient(
+              to top left,
+              #f1ff48 0%,
+              #f6faca 16%,
+              #d7a4e4 32%,
+              #c5c0ff 50%
+            )
+            top left / 50% 50% no-repeat,
+          linear-gradient(
+              to top right,
+              #f1ff48 0%,
+              #f6faca 16%,
+              #d7a4e4 32%,
+              #c5c0ff 50%
+            )
+            top right / 50% 50% no-repeat
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 36px !important;
+        font-weight: 500;
+        line-height: 52px;
+      }
     }
   }
   .splide__arrow {
     background-color: transparent !important;
-    &.splide__arrow--prev{
+    &.splide__arrow--prev {
       position: absolute;
       left: calc(100% + 20px);
       top: 44%;
     }
-    &.splide__arrow--next{
+    &.splide__arrow--next {
       position: absolute;
       left: calc(100% + 20px);
       top: 60%;
     }
   }
 }
-.splide__arrow:disabled{
+.splide__arrow:disabled {
   opacity: 1 !important;
 }
-
-
-
-
 
 /* Initially hide all content items */
 .tab-content-item {
@@ -478,9 +499,6 @@ clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
 .tab-content-item.d-block {
   display: block;
 }
-
-
-
 
 // case-studies
 .case-studies-image {
@@ -503,7 +521,7 @@ clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
 .accordion-list-item {
   padding: 33px 40px;
   border-radius: 150px;
-  border: 1.5px solid var(--Diamond-CTA, #F1FF48);
+  border: 1.5px solid var(--Diamond-CTA, #f1ff48);
 
   @media (max-width: 991px) {
     padding: 25px 30px;
@@ -517,7 +535,7 @@ clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
     }
 
     border-radius: 24px;
-    background-image: linear-gradient(to right, #F9FCCF, #CBC7FF, #fff);
+    background-image: linear-gradient(to right, #f9fccf, #cbc7ff, #fff);
 
     .accordion-title {
       color: var(--nevi-blue);
@@ -558,13 +576,12 @@ clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
 
 // case-studies - End
 
-
 // curved-slider-wrapper
 .curved-slider-wrapper {
-  .curved-slider-item{
+  .curved-slider-item {
     margin-top: -60px;
   }
-  .splide__track{
+  .splide__track {
     padding: 40px 0px 0px 0;
   }
   .splide__slide {
@@ -576,8 +593,8 @@ clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
 
   .splide__slide.is-active {
     img {
-      transform: perspective(900px) rotateY(30deg) scale(1) rotateX(20deg) translateY(-50px);
-      
+      transform: perspective(900px) rotateY(30deg) scale(1) rotateX(20deg)
+        translateY(-50px);
     }
   }
 }
@@ -595,40 +612,36 @@ clip-path: polygon(100% 53%, 100% 100%, 25% 100%, 0% 100%, 0 0, 100% 0);
 
 // curved-slider-wrapper - End
 
-
-
-
 /* ==================================
 = Partners logo carousel -/ Start
 ================================== */
 
 .partners-carousel-area {
   .section-heading {
-      font-size: 78px;
-      line-height: 1.17em;
-      margin-bottom: 60px;
+    font-size: 78px;
+    line-height: 1.17em;
+    margin-bottom: 60px;
   }
 
   .partners-carousel-wrapper {
-      .carousel-border {
-          border-bottom: 1px solid #AAB4CF;
-      }
-      .carousel-border-right {
-          border-right: 1px solid #AAB4CF;
-      }
+    .carousel-border {
+      border-bottom: 1px solid #aab4cf;
+    }
+    .carousel-border-right {
+      border-right: 1px solid #aab4cf;
+    }
 
-      .partners-carousel-item {
-          img {
-              transition: all 300ms ease-in-out;
-              &:hover {
-                  transform: scale(1.5) rotate(-15deg);
-              }
-          }
+    .partners-carousel-item {
+      img {
+        transition: all 300ms ease-in-out;
+        &:hover {
+          transform: scale(1.5) rotate(-15deg);
+        }
       }
+    }
   }
 }
 
 /* ==================================
 = Partners logo carousel -/ End
 ================================== */
-

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-$('.btn-info').hover(
+$('.commonBtn').hover(
     function() {
       $('.icon-scale.is-1').toggleClass('class1-for-img1');
       $('.icon-scale.is-2').toggleClass('class1-for-img2');
