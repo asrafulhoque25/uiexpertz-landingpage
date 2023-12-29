@@ -77,8 +77,10 @@ new Splide("#slider3", {
     autoWidth: true,
     arrows: false,
     pagination: false,
+    
     autoScroll: {
         speed: 1.3,
+        pauseOnHover: false,
     },
 }).mount(window.splide.Extensions);
 
@@ -138,7 +140,7 @@ new Splide( '#testimonialSlider', {
 new Splide("#curvedSlider", {
     type: "loop",
     drag: "free",
-    perPage: 2,
+    perPage: 3,
     padding: '10rem',
     gap: "4rem",
     height: "auto",
@@ -171,6 +173,34 @@ new Splide("#curvedSlider", {
     },
 } ).mount(window.splide.Extensions);
 
+
+
+     // gsap code 
+
+        // First, create your GSAP timeline
+        const tl = gsap.timeline({
+            defaults: {
+                duration: .50,
+                ease: "power3.easeOut"
+            }
+        });
+
+        // Define the animation within the timeline
+        tl.fromTo(
+            ".spl-title",
+            { y: "100%", opacity: 0.2 },
+            { y: "0%", opacity: 1 }
+        );
+
+        // Use ScrollTrigger to trigger the animation on scroll
+        ScrollTrigger.create({
+            animation: tl,
+            trigger: ".spl-title",
+            start: "top 80%",
+            end: "bottom 40%",
+            markers: false,
+            scrub: true
+        });
 
 
   
