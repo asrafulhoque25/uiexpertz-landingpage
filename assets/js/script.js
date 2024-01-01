@@ -99,6 +99,34 @@ new Splide( '#tabslider', {
 
 
 
+  const splide = new Splide("#bannerSlider", {
+    // Optional parameters
+    start: 1,
+    perPage: 1.5,
+    perMove: 1,
+    gap: 20,
+    type: "loop",
+    drag: "free",
+    snap: false,
+    interval: 3000,
+    arrows: true,
+    pagination: true,
+    rewind: true,
+    rewindByDrag: true,
+    lazyLoad: true,
+ 
+    // Responsive breakpoint
+    breakpoints: {
+       768: {
+          perPage: 1,
+          snap: true
+       }
+    }
+ });
+ 
+ splide.mount();
+
+
 
 $(window).on("load", function () {
     // code should be execute here
@@ -124,7 +152,7 @@ $(window).on("load", function () {
         const blurValue = (scrollTop / 100) * 2; // You can adjust the factor for blur effect
         
         // Apply blur using GSAP to the banner section
-        gsap.to('.banner', { filter: `blur(${blurValue}px)`, ease: 'power1.out' });
+        gsap.to('.banner', { filter: `blur(${blurValue}px)`, ease: 'power4.out' });
       }
     
       // Listen for scroll event and call the handleScroll function
@@ -156,9 +184,9 @@ new Splide( '#testimonialSlider', {
 // product slider
 
 new Splide("#curvedSlider", {
-    type: "loop",
+    // type: "loop",
     drag: "free",
-    perPage: 3,
+    perPage: 2,
     padding: '10rem',
     gap: "4rem",
     height: "auto",
@@ -174,6 +202,9 @@ new Splide("#curvedSlider", {
       },
     },
   }).mount(window.splide.Extensions);
+
+
+  
 
 
   //partners carousel
