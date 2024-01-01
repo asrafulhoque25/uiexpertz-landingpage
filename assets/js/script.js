@@ -112,6 +112,24 @@ $(window).on("load", function () {
                 "</span></div>";
         });
     });
+
+
+
+      // Function to handle scroll event
+      function handleScroll() {
+        // Get the scroll position
+        const scrollTop = window.scrollY - 200;
+        
+        // Calculate blur amount based on scroll position
+        const blurValue = (scrollTop / 100) * 2; // You can adjust the factor for blur effect
+        
+        // Apply blur using GSAP to the banner section
+        gsap.to('.banner', { filter: `blur(${blurValue}px)`, ease: 'power1.out' });
+      }
+    
+      // Listen for scroll event and call the handleScroll function
+      window.addEventListener('scroll', handleScroll);
+    
 });
 
 
@@ -199,6 +217,20 @@ new Splide("#curvedSlider", {
             start: "top 80%",
             end: "bottom 40%",
             markers: false,
+            scrub: true
+        });
+        tl.fromTo(
+            ".common-title-animation",
+            { y: "100%", opacity: 0.2 },
+            { y: "0%", opacity: 1 }
+        );
+
+        // Use ScrollTrigger to trigger the animation on scroll
+        ScrollTrigger.create({
+            animation: tl,
+            trigger: ".common-title-animation",
+            start: "top 90%",
+            end: "bottom 60%",
             scrub: true
         });
 
