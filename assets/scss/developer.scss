@@ -427,5 +427,100 @@
 
 
 
+/* ==================================
+= Footer section -/ Start
+================================== */
 
+.footer-section {
+    background: #000C2B;
+    padding-top: 115px;
+
+    .footer-top {
+        padding-bottom: 100px;
+
+        .footer-widget-heading {
+            padding-bottom: 38px;
+        }
+        .footer-widget-menu {
+            ul {
+                padding: 0;
+                list-style: none;
+                gap: 16px;
+                
+                li {
+                    .footer-address {
+                        max-width: 350px !important;
+                        display: inline-block;
+                    }
+                    a {
+                        
+                        text-decoration: none;
+                        color: #AAB4CF;
+                        transition: all 150ms ease-in-out;
+                        font-family: "Sharp Grotesk Book 20";
+                        line-height: 1.66em;
+                        font-size: 18px;
+
+                        &:hover {
+                            color: var(--primary-2);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-middle {
+        padding-bottom: 47px;
+        border-bottom: 1px solid hsla(223, 25%, 67%, 0.2);
+        .social-media-link-wrap {
+            a {
+                gap: 12px;
+                color: #36B7FF;
+                padding: 28px 30px;
+                border: 1px solid #36B7FF;
+                border-radius: 8px;
+                transition: all 250ms ease-in-out;
+                span {
+                    gap: 12px;
+                }
+
+                .social-media-link-arrow {
+                    
+                    transition: all 250ms ease-in-out;
+                    svg * {
+                        transition: all 250ms ease-in-out;
+                    }
+                }
+
+                &:hover {
+                    border-color: var(--primary-2);
+                    color: var(--primary-2);
+
+                    .social-media-link-arrow {
+                        
+                        transform: rotate(45deg);
+                        svg * {
+                            fill: var(--primary-2);
+                        }
+                    }
+                }
+
+                
+            }
+        }
+    }
+
+    .footer-copyright {
+        padding-block: 32px;
+        color: #97A3C1;
+        font-size: 18px;
+        line-height: 1.55em;
+    }
+}
+
+/* ==================================
+= Footer section -/ End
+================================== */
 
