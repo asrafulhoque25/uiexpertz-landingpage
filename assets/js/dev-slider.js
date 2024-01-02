@@ -25,3 +25,7 @@ new Splide( '#partnersCarousel', {
         pauseOnHover: false,
     },
 } ).mount(window.splide.Extensions);
+
+
+//Copyright year print
+document.getElementById("year").innerHTML = new Date().getFullYear();
