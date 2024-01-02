@@ -170,30 +170,37 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <div class="banner-slider-image">
-                             
-                            </div>
+                         
+                        <a href="#">
                             <div class="atvImg">
-                                  <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="" />
-                      
-                                <div class="atvImg-layer" data-img="https://d13yacurqjgara.cloudfront.net/users/1085581/screenshots/3002552/little_miss_sunshine-01.png"></div>
-                      
-                              </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="banner-slider-image">
-                                <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="" />
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="banner-slider-image">
                                 <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="" />
+                              <div class="atvImg-layer" data-img="assets/img/3d-slide-img1.png"></div>
                             </div>
+                        </a>
                         </li>
                         <li class="splide__slide">
-                            <div class="banner-slider-image">
-                                <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="" />
-                            </div>
+                            <a href="#">
+                                <div class="atvImg">
+                                    <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="" />
+                                  <div class="atvImg-layer" data-img="assets/img/3d-slide-img2.png"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="atvImg">
+                                    <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="" />
+                                  <div class="atvImg-layer" data-img="assets/img/3d-slide-img1.png"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="atvImg">
+                                    <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="" />
+                                  <div class="atvImg-layer" data-img="assets/img/3d-slide-img2.png"></div>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -320,13 +327,17 @@
     <!-- Services area -/End -->
 
     <!-- case-studies -->
-    <section class="case-studies section-padding-140 bg-clr-primary overflow-hidden">
+    <div class="relative z-10">
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
+    </div>
+    <section class="case-studies section-padding-140 bg-clr-primary overflow-hidden" id="cr">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="case-studies-image position-relative mb-5 mb-lg-0" id="js-scene2">
-                        <img src="assets/img/case-studies-img.png" alt="img" class="img-fluid">
-                        <div class="view-all items__inner">
+                    <div class="case-studies-image position-relative mb-5 mb-lg-0" >
+                       
+                        <!-- <div class="view-all items__inner">
                             <div class="items__layer horse layer" data-depth=".5">
                                 <div class="items__item">
                                     <div class="d-flex align-items-center gap-3 moving-image">
@@ -337,7 +348,16 @@
                                     </div>
                                 </div>
                             </div>
+                        </div> -->
+
+                        <div class="Pcard">
+                            <a href="/">
+                                <!-- <img class="rounded object-cover w-full" src="https://images.unsplash.com/photo-1620439032938-aadc7c683c8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8eEh4WVRNSExnT2N8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt=""> -->
+                                <img src="assets/img/case-studies-img.png" alt="img" class="img-fluid  w-full">
+                            </a>
                         </div>
+
+
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -863,6 +883,7 @@ tab-content to add a class name is "d-block". firstly all the tab-content will b
     <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
     <script src="assets/js/splide.min.js"></script>
     <script src="assets/js/jquery-petty-accordion.js"></script>
+    <script src="assets/js/paralax.js"></script>
 
     <!-- Script JS -->
     <script src="assets/js/script.js"></script>
