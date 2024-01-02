@@ -583,6 +583,16 @@ body {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
 .splide__arrow:disabled {
   opacity: 1 !important;
 }
@@ -598,6 +608,75 @@ body {
 }
 
 // case-studies
+
+
+.pointerclass{
+  .cursor-wrap{
+    z-index: 22;
+  }
+}
+
+.cursor {
+	position: absolute;
+	background: #5648FF;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	border-radius: 100%;
+	z-index: 1;
+	transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+		0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+	user-select: none;
+	pointer-events: none;
+	transform: scale(0.8);
+	backdrop-filter: blur(1px);
+
+	&.active {
+		opacity: 1;
+		transform: scale(1.2);
+		background: gray;
+	}
+}
+
+.cursor::before {
+	content: "";
+  width: 229px;
+  height: 146px;
+	position: absolute;
+	top: -100px;
+	left: -100px;
+	display: block;
+	opacity: 0;
+  background-image: url(../img/viewall.svg); /* Background image */
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.cursor.active::before {
+	opacity: 1;
+}
+
+.cursor-follower {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	z-index: -1;
+	background-color: #F1FF48 ;
+	user-select: none;
+	pointer-events: none;
+	transform: translate(4px, 4px);
+}
+
+.cursor-follower.active {
+	opacity: 0.3;
+	transform: scale(0);
+}
+
+
+
+
+
 .case-studies-image {
   .view-all {
     img {
@@ -699,7 +778,7 @@ body {
 
 
 .atvImg {
-  border-radius: 5px;
+  border-radius: 52px;
   transform-style: preserve-3d;
   -webkit-tap-highlight-color: rgba(#000, 0);
   width: 100%;
@@ -707,7 +786,7 @@ body {
   display: inline-block;
   overflow: hidden;
   img {
-    border-radius: 5px;
+    border-radius: 52px;
     box-shadow: 0 2px 8px rgba(192, 192, 192, 0.25);
   }
 }
@@ -716,7 +795,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 52px;
   transition: all 0.2s ease-out;
   &.over {
     .atvImg-shadow {
@@ -729,7 +808,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 52px;
   overflow: hidden;
   transform-style: preserve-3d;
 }
@@ -763,7 +842,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 5px;
+  border-radius: 52px;
   background: linear-gradient(135deg, rgba(192, 192, 192, .25) 0%, rgba(192, 192, 192, 0) 60%);
 }
 
