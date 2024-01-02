@@ -428,6 +428,127 @@
 
 
 /* ==================================
+= FAQ section -/ Start
+================================== */
+.fs-78 {
+    font-size: 78px;
+}
+.faq-section{
+    .faq-section-title {
+        line-height: 1.77em;
+    }
+
+    .faq-accordion-sec-wrap {
+        padding-block: 70px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 200px;
+            width: 100%;
+            background: linear-gradient(180deg, #00154C 0%, rgba(0, 21, 76, 0.80) 69.72%, rgba(0, 21, 76, 0.00) 100%);
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            height: 200px;
+            width: 100%;
+            background: linear-gradient(0deg, #00154C 0%, rgba(0, 21, 76, 0.80) 69.72%, rgba(0, 21, 76, 0.00) 100%);
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        .accordion {
+            .accordion-item {
+                border: 0;
+                border-bottom: 1px solid #384973;
+                border-radius: 0;
+                padding-bottom: 10px;
+                background: var(--nevi-blue);
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 36px;
+                        line-height: 1.33em;
+                        background: var(--nevi-blue);
+                        transition: all 50ms ease-in-out;
+                        padding-right: 0;
+                        padding-left: 130px;
+                        padding-top: 30px;
+                        
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                        &::after {
+                            display: none;
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 62px;
+                            height: 62px;
+                            background: url('data:image/svg+xml,<svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="31" cy="31" r="31" fill="%23D4F941"/><path d="M31.7071 18.2929C31.3166 17.9024 30.6834 17.9024 30.2929 18.2929L23.9289 24.6569C23.5384 25.0474 23.5384 25.6805 23.9289 26.0711C24.3195 26.4616 24.9526 26.4616 25.3431 26.0711L31 20.4142L36.6569 26.0711C37.0474 26.4616 37.6805 26.4616 38.0711 26.0711C38.4616 25.6805 38.4616 25.0474 38.0711 24.6569L31.7071 18.2929ZM32 43L32 19L30 19L30 43L32 43Z" fill="%2300154C"/></svg>');
+                            left: 37px;
+                            top: 30px;
+                            transition: all 300ms ease-in-out;
+                        }
+
+                        &.collapsed {
+                            transition: all 150ms ease-in-out;
+                            font-family: "Sharp Grotesk Book 20";
+                            padding-left: 0px;
+                            padding-top: 30px;
+                            
+                            &::after {
+                                display: none;
+                            }
+                            
+                            &::before {
+                                background: none;
+                                top: 70px;
+                                transition: all 300ms ease-in-out;
+                            }
+                        }
+                    }
+                }
+
+                .accordion-collapse {
+                    background: var(--nevi-blue);
+                    transition: all 150ms ease-in-out;
+                    padding-left: 130px;
+
+                    .accordion-body {
+                        background: var(--nevi-blue);
+                        color: #AAB4CF;
+                        font-size: 20px;
+                        line-height: 1.6em;
+                        padding-inline: 0;
+                        padding-top: 5px;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+/* ==================================
+= FAQ section -/ End
+================================== */
+
+
+
+/* ==================================
 = Footer section -/ Start
 ================================== */
 
@@ -456,14 +577,19 @@
                         
                         text-decoration: none;
                         color: #AAB4CF;
-                        transition: all 150ms ease-in-out;
                         font-family: "Sharp Grotesk Book 20";
                         line-height: 1.66em;
                         font-size: 18px;
+                        transition: all 300ms linear;
 
                         &:hover {
-                            color: var(--primary-2);
-                            text-decoration: underline;
+                            background: -webkit-linear-gradient(132deg, rgba(241,255,72,1) 0%, rgba(246,250,202,1) 16%, rgba(215,164,228,1) 32%, rgba(197,192,255,1) 50%);
+                            background: linear-gradient(132deg, rgba(241,255,72,1) 0%, rgba(246,250,202,1) 16%, rgba(215,164,228,1) 32%, rgba(197,192,255,1) 50%);;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            -webkit-text-stroke-width: 0;
+                            -webkit-text-stroke-color: transparent;
+                            // text-decoration: underline;
                         }
                     }
                 }
@@ -477,14 +603,21 @@
         .social-media-link-wrap {
             a {
                 gap: 12px;
-                color: #36B7FF;
-                padding: 28px 30px;
-                border: 1px solid #36B7FF;
-                border-radius: 8px;
+                
+                padding: 7px 30px;
+                border-radius: 150px;
+                border: 1px solid #f0ff483b;
                 transition: all 250ms ease-in-out;
-                span {
-                    gap: 12px;
-                }
+
+                background: -webkit-linear-gradient(132deg, rgba(241,255,72,1) 0%, rgba(246,250,202,1) 16%, rgba(215,164,228,1) 32%, rgba(197,192,255,1) 50%);
+                background: linear-gradient(132deg, rgba(241,255,72,1) 0%, rgba(246,250,202,1) 16%, rgba(215,164,228,1) 32%, rgba(197,192,255,1) 50%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 0;
+                -webkit-text-stroke-color: transparent;
+
+                line-height: 200%;
+
 
                 .social-media-link-arrow {
                     

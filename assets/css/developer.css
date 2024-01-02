@@ -430,6 +430,117 @@
 = Partners logo carousel -/ End
 ================================== */
 /* ==================================
+= FAQ section -/ Start
+================================== */
+.fs-78 {
+  font-size: 78px;
+}
+
+.faq-section .faq-section-title {
+  line-height: 1.77em;
+}
+.faq-section .faq-accordion-sec-wrap {
+  padding-block: 70px;
+  position: relative;
+}
+.faq-section .faq-accordion-sec-wrap::before {
+  position: absolute;
+  content: '';
+  height: 200px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00154C), color-stop(69.72%, rgba(0, 21, 76, 0.8)), to(rgba(0, 21, 76, 0)));
+  background: linear-gradient(180deg, #00154C 0%, rgba(0, 21, 76, 0.8) 69.72%, rgba(0, 21, 76, 0) 100%);
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.faq-section .faq-accordion-sec-wrap::after {
+  position: absolute;
+  content: '';
+  height: 200px;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#00154C), color-stop(69.72%, rgba(0, 21, 76, 0.8)), to(rgba(0, 21, 76, 0)));
+  background: linear-gradient(0deg, #00154C 0%, rgba(0, 21, 76, 0.8) 69.72%, rgba(0, 21, 76, 0) 100%);
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.faq-section .faq-accordion-sec-wrap .accordion .accordion-item {
+  border: 0;
+  border-bottom: 1px solid #384973;
+  border-radius: 0;
+  padding-bottom: 10px;
+  background: var(--nevi-blue);
+}
+.faq-section .faq-accordion-sec-wrap .accordion .accordion-item .accordion-header .accordion-button {
+  font-size: 36px;
+  line-height: 1.33em;
+  background: var(--nevi-blue);
+  -webkit-transition: all 50ms ease-in-out;
+  transition: all 50ms ease-in-out;
+  padding-right: 0;
+  padding-left: 130px;
+  padding-top: 30px;
+}
+.faq-section .faq-accordion-sec-wrap .accordion .accordion-item .accordion-header .accordion-button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.faq-section .faq-accordion-sec-wrap .accordion .accordion-item .accordion-header .accordion-button::after {
+  display: none;
+}
+.faq-section .faq-accordion-sec-wrap .accordion .accordion-item .accordion-header .accordion-button::before {
+  content: '';
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  background: url('data:image/svg+xml,<svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="31" cy="31" r="31" fill="%23D4F941"/><path d="M31.7071 18.2929C31.3166 17.9024 30.6834 17.9024 30.2929 18.2929L23.9289 24.6569C23.5384 25.0474 23.5384 25.6805 23.9289 26.0711C24.3195 26.4616 24.9526 26.4616 25.3431 26.0711L31 20.4142L36.6569 26.0711C37.0474 26.4616 37.6805 26.4616 38.0711 26.0711C38.4616 25.6805 38.4616 25.0474 38.0711 24.6569L31.7071 18.2929ZM32 43L32 19L30 19L30 43L32 43Z" fill="%2300154C"/></svg>');
+  left: 37px;
+  top: 30px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.faq-section .faq-accordion-sec-wrap .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  font-family: "Sharp Grotesk Book 20";
+  padding-left: 0px;
+  padding-top: 30px;
+}
+.faq-section .faq-accordion-sec-wrap .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+  display: none;
+}
+.faq-section .faq-accordion-sec-wrap .accordion .accordion-item .accordion-header .accordion-button.collapsed::before {
+  background: none;
+  top: 70px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.faq-section .faq-accordion-sec-wrap .accordion .accordion-item .accordion-collapse {
+  background: var(--nevi-blue);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  padding-left: 130px;
+}
+.faq-section .faq-accordion-sec-wrap .accordion .accordion-item .accordion-collapse .accordion-body {
+  background: var(--nevi-blue);
+  color: #AAB4CF;
+  font-size: 20px;
+  line-height: 1.6em;
+  padding-inline: 0;
+  padding-top: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* ==================================
+= FAQ section -/ End
+================================== */
+/* ==================================
 = Footer section -/ Start
 ================================== */
 .footer-section {
@@ -454,15 +565,18 @@
 .footer-section .footer-top .footer-widget-menu ul li a {
   text-decoration: none;
   color: #AAB4CF;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
   font-family: "Sharp Grotesk Book 20";
   line-height: 1.66em;
   font-size: 18px;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
 }
 .footer-section .footer-top .footer-widget-menu ul li a:hover {
-  color: var(--primary-2);
-  text-decoration: underline;
+  background: linear-gradient(132deg, #f1ff48 0%, #f6faca 16%, #d7a4e4 32%, #c5c0ff 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0;
+  -webkit-text-stroke-color: transparent;
 }
 .footer-section .footer-middle {
   padding-bottom: 47px;
@@ -470,15 +584,17 @@
 }
 .footer-section .footer-middle .social-media-link-wrap a {
   gap: 12px;
-  color: #36B7FF;
-  padding: 28px 30px;
-  border: 1px solid #36B7FF;
-  border-radius: 8px;
+  padding: 7px 30px;
+  border-radius: 150px;
+  border: 1px solid #f0ff483b;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-}
-.footer-section .footer-middle .social-media-link-wrap a span {
-  gap: 12px;
+  background: linear-gradient(132deg, #f1ff48 0%, #f6faca 16%, #d7a4e4 32%, #c5c0ff 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0;
+  -webkit-text-stroke-color: transparent;
+  line-height: 200%;
 }
 .footer-section .footer-middle .social-media-link-wrap a .social-media-link-arrow {
   -webkit-transition: all 250ms ease-in-out;
