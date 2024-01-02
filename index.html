@@ -43,13 +43,15 @@
     <!-- Splide slider css  -->
     <link rel="stylesheet" type="text/css" href="assets/css/splide.min.css" />
     <!-- Main CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/developer.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <!-- jQuery (necessary for jQuery plugins) -->
 </head>
 
 <body>
-    <!-- Main Coding Start Here -->
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+  <!-- Main Coding Start Here -->
     <!-- header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -139,7 +141,7 @@
                 </div>
             </div>
             <div class="col-md-5">
-                <div class="slider__column splide" id="bannerSlider" >
+                <!-- <div class="slider__column splide" id="bannerSlider" >
                     <div class="splide__track">
                        <ul class="splide__list" style="height: 500px;">
                           <li class="splide__slide"><img src="https://source.unsplash.com/1920x1280/?animal" alt="Slider"></li>
@@ -150,7 +152,74 @@
                           <li class="splide__slide"><img src="https://source.unsplash.com/1920x1280/?fruits" alt="Slider"></li>
                        </ul>
                     </div>
-                 </div>
+                 </div> -->
+                 <div class="card-wrapper">
+    
+                    <div class="card left-card">
+                      <div class="card-bg">
+                        <div class="card-img">
+                          <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="card right-card">
+                      <div class="card-bg">
+                        <div class="card-img">
+                            <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>    
+                
+                    <div class="card left-card">
+                      <div class="card-bg">
+                        <div class="card-img">
+                            <img src="assets/img/case-studies-img.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="card right-card">
+                      <div class="card-bg">
+                        <div class="card-img">
+                            <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="card left-card">
+                      <div class="card-bg">
+                        <div class="card-img">
+                            <img src="assets/img/case-studies-img.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>    
+                
+                    <div class="card right-card">
+                      <div class="card-bg">
+                        <div class="card-img">
+                            <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card left-card">
+                      <div class="card-bg">
+                        <div class="card-img">
+                            <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="card right-card">
+                      <div class="card-bg">
+                        <div class="card-img">
+                            <img src="assets/img/case-studies-img.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>      
+                
+                  </div>
             </div>
            </div>
         </div>
@@ -172,7 +241,7 @@
                         <li class="splide__slide">
                          
                         <a href="#">
-                            <div class="atvImg">
+                            <div class="atvImg" data-tilt> 
                                 <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="" />
                               <div class="atvImg-layer" data-img="assets/img/3d-slide-img1.png"></div>
                             </div>
@@ -180,7 +249,7 @@
                         </li>
                         <li class="splide__slide">
                             <a href="#">
-                                <div class="atvImg">
+                                <div class="atvImg" data-tilt>
                                     <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="" />
                                   <div class="atvImg-layer" data-img="assets/img/3d-slide-img2.png"></div>
                                 </div>
@@ -188,7 +257,7 @@
                         </li>
                         <li class="splide__slide">
                             <a href="#">
-                                <div class="atvImg">
+                                <div class="atvImg" data-tilt>
                                     <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="" />
                                   <div class="atvImg-layer" data-img="assets/img/3d-slide-img1.png"></div>
                                 </div>
@@ -196,7 +265,7 @@
                         </li>
                         <li class="splide__slide">
                             <a href="#">
-                                <div class="atvImg">
+                                <div class="atvImg" data-tilt>
                                     <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="" />
                                   <div class="atvImg-layer" data-img="assets/img/3d-slide-img2.png"></div>
                                 </div>
@@ -745,7 +814,7 @@
                     <img src="assets/img/cta-right-shape.svg" alt="Shape" class="img-fluid">
                 </div>
 
-                <div class="scroll-reveal">
+                <div class="scroll-reveals">
                     <h3 class="ff-sg-semibold-25 text-clr-neviBlue cta-heading text-center ">
                         <span>Build at speed, build with precision</span>
                     </h3>
@@ -850,24 +919,11 @@
     </section>
     <!--/ cost snapshot -->
 
-    <!-- Main Coding End -->
-
-    <!-- Your HTML remains unchanged -->
-
-    <div class="tabwrap">
-        <div class="tab">
-            <div class="tab-item">item1</div>
-            <div class="tab-item">item2</div>
-            <div class="tab-item">item3</div>
-            <div class="tab-item active">item4</div>
-        </div>
-        <div class="tab-content">
-            <div class="tab-content-item">content1</div>
-            <div class="tab-content-item">content2</div>
-            <div class="tab-content-item">content3</div>
-            <div class="tab-content-item">content4</div>
         </div>
     </div>
+  
+    <!-- Main Coding End -->
+
 
     <!-- in tabwrap div there are 2 part. 1. tab and 2. tab-content . in tab 1st item is has "active" class. when first item active then i want  
 tab-content to add a class name is "d-block". firstly all the tab-content will be display none. when the tab-item active then maintain the serial bottom tab-content-item also add a class "d-block"
@@ -878,7 +934,10 @@ tab-content to add a class name is "d-block". firstly all the tab-content will b
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="assets/js/ScrollSmoother.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js" ></script> -->
+
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
     <script src="assets/js/splide.min.js"></script>

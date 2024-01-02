@@ -26,6 +26,49 @@ $(document).ready(function() {
   
       // Synchronize on page load
       syncTabs();
+
+
+
+      
+
+	$('.card-wrapper .card').last().addClass('active');
+	$('.card-wrapper .card').last().prev().addClass('next');
+  // Autoplay interval 
+	var interval = 5000;
+	var myInt = setInterval(function () {
+								$('.card.active').trigger('click');
+				      }, interval);
+  // Clickable toggle
+	$('.card').on('click', function(){
+		clearInterval(myInt);
+    // Prevent multiple fast clicks to break the functioning
+		$('.card').css({'pointer-events' : 'none'});
+		$('.card.active').addClass('animate-leave').removeClass('active');
+		$('.card.next').addClass('active').removeClass('next');
+		$('.card-wrapper .card').last().prev().prev().addClass('next');
+		setTimeout( function(){ 
+			$('.card.animate-leave').addClass('animate-back').removeClass('animate-leave');
+			$('.card-wrapper').prepend( $('.animate-back') );
+		}, 300); // Wait for the animation to end
+		setTimeout( function(){ 
+			$('.card.animate-back').removeClass('animate-back');
+			$('.card').css({'pointer-events' : 'auto'});
+			clearInterval(myInt);
+			myInt = setInterval(function () {
+				$('.card.active').trigger('click');
+			}, interval);
+		}, 700);
+	});
+
+  // Just for fun
+	$('.polaroid-style').on('click', function(){
+		$('.card').toggleClass('polaroid')
+	});
+
+
+
+
+
   });
   
 
@@ -99,32 +142,6 @@ new Splide( '#tabslider', {
 
 
 
-  const splide = new Splide("#bannerSlider", {
-    // Optional parameters
-    start: 1,
-    perPage: 1.5,
-    perMove: 1,
-    gap: 20,
-    type: "loop",
-    drag: "free",
-    snap: false,
-    interval: 3000,
-    arrows: true,
-    pagination: true,
-    rewind: true,
-    rewindByDrag: true,
-    lazyLoad: true,
- 
-    // Responsive breakpoint
-    breakpoints: {
-       768: {
-          perPage: 1,
-          snap: true
-       }
-    }
- });
- 
- splide.mount();
 
 
 
@@ -216,9 +233,10 @@ new Splide("#curvedSlider", {
     arrows: false,
     pagination: false,
     height: '27.5rem',
-    drag: 'freeg',
+    drag: 'free',
     autoScroll: {
         speed: 1,
+        pauseOnHover: false,
     },
 } ).mount(window.splide.Extensions);
 
@@ -325,4 +343,75 @@ card.forEach((el) => {
 		cursor.classList.remove("active");
 		follower.classList.remove("active");
 	});
+});
+
+
+// image parallax
+
+VanillaTilt.init(document.querySelectorAll(".atvImg"), {
+  reverse: false,
+  max: 35,
+  perspective: 1000,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+  scale: 1,
+  speed: 300,
+  transition: true,
+  axis: null,
+  glare: false,
+  "max-glare": 1,
+  "glare-prerender": false,
+  "mouse-event-element": null,
+  reset: true,
+  "reset-to-start": true,
+});
+
+
+//smooth scrolling
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+// create the smooth scroller FIRST!
+const smoother = ScrollSmoother.create({
+  content: "#smooth-content",
+  smooth: 1,
+  normalizeScroll: true,
+  ignoreMobileResize: true,
+	effects: true,
+  //preventDefault: true,
+  //ease: 'power4.out',
+  //smoothTouch: 0.1, 
+});
+
+
+//gsap scroll
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+// You can use a ScrollTrigger in a tween or timeline
+gsap.to(".cta-left-shape", {
+  y:-330,
+  x: -500,
+  rotation: 360,
+  scrollTrigger: {
+    trigger: ".cta-left-shape",
+    start: "top 100%",
+    end: "top 0%",
+    scrub: true,
+    markers: true,
+    id: "scrub"
+  }
+});
+gsap.to(".cta-right-shape", {
+  y:60,
+  x: -50,
+  rotation: 360,
+  scrollTrigger: {
+    trigger: ".cta-right-shape",
+    start: "top 70%",
+    end: "top 10%",
+    scrub: true,
+    markers: true,
+    id: "scrub"
+  }
 });
