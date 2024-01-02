@@ -27,5 +27,23 @@ new Splide( '#partnersCarousel', {
 } ).mount(window.splide.Extensions);
 
 
+new Splide( '#faq-accordion', {
+    type   : 'loop',
+    direction: 'ttb',
+    perPage: 3,
+    perMove: 1,
+    arrows: false,
+    pagination: false,
+    drag: 'free',
+    autoHeight: true,
+    height    : '36rem',
+    wheel    : true,
+    autoScroll: {
+        speed: 1,
+        pauseOnHover: true,
+    },
+} ).mount(window.splide.Extensions);
+
+
 //Copyright year print
 document.getElementById("year").innerHTML = new Date().getFullYear();
