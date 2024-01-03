@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const element = document.querySelector('.fill');
     if (element) {
@@ -26,6 +28,23 @@ $(document).ready(function() {
   
       // Synchronize on page load
       syncTabs();
+
+
+      // custom accordion
+    $(function () {
+      if ($('.accordion-list').length) {
+          $('.accordion-list').on('click', '.accordion-list-item', function (e) {
+              e.preventDefault();
+              // remove siblings activities
+              $(this).closest('.accordion-list-item').siblings().removeClass('open').find('.accordion-desc').slideUp();
+              $(this).closest('.accordion-list-item').siblings().find('.ni').addClass('ni-plus').removeClass('ni-minus');
+
+              // add slideToggle into this
+              $(this).closest('.accordion-list-item').toggleClass('open').find('.accordion-desc').slideToggle();
+              $(this).find('.ni').toggleClass('ni-plus ni-minus');
+          });
+      }
+  });
 
 
 
@@ -368,50 +387,125 @@ VanillaTilt.init(document.querySelectorAll(".atvImg"), {
 
 //smooth scrolling
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-// create the smooth scroller FIRST!
-const smoother = ScrollSmoother.create({
-  content: "#smooth-content",
-  smooth: 1,
-  normalizeScroll: true,
-  ignoreMobileResize: true,
-	effects: true,
-  //preventDefault: true,
-  //ease: 'power4.out',
-  //smoothTouch: 0.1, 
-});
 
 
 //gsap scroll
 
 
+
+
+new Splide( '#partnersCarousel', {
+  type   : 'loop',
+  perPage: 5,
+  perMove: 1,
+  arrows: false,
+  pagination: false,
+  height: '27.5rem',
+  drag: 'free',
+  autoScroll: {
+      speed: 1,
+      pauseOnHover: false,
+  },
+} ).mount(window.splide.Extensions);
+
+
+new Splide( '#faq-accordion', {
+  type   : 'loop',
+  direction: 'ttb',
+  perPage: 3,
+  perMove: 1,
+  arrows: false,
+  pagination: false,
+  drag: 'free',
+  autoHeight: true,
+  height    : '36rem',
+  wheel    : true,
+  autoScroll: {
+      speed: 1,
+      pauseOnHover: true,
+  },
+} ).mount(window.splide.Extensions);
+
+
+//Copyright year print
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
+
+//cta 
 gsap.registerPlugin(ScrollTrigger);
 
-// You can use a ScrollTrigger in a tween or timeline
-gsap.to(".cta-left-shape", {
-  y:-330,
-  x: -500,
-  rotation: 360,
+
+gsap.to("#call-left-shape", {
   scrollTrigger: {
-    trigger: ".cta-left-shape",
-    start: "top 100%",
-    end: "top 0%",
+    trigger: "#call-left-shape",
+    start: "top 80%",
+    end: "bottom 20%",
     scrub: true,
-    markers: true,
-    id: "scrub"
-  }
+    markers: false // Corrected property name to 'markers'
+  },
+  // Other animation properties
+    y:-330,
+    x: -100,
+    rotation: 360,
 });
-gsap.to(".cta-right-shape", {
-  y:60,
-  x: -50,
-  rotation: 360,
+gsap.to("#call-right-shape", {
   scrollTrigger: {
-    trigger: ".cta-right-shape",
-    start: "top 70%",
-    end: "top 10%",
+    trigger: "#call-right-shape",
+    start: "top 80%",
+    end: "bottom 20%",
     scrub: true,
-    markers: true,
-    id: "scrub"
-  }
+    markers: false // Corrected property name to 'markers'
+  },
+  // Other animation properties
+    // y:-330,
+    // x: -100,
+    rotation: 360,
 });
+
+
+
+
+
+
+let typeSplit;
+
+// Split the text up
+function runSplit() {
+  typeSplit = new SplitType(".split-word", {
+    types: "lines, words"
+  });
+  $(".word").append("<div class='line-mask'></div>");
+  createAnimation();
+}
+
+
+// Register GSAP plugins
+runSplit();
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Create staggered animation
+function createAnimation() {
+  let allMasks = $(".word").map(function() {
+    return $(this).find(".line-mask");
+  }).get();
+
+  let tll = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".split-word",
+      start: "top center",
+      end: "bottom center",
+      scrub: 1
+    }
+  });
+
+  tll.to(allMasks, {
+    width: "0%",
+    duration: 1,
+    stagger: 0.5
+  });
+}
+
+
