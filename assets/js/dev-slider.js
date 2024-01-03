@@ -36,6 +36,7 @@ new Splide( '#faq-accordion', {
     pagination: false,
     drag: 'free',
     autoHeight: true,
+    drag   : 'free',
     height    : '36rem',
     wheel    : true,
     autoScroll: {
