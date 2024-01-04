@@ -1,15 +1,15 @@
-new Splide( '#testimonialSlider', {
-    type   : 'loop',
-    perPage: 1,
-    perMove: 1,
-    autoplay: true,
-    arrows: true,
-    pagination: false,
-    gap: '3rem',
-    speed: 2500,
-    // direction: 'ttb',
-    // height: '32rem',
-} ).mount();
+// new Splide( '#testimonialSlider', {
+//     type   : 'loop',
+//     perPage: 1,
+//     perMove: 1,
+//     autoplay: true,
+//     arrows: true,
+//     pagination: false,
+//     gap: '3rem',
+//     speed: 2500,
+//     // direction: 'ttb',
+//     // height: '32rem',
+// } ).mount();
 
 
 new Splide( '#partnersCarousel', {
@@ -102,25 +102,24 @@ document.addEventListener( 'DOMContentLoaded', function () {
         gap: '2rem',
         pagination: false,
         arrows: false,
-        autoplay: true,
-        speed: 1000,
+        cover: true,
     } );
 
     var thumbnails = new Splide( '#testimonialThumbnails', {
         type: 'loop',
         perPage: 4,
-        perMove: 1,
         gap: '1.875rem',
         padding: '8.75rem',
         pagination: false,
         arrows: true,
         autoplay: true,
         speed: 1000,
-        classes: {
-            arrows: 'splide__arrows testimony-thumb-arrows',
-            arrow : 'splide__arrow testimony-thumb-arrow',
-            prev  : 'splide__arrow--prev testimony-thumb-prev',
-            next  : 'splide__arrow--next testimony-thumb-next',
+        rewind: true,
+        focus: 'center',
+        cover: true,
+        dragMinThreshold: {
+            mouse: 4,
+            touch: 10,
         },
     } );
 
