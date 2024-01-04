@@ -48,3 +48,83 @@ new Splide( '#faq-accordion', {
 
 //Copyright year print
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+
+//     let clientTestimonial = document.querySelectorAll('#client_testimonial');
+//     clientTestimonial.forEach(function (element) {
+//         let splide = new Splide(element, {
+//             type: 'loop',
+//             perPage: 1,
+//             perMove: 1,
+//             gap: '2rem',
+//             pagination: false,
+//             arrows: false,
+//             autoplay: true,
+//             speed: 1000,
+//         });
+//         splide.mount();
+//     });
+
+
+//     let testimonialThumbnails = document.querySelectorAll('#testimonialThumbnails');
+//     testimonialThumbnails.forEach(function (element) {
+//         let splide = new Splide(element, {
+//             type: 'loop',
+//             perPage: 4,
+//             perMove: 1,
+//             gap: '1.875rem',
+//             padding: '8.75rem',
+//             pagination: false,
+//             arrows: true,
+//             autoplay: true,
+//             speed: 1000,
+//             classes: {
+//                 arrows: 'splide__arrows testimony-thumb-arrows',
+//                 arrow : 'splide__arrow testimony-thumb-arrow',
+//                 prev  : 'splide__arrow--prev testimony-thumb-prev',
+//                 next  : 'splide__arrow--next testimony-thumb-next',
+//         },
+//         });
+//         splide.mount();
+//     });
+// });
+
+
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    var main = new Splide( '#client_testimonial', {
+        type: 'loop',
+        perPage: 1,
+        perMove: 1,
+        gap: '2rem',
+        pagination: false,
+        arrows: false,
+        autoplay: true,
+        speed: 1000,
+    } );
+
+    var thumbnails = new Splide( '#testimonialThumbnails', {
+        type: 'loop',
+        perPage: 4,
+        perMove: 1,
+        gap: '1.875rem',
+        padding: '8.75rem',
+        pagination: false,
+        arrows: true,
+        autoplay: true,
+        speed: 1000,
+        classes: {
+            arrows: 'splide__arrows testimony-thumb-arrows',
+            arrow : 'splide__arrow testimony-thumb-arrow',
+            prev  : 'splide__arrow--prev testimony-thumb-prev',
+            next  : 'splide__arrow--next testimony-thumb-next',
+        },
+    } );
+
+    main.sync( thumbnails );
+    main.mount();
+    thumbnails.mount();
+} );
