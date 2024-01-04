@@ -1128,19 +1128,7 @@ body {
       .cta-heading {
           font-size: 78px;
       }
-      .word {
-        position: relative;
-      }
-      .line-mask {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: conic-gradient(from 180deg at 31.12% 44.57%, #D4F941 0deg, #C7C2FF 236.9368815422058deg, #D4F941 360deg);
-        opacity: 0.8;
-        height: 100%;
-        width: 100%;
-        z-index: 2;
-      }
+ 
   }
 }
 
