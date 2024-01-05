@@ -213,25 +213,25 @@ $(window).on("load", function () {
 
 // product slider
 
-new Splide("#curvedSlider", {
-    type: "loop",
-    drag: "free",
-    perPage: 2,
-    padding: '10rem',
-    gap: "4rem",
-    height: "auto",
-    arrows: false,
-    pagination: false,
-    autoScroll: {
-        speed: -1,
-      },
-    breakpoints: {
-      991: {
-        perPage: 2,
-        gap: "2rem",
-      },
-    },
-  }).mount(window.splide.Extensions);
+// new Splide("#curvedSlider", {
+//     type: "loop",
+//     drag: "free",
+//     perPage: 2,
+//     padding: '10rem',
+//     gap: "4rem",
+//     height: "auto",
+//     arrows: false,
+//     pagination: false,
+//     autoScroll: {
+//         speed: -1,
+//       },
+//     breakpoints: {
+//       991: {
+//         perPage: 2,
+//         gap: "2rem",
+//       },
+//     },
+//   }).mount(window.splide.Extensions);
 
 
   
@@ -529,3 +529,50 @@ document.addEventListener( 'DOMContentLoaded', function () {
   main.mount();
   thumbnails.mount();
 } );
+
+
+//Invention slider
+document.addEventListener('DOMContentLoaded', function () {
+    let invention_inner = document.querySelectorAll('#invention_inner_slider');
+
+    invention_inner.forEach(function (element) {
+        let splide = new Splide(element, {
+            type: 'loop',
+            perPage: 2,
+            perMove: 1,
+            gap: '2rem',
+            pagination: false,
+            arrows: false,
+            padding: '7rem',
+            drag: 'free',
+            autoScroll: {
+                speed: 0.9,
+                pauseOnHover: true,
+            },
+        });
+
+        splide.mount(window.splide.Extensions);
+    });
+});
+
+// Invention inner Scroller slider
+const scrollers = document.querySelectorAll(".scroller");
+
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    addAnimation();
+}
+
+function addAnimation() {
+    scrollers.forEach(scroller => {
+        scroller.setAttribute("data-animated", true);
+
+        const scrollerInner = scroller.querySelector('.scroller__inner');
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        scrollerContent.forEach(item => {
+            const duplicatedItem = item.cloneNode(true);
+            duplicatedItem.setAttribute("area-hidden", true);
+            scrollerInner.appendChild(duplicatedItem);
+        });
+    })
+}

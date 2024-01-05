@@ -133,8 +133,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 } );
 
 
-//
-
+//Invention slider
 document.addEventListener('DOMContentLoaded', function () {
     let invention_inner = document.querySelectorAll('#invention_inner_slider');
 
@@ -158,11 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
-
-
-// Scroller slider
+// Invention inner Scroller slider
 const scrollers = document.querySelectorAll(".scroller");
 
 if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
