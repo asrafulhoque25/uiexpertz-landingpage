@@ -1338,7 +1338,6 @@ body {
       &:hover {
           background: #F3F2FF;
           border-color: #F3F2FF;
-          transform: rotate(-7.03deg);
       }
 
       .client-testimonial-thumb-top {
@@ -1521,12 +1520,13 @@ body {
 = Footer section -/ Start
 ================================== */
 
-
 .footer-section {
   background: #000C2B;
   padding-top: 115px;
 
   .footer-top {
+      position: relative;
+      z-index: 99999;
       padding-bottom: 100px;
 
       .footer-widget-heading {
@@ -1568,6 +1568,9 @@ body {
   }
 
   .footer-middle-social-media {
+      
+      position: relative;
+      z-index: 99999;
       padding-bottom: 47px;
       border-bottom: 1px solid hsla(223, 25%, 67%, 0.2);
 
@@ -1585,8 +1588,6 @@ body {
               // border: 5px solid yellow;
               position: relative;
               z-index: 99;
-              
-              
 
               &::before {
                   content: '';
@@ -1596,9 +1597,9 @@ body {
                   bottom: 0px;
                   right: 0px;
                   border-radius: 150px;
-                  background: #000920;
+                  background: #000C2B;
                   z-index: -5;
-                  opacity: .8;
+                  opacity: 1;
                   transition: all 230ms ease-in-out;
               }
 
@@ -1638,7 +1639,7 @@ body {
                       opacity: 1;
                   }
                   &::before {
-                      opacity: .9;
+                      opacity: 1;
                   }
                   .social-media-link-lable {
                       .social-media-link-arrow-icon {
@@ -1646,17 +1647,7 @@ body {
                       }
                   }
               }
-
-
-              
-
-
-
-
-
-              
-
-              
+          
           }
       }
 
@@ -1677,9 +1668,9 @@ body {
                   bottom: 0px;
                   right: 0px;
                   border-radius: 150px;
-                  background: #000920;
+                  background: #000C2B;
                   z-index: -5;
-                  opacity: .8;
+                  opacity: 1;
                   transition: all 230ms ease-in-out;
               }
 
@@ -1697,13 +1688,12 @@ body {
                   transition: all 230ms ease-in-out;
               }
 
-              
               &:hover {
                   &::after {
                       opacity: 1;
                   }
                   &::before {
-                      opacity: .9;
+                      opacity: 1;
                   }
               }
           }
@@ -1730,12 +1720,44 @@ body {
   }
 
   .footer-copyright {
+      position: relative;
+      z-index: 99999;
+
       padding-block: 32px;
       color: #97A3C1;
       font-size: 18px;
       line-height: 1.55em;
   }
+
+  .footer-bg-shape {
+
+      z-index: 99;
+      width: 914px;
+      height: 608px;
+      bottom: -35%;
+      right: 40%;
+
+      border-radius: 914px;
+      background: linear-gradient(105deg, rgba(241, 255, 72, 0.50) 17.05%, rgba(246, 250, 202, 0.50) 36.68%, rgba(215, 164, 228, 0.50) 56.31%, rgba(197, 192, 255, 0.50) 78.84%);
+      mix-blend-mode: color;
+      filter: blur(100px);
+  }
+
+  .footer-bg-shape2 {
+
+      z-index: 99;
+      width: 914px;
+      height: 608px;
+      bottom: -35%;
+      right: 40%;
+
+      border-radius: 914px;
+      opacity: 0.2;
+      background: linear-gradient(to bottom right, rgba(241, 255, 72, 0.50) 0%, rgba(246, 250, 202, 0.50) 16%, rgba(215, 164, 228, 0.50) 32%, rgba(197, 192, 255, 0.50) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(241, 255, 72, 0.50) 0%, rgba(246, 250, 202, 0.50) 16%, rgba(215, 164, 228, 0.50) 32%, rgba(197, 192, 255, 0.50) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(241, 255, 72, 0.50) 0%, rgba(246, 250, 202, 0.50) 16%, rgba(215, 164, 228, 0.50) 32%, rgba(197, 192, 255, 0.50) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(241, 255, 72, 0.50) 0%, rgba(246, 250, 202, 0.50) 16%, rgba(215, 164, 228, 0.50) 32%, rgba(197, 192, 255, 0.50) 50%) top right / 50% 50% no-repeat;
+      filter: blur(100px);
+  }
 }
+
 
 /* ==================================
 = Footer section -/ End

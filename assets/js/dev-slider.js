@@ -103,6 +103,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
         pagination: false,
         arrows: false,
         cover: true,
+        autoplay: true,
+        speed: 1200,
     } );
 
     var thumbnails = new Splide( '#testimonialThumbnails', {

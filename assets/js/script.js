@@ -101,7 +101,6 @@ $(document).ready(function() {
   
 
 
-  // curvedSlider
 
 
 // Splide slider activator.
@@ -239,22 +238,6 @@ new Splide("#curvedSlider", {
 
 
   //partners carousel
-
-  new Splide( '#partnersCarousel', {
-    type   : 'loop',
-    perPage: 5,
-    perMove: 1,
-    arrows: false,
-    pagination: false,
-    height: '27.5rem',
-    drag: 'free',
-    autoScroll: {
-        speed: 1,
-        pauseOnHover: false,
-    },
-} ).mount(window.splide.Extensions);
-
-
 
      // gsap code 
 
@@ -398,7 +381,7 @@ new Splide( '#partnersCarousel', {
   height: '27.5rem',
   drag: 'free',
   autoScroll: {
-      speed: 1,
+      speed: 0.6,
       pauseOnHover: false,
   },
 } ).mount(window.splide.Extensions);
@@ -510,13 +493,15 @@ function createAnimation() {
 
 document.addEventListener( 'DOMContentLoaded', function () {
   var main = new Splide( '#client_testimonial', {
-      type: 'loop',
+      type: 'fade',
       perPage: 1,
       perMove: 1,
       gap: '2rem',
       pagination: false,
       arrows: false,
       cover: true,
+      autoplay: true,
+      speed: 1200,
   } );
 
   var thumbnails = new Splide( '#testimonialThumbnails', {
