@@ -939,3 +939,100 @@
 = Client testimonial section -/ End
 ================================== */
 
+
+
+
+
+/* ==================================
+= Invention section -/ Start
+================================== */
+
+.inventions-area {
+    .section-heading {
+        h2 {
+            font-size: 152px;
+            line-height: 1.06em;
+        }
+    }
+    .invention-inner-slide-section {
+        margin-top: -30px;
+        .invention-inner-slider-wrap {
+            .invention-inner-slide-item {
+                max-width: 1024px;
+                width: 100%;
+                max-height: 768px;
+                height: 100%;
+                padding: 50px;
+
+                &.invention-main-slide-bg-1 {
+                    border-radius: 62px;
+                    background: linear-gradient(270deg, #424242 1.51%, #1A1A1A 98.58%);
+                }
+
+                &.invention-main-slide-bg-2 {
+                    border-radius: 62px;
+                    background: #979AA1;
+                }
+
+                &.invention-main-slide-bg-3 {
+                    border-radius: 62px;
+                    background: #C3C3C8;
+                }
+
+                &.invention-main-slide-bg-4 {
+                    border-radius: 62px;
+                    background: linear-gradient(270deg, #424242 1.51%, #1A1A1A 98.58%);
+                }
+
+                &.invention-main-slide-bg-5 {
+                    border-radius: 62px;
+                    background: #C3C3C8;
+                }
+
+
+
+            }
+        }
+    }
+}
+
+
+
+.invention-inner-slide-item {
+    .invention-in-slider-container { //scroller
+        max-width: 1024px;
+
+        .scroller__inner { //ul
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}
+
+.scroller[data-animated=true] {
+    overflow: hidden;
+}
+
+.scroller[data-animated=true] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 10s linear infinite;
+}
+
+.scroller[data-animated=true] .scroller__inner {
+    animation-play-state: paused;
+}
+.scroller[data-animated=true] .scroller__inner:hover {
+    animation-play-state: running;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+/* ==================================
+= Invention section -/ End
+================================== */
+
