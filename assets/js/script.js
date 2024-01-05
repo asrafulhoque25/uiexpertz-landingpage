@@ -9,6 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       console.error('Element with class ".fill" not found');
     }
+
+
+
+
+
+
+
+
+    
   });
 
 $('.commonBtn').hover(
@@ -201,20 +210,6 @@ $(window).on("load", function () {
 
 // Splide slider activator.
 
-
-
-
-
-new Splide( '#testimonialSlider', {
-    type   : 'loop',
-    perPage: 1,
-    perMove: 1,
-    autoplay: true,
-    arrows: true,
-    pagination: false,
-    gap: '3rem',
-    speed:2500,
-} ).mount();
 
 
 // product slider
@@ -509,3 +504,40 @@ function createAnimation() {
 }
 
 
+//testimonial
+
+
+
+document.addEventListener( 'DOMContentLoaded', function () {
+  var main = new Splide( '#client_testimonial', {
+      type: 'loop',
+      perPage: 1,
+      perMove: 1,
+      gap: '2rem',
+      pagination: false,
+      arrows: false,
+      cover: true,
+  } );
+
+  var thumbnails = new Splide( '#testimonialThumbnails', {
+      type: 'loop',
+      perPage: 4,
+      gap: '1.875rem',
+      padding: '8.75rem',
+      pagination: false,
+      arrows: true,
+      autoplay: true,
+      speed: 1000,
+      rewind: true,
+      focus: 'center',
+      cover: true,
+      dragMinThreshold: {
+          mouse: 4,
+          touch: 10,
+      },
+  } );
+
+  main.sync( thumbnails );
+  main.mount();
+  thumbnails.mount();
+} );
