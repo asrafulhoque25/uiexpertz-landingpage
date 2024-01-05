@@ -412,7 +412,9 @@
         .partners-carousel-item {
             img {
                 transition: all 300ms ease-in-out;
-                &:hover {
+            }
+            &:hover {
+                img {
                     transform: scale(1.5) rotate(-15deg);
                 }
             }
@@ -789,7 +791,6 @@
         filter: blur(100px);
     }
 }
-
 
 /* ==================================
 = Footer section -/ End

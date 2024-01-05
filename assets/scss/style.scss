@@ -952,7 +952,9 @@ body {
     .partners-carousel-item {
       img {
         transition: all 300ms ease-in-out;
-        &:hover {
+      }
+      &:hover {
+        img {
           transform: scale(1.5) rotate(-15deg);
         }
       }

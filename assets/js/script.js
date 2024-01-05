@@ -493,15 +493,18 @@ function createAnimation() {
 
 document.addEventListener( 'DOMContentLoaded', function () {
   var main = new Splide( '#client_testimonial', {
-      type: 'fade',
-      perPage: 1,
-      perMove: 1,
-      gap: '2rem',
-      pagination: false,
-      arrows: false,
-      cover: true,
-      autoplay: true,
-      speed: 1200,
+    type: 'loop',
+    perPage: 1,
+    perMove: 1,
+    gap: '4rem',
+    pagination: false,
+    direction: 'ttb',
+    height: '30rem',
+    autoHeight: true,
+    arrows: false,
+    cover: true,
+    autoplay: true,
+    speed: 1200,
   } );
 
   var thumbnails = new Splide( '#testimonialThumbnails', {
