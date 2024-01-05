@@ -343,24 +343,6 @@ card.forEach((el) => {
 });
 
 
-// image parallax
-
-VanillaTilt.init(document.querySelectorAll(".atvImg"), {
-  reverse: false,
-  max: 35,
-  perspective: 1000,
-  easing: "cubic-bezier(.03,.98,.52,.99)",
-  scale: 1,
-  speed: 300,
-  transition: true,
-  axis: null,
-  glare: false,
-  "max-glare": 1,
-  "glare-prerender": false,
-  "mouse-event-element": null,
-  reset: true,
-  "reset-to-start": true,
-});
 
 
 //smooth scrolling
@@ -576,3 +558,23 @@ function addAnimation() {
         });
     })
 }
+
+
+// image parallax
+
+VanillaTilt.init(document.querySelectorAll(".invention-inner-slide-item"), {
+  reverse: true,
+  max: 5,
+  perspective: 10,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+  scale: 1,
+  speed: 30,
+  transition: true,
+  axis: null,
+  glare: false,
+  "max-glare": 1,
+  "glare-prerender": false,
+  "mouse-event-element": null,
+  reset: true,
+  "reset-to-start": true,
+});

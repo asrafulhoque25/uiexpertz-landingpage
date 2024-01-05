@@ -947,8 +947,11 @@ body {
         }
     }
     .invention-inner-slide-section {
-        margin-top: -24px;
+        margin-top: -54px;
         .invention-inner-slider-wrap {
+          #invention_inner_slider-list {
+            padding-block: 30px !important;
+          }
             .invention-inner-slide-item {
                 max-width: 1024px;
                 width: 100%;
@@ -1011,10 +1014,10 @@ body {
     animation: scroll 10s linear infinite;
 }
 
-.scroller[data-animated=true] .scroller__inner {
+.invention-inner-slide-item .scroller[data-animated=true] .scroller__inner {
     animation-play-state: paused;
 }
-.scroller[data-animated=true] .scroller__inner:hover {
+.invention-inner-slide-item:hover .scroller[data-animated=true] .scroller__inner {
     animation-play-state: running;
 }
 
