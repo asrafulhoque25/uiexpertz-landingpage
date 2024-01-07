@@ -464,64 +464,173 @@ body {
   // card slider
 
   
-.card-wrapper {
-  position: relative;
+// .card-wrapper {
+//   position: relative;
   
-  .card {
-    width: 70%;
-    max-width: 300px;
-    position: absolute;
-    top: -200px;
-    left: 20%;
-    display: block;
-    transition: transform .5s ease;  
-    // transform-origin: bottom center;
-    background-color: transparent !important;
-    border: 0;
-    cursor: pointer;
-  }
+//   .card {
+//     width: 70%;
+//     max-width: 300px;
+//     position: absolute;
+//     top: -200px;
+//     left: 20%;
+//     display: block;
+//     transition: transform .5s ease;  
+//     // transform-origin: bottom center;
+//     background-color: transparent !important;
+//     border: 0;
+//     cursor: pointer;
+//   }
   
-  .card.polaroid .card-bg {
-    padding-top: 90%;
+//   .card.polaroid .card-bg {
+//     padding-top: 90%;
  
-  }
+//   }
   
-  .card-bg {
-    padding-top: 130%;
-    position: relative;
-  }
+//   .card-bg {
+//     padding-top: 130%;
+//     position: relative;
+//   }
   
-  .card-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
+//   .card-img {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//   }
   
-  .card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 22px;
-  }
+//   .card-img img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     border-radius: 22px;
+//   }
   
-  .polaroid .card-img img {
-    border-radius: 22px
-  }
+//   .polaroid .card-img img {
+//     border-radius: 22px
+//   }
   
-  .left-card {
-    transform: rotate(-15deg);
-  }
+//   .left-card {
+//     transform: rotate(-15deg);
+//   }
   
-  .right-card {
-    transform: rotate(15deg);
-  }
+//   .right-card {
+//     transform: rotate(15deg);
+//   }
   
-  .card.active {
-    transform: rotate(0);
-  }
+//   .card.active {
+//     transform: rotate(0);
+//   }
+// }
+
+
+
+
+
+.carousel {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: space-around;
 }
+.carousel__list {
+	display: flex;
+	list-style: none;
+	position: relative;
+	justify-content: center;
+  right: 150px;
+    top: -150px;
+}
+.carousel__item {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	width: 31vw;
+  height: 365px;
+	max-width: 31vw;
+	aspect-ratio: 1.77/1;
+	border-radius: 20px;
+	position: absolute;
+	background-color: BLACK;
+	transition: all 0.25s ease-in-out;
+}
+.carousel__item:hover {
+	transition: all 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+	.carousel__item {
+		width: calc(100vw - 10rem);
+	}
+}
+@media screen and (max-width: 768px) {
+	.carousel__item {
+		width: calc(100vw - 2rem);
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+.carousel__item:nth-child(1) {
+	background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+	background-position: center;
+	background-size: cover;
+}
+.carousel__item:nth-child(2) {
+	background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+	background-position: center;
+	background-size: cover;
+}
+.carousel__item:nth-child(3) {
+	background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+	background-position: center;
+	background-size: cover;
+}
+.carousel__item:nth-child(4) {
+	background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+	background-position: center;
+	background-size: cover;
+}
+.carousel__item:nth-child(5) {
+	background-image: url(https://i.postimg.cc/9MYpQkjy/case-studies-img.png);
+	background-position: center;
+	background-size: cover;
+}
+.carousel__item[data-pos="0"] {
+	z-index: 5;
+}
+
+.carousel__item[data-pos="-1"],
+.carousel__item[data-pos="1"] {
+	filter: brightness(50%);
+}
+.carousel__item[data-pos="-1"] {
+	transform: translateX(-15%) scale(0.9);
+	z-index: 4;
+}
+.carousel__item[data-pos="1"] {
+	transform: translateX(15%) scale(0.9);
+	z-index: 4;
+}
+.carousel__item[data-pos="-2"],
+.carousel__item[data-pos="2"] {
+	filter: brightness(20%);
+}
+.carousel__item[data-pos="-2"] {
+	transform: translateX(-25%) scale(0.8);
+	z-index: 3;
+}
+.carousel__item[data-pos="2"] {
+	transform: translateX(25%) scale(0.8);
+	z-index: 3;
+}
+
+#particles-js {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+
 
 /* Cards aniamtion */
 .card.animate-leave {
