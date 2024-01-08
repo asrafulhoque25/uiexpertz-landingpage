@@ -57,6 +57,9 @@ body {
 .text-clr-gray5 {
   color: var(--gray-5);
 }
+.text-clr-navy-blue2 {
+  color: var(--nevi-blue2);
+}
 
 // BG color
 .bg-clr-neviBlue {
@@ -758,60 +761,28 @@ body {
 /* banner  - END*/
 
 .tabSliderWrap {
-  .splide {
-    width: 250px;
-    height: 120px;
-  }
-  .splide__pagination {
-    display: none;
-  }
+
   .splide__slide {
     display: flex;
     align-items: center;
     justify-content: end !important;
+
+    div {
+      color: hsla(0, 0%, 100%, 0.4);
+      transition: all 150ms ease-in-out;
+    }
+
     &.is-active {
       div {
-        background: var(
-          --Diamond-CTA,
-          linear-gradient(
-              to bottom right,
-              #f1ff48 0%,
-              #f6faca 16%,
-              #d7a4e4 32%,
-              #c5c0ff 50%
-            )
-            bottom right / 50% 50% no-repeat,
-          linear-gradient(
-              to bottom left,
-              #f1ff48 0%,
-              #f6faca 16%,
-              #d7a4e4 32%,
-              #c5c0ff 50%
-            )
-            bottom left / 50% 50% no-repeat,
-          linear-gradient(
-              to top left,
-              #f1ff48 0%,
-              #f6faca 16%,
-              #d7a4e4 32%,
-              #c5c0ff 50%
-            )
-            top left / 50% 50% no-repeat,
-          linear-gradient(
-              to top right,
-              #f1ff48 0%,
-              #f6faca 16%,
-              #d7a4e4 32%,
-              #c5c0ff 50%
-            )
-            top right / 50% 50% no-repeat
-        );
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         font-size: 36px !important;
         font-weight: 500;
         line-height: 52px;
+        transition: all 150ms ease-in-out;
+
+        background: linear-gradient(157deg, #F1FF48 -6.07%, #F6FACA 20.83%, #D7A4E4 36.81%, #C5C0FF 50.83%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
   }
@@ -820,28 +791,177 @@ body {
     &.splide__arrow--prev {
       position: absolute;
       left: calc(100% + 20px);
-      top: 44%;
+      top: 29%;
     }
     &.splide__arrow--next {
       position: absolute;
       left: calc(100% + 20px);
-      top: 60%;
+      top: 46%;
     }
   }
 }
 
 
+/** ==================================
+* Cost snapshot section style -/Start
+====================================*/
+
+.cost-snapshot  {
+  padding-block: 10px;
+
+  .pricing-section-bg-shape {
+    bottom: 180px;
+    left: 115px;
+
+    animation: pricingBgShape 4.5s ease infinite;
+    @keyframes pricingBgShape {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(25px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+  }
+
+  .pricing-lets-talk-btn {
+    margin-top: 60px;
+  }
+
+  .pricing-table-wrapper {
+
+    .pricing-table-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 8px;
+    }
+
+    .single-pricing-table {
+      padding: 50px;
+      border-radius: 36px;
+
+      &:hover {
+        .single-pricing-plan-icon {
+          animation-play-state: running;
+        }
+      }
 
 
 
+      .single-pricing-plan-icon {
+        animation: planIcon 1.5s ease infinite;
+        animation-play-state: paused;
 
+        @keyframes planIcon {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-15px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
 
+        }
+      }
 
+      .plan-price {
+        margin-top: 27px;
+        p {
+          font-size: 24px;
+          line-height: 1.41em;
+          margin-bottom: 10px;
+        }
+        h3 {
+          font-size: 36px;
+          line-height: 1.27em;
+        }
+      }
 
+      .pricing-plan-service-list {
+        ul {
+          gap: 8px;
+          margin-top: 20px;
+          li {
+            gap: 10px;
+            font-size: 18px;
+            line-height: 1.55em;
+          }
+        }
+      }
 
-.splide__arrow:disabled {
-  opacity: 1 !important;
+    }
+  }
+
+  .common-btn {
+    height: 80px;
+    padding: 10px 50px !important;
+    
+      svg * {
+        fill: var(--nevi-blue);
+      }
+
+    &::after {
+      background-color: var(--primary) !important;
+    }
+    &:hover {
+      color: #fff !important;
+      svg {
+        transform: rotate(45deg);
+      }
+      svg * {
+        fill: #ffffff !important;
+      }
+      &::after {
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        border-radius: 100px;
+      }
+    }
+  }
 }
+
+
+// .pricing-cursor-hover-wrap {
+//   position: relative;
+//   width: 132px;
+//   height: 132px;
+//   background: linear-gradient(153deg, #F1FF48 -14.76%, #F6FACA 20.59%, #D7A4E4 41.58%, #C5C0FF 60%);
+//   border-radius: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-family: "Sharp Grotesk Medium 25";
+//   .cursor-text {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     p {
+//       margin-bottom: 0;
+//       font-size: 12px;
+//       text-transform: uppercase;
+//     }
+//     span {
+//       position: absolute;
+//       left: 50%;
+//       font-size: 12px;
+//       font-family: "Sharp Grotesk Medium 25";
+//       transform-origin: 0 66px;
+//     }
+//   }
+// }
+/** ==================================
+* Cost snapshot section style -/End
+====================================*/
+
+
+
 
 /* Initially hide all content items */
 .tab-content-item {
@@ -1066,7 +1186,7 @@ body {
                 width: 100%;
                 max-height: 768px;
                 height: 100%;
-                padding: 50px;
+                padding: 40px;
 
                 &.invention-main-slide-bg-1 {
                     border-radius: 62px;

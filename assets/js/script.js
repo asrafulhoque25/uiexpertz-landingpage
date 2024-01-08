@@ -335,22 +335,6 @@ new Splide("#slider3", {
 
 
 
-
-
-// portfolio 
-new Splide( '#tabslider', {
-    direction: 'ttb',
-    height   : '10rem',
-    wheel    : true,
-    perPage: 3,
-    focus  : 'center',
-  }).mount();
-
-
-
-
-
-
 $(window).on("load", function () {
     // code should be execute here
     // button effect
@@ -690,6 +674,51 @@ document.addEventListener( 'DOMContentLoaded', function () {
   main.mount();
   thumbnails.mount();
 } );
+
+
+
+// Pricing section 
+document.addEventListener( 'DOMContentLoaded', function () {
+  let priceTableWrap = new Splide( '#pricingTable', {
+    autoHeight: true,
+    type: 'loop',
+    rewind: true,
+    gap: "4rem",
+    speed: 1500,
+    focus: 'center',
+    pagination: false,
+    arrows: false,
+    perPage: 1,
+  } );
+
+  let priceTitleSlide = new Splide( '#tabslider', {
+    direction: 'ttb',
+    height   : '8.5rem',
+    type: 'loop',
+    rewind: true,
+    focus: 'center',
+    wheel    : true,
+    pagination: false,
+    perPage: 3,
+    focus  : 'center',
+  } );
+
+  priceTableWrap.sync( priceTitleSlide );
+  priceTableWrap.mount();
+  priceTitleSlide.mount();
+} );
+
+
+// Cursor animation.
+// const priceCursorText = document.querySelector(".cursor-text p");
+// priceCursorText.innerHTML = priceCursorText.innerText.split('').map(
+//   (char, i) => `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+// ).join('');
+
+
+
+
+
 
 
 //Invention slider
