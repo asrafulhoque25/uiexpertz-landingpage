@@ -1052,3 +1052,178 @@
     height: 132px;
     position: relative;
 }
+
+
+
+
+/* ==================================
+= About page style -/ Start
+================================== */
+
+.award-winning-area {
+    .award-winning-content {
+        h2 {
+            font-size: 48px;
+            line-height: 1.25em;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 1.6em;
+            max-width: 650px;
+        }
+
+        .award-winning-list-wrap {
+            max-width: 630px;
+            margin-top: 38px;
+            .award-winning-list-item {
+                line-height: 1.5em;
+                gap: 24px;
+                border-bottom: 1px solid hsla(223, 100%, 15%, 0.15);
+                padding-block: 20px;
+                &:last-child {
+                    border-bottom: 0px;
+                }
+                span {
+                    font-size: 48px;
+                    line-height: 1.25em;
+                    min-width: 150px;
+                }
+            }
+        }
+    }
+}
+
+
+// about-text-carousel
+.about-text-carousel {
+    background: radial-gradient(142.12% 142.12% at 86.5% 77%, #F1FF48 0%, #F6FACA 31.77%, #D7A4E4 63.54%, #C5C0FF 100%) !important;
+    .splide__slide {
+        svg * {
+            fill: var(--nevi-blue) !important;
+        }
+    }
+    .text-carousel-heading {
+        color: var(--nevi-blue) !important;
+    }
+}
+
+// mission-vision-area
+.mission-vision-area {
+    padding-block: 140px 44px;
+
+
+    .section-heading {
+        h2 {
+            font-size: 152px;
+            line-height: 1.06em;
+            text-wrap: balance;
+        }
+        margin-bottom: 120px;
+    }
+}
+
+
+//Benefit area
+.benefit-area {
+    .row {
+        --bs-gutter-y: 80px
+    }
+    .section-heading {
+        h2 {
+            font-size: 68px;
+            line-height: 1.32em;
+            text-wrap: balance;
+            max-width: 1026px;
+        }
+        margin-bottom: 74px;
+    }
+
+    .benefit-single-item {
+        .benefit-item-icon {
+            margin-bottom: 57px;
+        }
+        h3 {
+            font-size: 36px;
+            line-height: 1.27em;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 1.62em;
+        }
+    }
+}
+
+
+// Mission and Vision area
+.mission-vision-area {
+    .section-heading {
+        position: relative;
+        z-index: 999;
+    }
+    .mission-and-vision-slide-wrap {
+        margin-top: -270px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 233px;
+            background: linear-gradient(180deg, #001549 0%, rgba(0, 21, 73, 0.80) 52.08%, rgba(0, 15, 53, 0.00) 100%, rgba(0, 21, 73, 0.00) 100%);
+            z-index: 99;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 233px;
+            background: linear-gradient(0deg, #001549 0%, rgba(0, 21, 73, 0.80) 52.08%, rgba(0, 15, 53, 0.00) 100%, rgba(0, 21, 73, 0.00) 100%);
+            z-index: 99;
+        }
+        .mission-vision-slide-item {
+            div {
+                gap: 83px;
+            }
+            h3 {
+                font-size: 36px;
+                line-height: 1.27em;
+                color: #36B7FF;
+            }
+            p {
+                font-size: 24px;
+                line-height: 1.58em;
+                color: #9DB9FF;
+            }
+        }
+
+        .blank-space-200 {
+            min-height: 285px;
+        }
+
+        .splide__slide {
+            // padding-left: 174px;
+            transform: translateX(174px);
+            transition: all 370ms linear;
+            &.is-active {
+                transform: translateX(0);
+                transition: all 270ms linear;
+            }
+            &.is-prev {
+                transform: translateX(174px);
+                transition: all 370ms linear;
+            }
+            &.is-next {
+                transform: translateX(174px);
+                transition: all 370ms linear;
+            }
+        }
+    }
+}
+
+
+/* ==================================
+= About page style -/ End
+================================== */

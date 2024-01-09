@@ -27,6 +27,7 @@ body {
   --primary: #5648ff;
   --gray-5: #e3e8f8;
   --nevi-blue2: #384973;
+  --dark-navy-blue: #001447;
 }
 
 /* reset, root - END */
@@ -61,6 +62,10 @@ body {
   color: var(--nevi-blue2);
 }
 
+.text-clr-dark-navy-blue {
+  color: var(--dark-navy-blue);
+}
+
 // BG color
 .bg-clr-neviBlue {
   background-color: var(--nevi-blue);
@@ -72,6 +77,10 @@ body {
 
 .bg-clr-primary {
   background-color: var(--primary);
+}
+
+.bg-clr-dark-navy-blue {
+  background-color: var(--dark-navy-blue);
 }
 
 /* Font family */

@@ -588,6 +588,31 @@ document.addEventListener('DOMContentLoaded', function () {
 // FAQ Accordion slider - End
 
 
+// Mission & Vision slider - Start 
+document.addEventListener('DOMContentLoaded', function () {
+    let splideElements = document.querySelectorAll('#missionVisionSlide');
+
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type   : 'loop',
+            direction: 'ttb',
+            perPage: 1,
+            perMove: 1,
+            arrows: false,
+            pagination: false,
+            gap: "1.54rem",
+            autoplay: true,
+            autoHeight: true,
+            height    : '44rem',
+            focus: 'center',
+        });
+
+        splide.mount();
+    });
+});
+// Mission & Vision slider - End
+
+
 //Copyright year print
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
