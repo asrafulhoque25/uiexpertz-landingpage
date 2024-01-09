@@ -21,15 +21,6 @@ $('.commonBtn').hover(
 
 // Get all tab items and content items
 $(document).ready(function() {
-    function syncTabs() {
-        var activeTabIndex = $('.splide__list .splide__slide.active').index();
-        $('.tab-content .tab-content-item').removeClass('d-block');
-        $('.tab-content .tab-content-item').eq(activeTabIndex).addClass('d-block');
-      }
-  
-      // Synchronize on page load
-      syncTabs();
-
 
       // custom accordion
     $(function () {
@@ -285,54 +276,81 @@ particlesJS("particles-js", {
 // Splide slider activator.
 
 /* =========== Services Two Slider ===========*/
-new Splide("#slider1", {
-    type: "loop",
-    drag: "free",
-    perPage: 3,
-    gap: "1.875rem",
-    direction: "ttb",
-    height: "60rem",
-    arrows: false,
-    pagination: false,
-    focus: "center",
-    autoScroll: {
-        speed: 0.6,
-    },
-}).mount(window.splide.Extensions);
+//Services slider 1
+document.addEventListener('DOMContentLoaded', function () {
+  let splideElements = document.querySelectorAll('#slider1');
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+        type: "loop",
+        drag: "free",
+        perPage: 3,
+        gap: "1.875rem",
+        direction: "ttb",
+        height: "60rem",
+        arrows: false,
+        pagination: false,
+        focus: "center",
+        autoScroll: {
+            speed: 0.6,
+        },
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
+
+//Services slider 2
+document.addEventListener('DOMContentLoaded', function () {
+  let splideElements = document.querySelectorAll('#slider2');
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+        type: "loop",
+        drag: "free",
+        perPage: 3,
+        gap: "1.875rem",
+        direction: "ttb",
+        height: "60rem",
+        focus: "center",
+        arrows: false,
+        pagination: false,
+        autoScroll: {
+            speed: -0.6,
+        },
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
 
 
-new Splide("#slider2", {
-    type: "loop",
-    drag: "free",
-    perPage: 3,
-    gap: "1.875rem",
-    direction: "ttb",
-    height: "60rem",
-    focus: "center",
-    arrows: false,
-    pagination: false,
-    autoScroll: {
-        speed: -0.6,
-    },
-}).mount(window.splide.Extensions);
+//Text slide - start
+document.addEventListener('DOMContentLoaded', function () {
+  let splideElements = document.querySelectorAll('#slider3');
 
-new Splide("#slider3", {
-    type: "loop",
-    drag: "free",
-    perPage: 3,
-    gap: "1.875rem",
-    height: "6rem",
-    focus: "center",
-    autoWidth: true,
-    arrows: false,
-    pagination: false,
-    
-    autoScroll: {
-        speed: 1.3,
-        pauseOnHover: false,
-    },
-}).mount(window.splide.Extensions);
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+        type: "loop",
+        drag: "free",
+        perPage: 3,
+        gap: "1.875rem",
+        height: "6rem",
+        focus: "center",
+        autoWidth: true,
+        arrows: false,
+        pagination: false,
+        
+        autoScroll: {
+            speed: 1.3,
+            pauseOnHover: false,
+        },
+      });
 
+      splide.mount(window.splide.Extensions);
+  });
+});
+//Text slide - end
 
 
 $(window).on("load", function () {
@@ -515,39 +533,59 @@ card.forEach((el) => {
 //gsap scroll
 
 
+//Partners Carousel - Start
+document.addEventListener('DOMContentLoaded', function () {
+  let splideElements = document.querySelectorAll('#partnersCarousel');
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+        type   : 'loop',
+        perPage: 5,
+        perMove: 1,
+        arrows: false,
+        pagination: false,
+        height: '27.5rem',
+        drag: 'free',
+        autoScroll: {
+            speed: 0.6,
+            pauseOnHover: false,
+        },
+
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
+//Partners Carousel - Start
 
 
-new Splide( '#partnersCarousel', {
-  type   : 'loop',
-  perPage: 5,
-  perMove: 1,
-  arrows: false,
-  pagination: false,
-  height: '27.5rem',
-  drag: 'free',
-  autoScroll: {
-      speed: 0.6,
-      pauseOnHover: false,
-  },
-} ).mount(window.splide.Extensions);
+// FAQ Accordion slider - Start 
+document.addEventListener('DOMContentLoaded', function () {
+  let splideElements = document.querySelectorAll('#faq-accordion');
 
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+        type   : 'loop',
+        direction: 'ttb',
+        perPage: 3,
+        perMove: 1,
+        arrows: false,
+        pagination: false,
+        drag: 'free',
+        autoHeight: true,
+        height    : '36rem',
+        wheel    : true,
+        autoScroll: {
+            speed: 1,
+            pauseOnHover: true,
+        },
+        
+      });
 
-new Splide( '#faq-accordion', {
-  type   : 'loop',
-  direction: 'ttb',
-  perPage: 3,
-  perMove: 1,
-  arrows: false,
-  pagination: false,
-  drag: 'free',
-  autoHeight: true,
-  height    : '36rem',
-  wheel    : true,
-  autoScroll: {
-      speed: 1,
-      pauseOnHover: true,
-  },
-} ).mount(window.splide.Extensions);
+      splide.mount(window.splide.Extensions);
+  });
+});
+// FAQ Accordion slider - End
 
 
 //Copyright year print
@@ -637,7 +675,7 @@ function createAnimation() {
 
 
 document.addEventListener( 'DOMContentLoaded', function () {
-  var main = new Splide( '#client_testimonial', {
+  let main = new Splide( '#client_testimonial', {
     type: 'loop',
     perPage: 1,
     perMove: 1,
@@ -652,7 +690,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
     speed: 1200,
   } );
 
-  var thumbnails = new Splide( '#testimonialThumbnails', {
+  let thumbnails = new Splide( '#testimonialThumbnails', {
       type: 'loop',
       perPage: 4,
       gap: '1.875rem',
