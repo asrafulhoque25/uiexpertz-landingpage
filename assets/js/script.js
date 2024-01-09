@@ -710,12 +710,12 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
 
 // Cursor animation.
-// const priceCursorText = document.querySelector(".cursor-text p");
-// priceCursorText.innerHTML = priceCursorText.innerText.split('').map(
-//   (char, i) => `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
-// ).join('');
 
 
+// Cursor JS - Start
+
+
+// Cursor JS - End
 
 
 
