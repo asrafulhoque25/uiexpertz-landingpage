@@ -1036,3 +1036,19 @@
 = Invention section -/ End
 ================================== */
 
+.lorem-text-cl {
+    background: var(
+        --diamond-cta,
+        radial-gradient(
+        closest-side,
+        rgba(241, 255, 72, 1) 0%,
+        rgba(246, 250, 202, 1) 31.77083432674408%,
+        rgba(215, 164, 228, 1) 63.54166865348816%,
+        rgba(197, 192, 255, 1) 100%
+        )
+    );
+    border-radius: 50%;
+    width: 132px;
+    height: 132px;
+    position: relative;
+}
