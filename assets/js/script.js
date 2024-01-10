@@ -45,8 +45,8 @@ $(document).ready(function() {
 	// $('.card-wrapper .card').last().addClass('active');
 	// $('.card-wrapper .card').last().prev().addClass('next');
   // // Autoplay interval 
-	// var interval = 5000;
-	// var myInt = setInterval(function () {
+	// let interval = 5000;
+	// let myInt = setInterval(function () {
 	// 							$('.card.active').trigger('click');
 	// 			      }, interval);
   // // Clickable toggle
@@ -84,8 +84,8 @@ const carouselItems = document.querySelectorAll(".carousel__item");
 const elems = Array.from(carouselItems);
 let intervalId;
 carouselList.addEventListener("click", function (event) {
-	var newActive = event.target;
-	var isItem = newActive.closest(".carousel__item");
+	let newActive = event.target;
+	let isItem = newActive.closest(".carousel__item");
 
 	if (!isItem || newActive.classList.contains("carousel__item_active")) {
 		return;
@@ -116,7 +116,7 @@ function update(newActive) {
 	current.classList.remove("carousel__item_active");
 
 	[current, prev, next, first, last].forEach(function (item) {
-		var itemPos = item.dataset.pos;
+		let itemPos = item.dataset.pos;
 
 		item.dataset.pos = getPos(itemPos, newActivePos);
 	});
@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function () {
         type: "loop",
         drag: "free",
         perPage: 3,
-        gap: "1.875rem",
+        gap: "2.5rem",
         height: "6rem",
         focus: "center",
         autoWidth: true,
@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         autoScroll: {
             speed: 1.3,
-            pauseOnHover: false,
+            pauseOnHover: true,
         },
       });
 
@@ -464,10 +464,10 @@ $(window).on("load", function () {
 
   
   // animation
-  var scene = document.getElementById('js-scene1');
-  var parallax = new Parallax(scene);
-  // var scene = document.getElementById('js-scene2');
-  // var parallax = new Parallax(scene);
+  // let scene = document.getElementById('js-scene1');
+  // let parallax = new Parallax(scene);
+  // let scene = document.getElementById('js-scene2');
+  // let parallax = new Parallax(scene);
 
 
 // gsap hover animation
@@ -598,12 +598,13 @@ document.addEventListener('DOMContentLoaded', function () {
             direction: 'ttb',
             perPage: 1,
             perMove: 1,
+            padding: '20rem',
             arrows: false,
             pagination: false,
             gap: "1.54rem",
             autoplay: true,
             autoHeight: true,
-            height    : '44rem',
+            height    : '32rem',
             focus: 'center',
         });
 
@@ -863,8 +864,8 @@ gsap.to("#animated-path", {
     trigger: "#trigger",
     start: "50% 60%",
     end: "50% 0%",
-    scrub: true,
-    markers:true,
+    scrub: false,
+    markers:false,
   }
 });
 

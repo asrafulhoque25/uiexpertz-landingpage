@@ -1060,6 +1060,45 @@
 = About page style -/ Start
 ================================== */
 
+//Sub page banner style -/Start
+.sub-page-banner-area {
+    min-height: 550px;
+    display: grid;
+
+    background: url('../img/sub-page-banner-bg-img.png'), linear-gradient(180deg, #4033D9 0%, #5648FF 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    .sub-page-banner-heading {
+        h1 {
+            font-size: 82px;
+            line-height: 1.12em;
+            text-wrap: balance;
+        }
+    }
+
+    .sub-page-banner-wrap {
+        display: grid;
+        align-content: space-between;
+        .page-breadcrumbs {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+            ul {
+                gap: 10px;
+                li {
+                    a {
+                        transition: all 130ms ease-in-out;
+                        &:hover {
+                            color: var(--nevi-blue) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Sub page banner style -/End
+
 .award-winning-area {
     .award-winning-content {
         h2 {
@@ -1159,9 +1198,34 @@
     .section-heading {
         position: relative;
         z-index: 999;
+
+        .vision-star-shape {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 40px;
+                left: calc(50% - 22px);
+                width: 44px;
+                height: 44px;
+                background: url('data:image/svg+xml,<svg width="48" height="46" viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.70719 19.3814L16.0819 25.5727L8.09167 39.0309L13.6697 43.0835L24 31.3256L34.3303 43.0835L39.9083 39.0309L31.9181 25.5727L46.2928 19.3814L44.1622 12.8241L28.8936 16.2645L27.4474 0.680078H20.5526L19.1064 16.2645L3.8378 12.8241L1.70719 19.3814Z" fill="%23D4F941" stroke="%2300154C" stroke-width="6.92443"/></svg>');
+                background-repeat: no-repeat;
+                background-size: contain;
+                animation: startShape 8s infinite linear;
+            }
+
+            @keyframes startShape {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        }
     }
     .mission-and-vision-slide-wrap {
-        margin-top: -270px;
+        margin-top: -200px;
         position: relative;
         &::before {
             content: '';
@@ -1226,4 +1290,151 @@
 
 /* ==================================
 = About page style -/ End
+================================== */
+
+
+
+/* ==================================
+= Ui Ux Design page style -/ Start
+================================== */
+
+// Recent projects - Start
+.recent-projects-area {
+
+    .row {
+        --bs-gutter-x: 110px;
+        --bs-gutter-y: 110px;
+    }
+
+    .section-heading {
+        margin-bottom: 110px;
+        h2 {
+            font-size: 132px;
+            line-height: 1.22em;
+        }
+        .heading-inner-star-shape {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 32px;
+                left: 34px;
+                width: 49px;
+                height: 49px;
+                background: url('data:image/svg+xml,<svg width="51" height="49" viewBox="0 0 51 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.0107 0.768991L21.2575 19.6607L2.74865 15.4902L1.21018 20.2252L18.6355 27.7304L8.94959 44.0446L12.9774 46.971L25.5 32.7177L38.0226 46.971L42.0504 44.0446L32.3645 27.7304L49.7898 20.2252L48.2514 15.4902L29.7425 19.6607L27.9893 0.768991H23.0107Z" fill="%235648FF" stroke="white" stroke-width="5"/></svg>');
+                background-repeat: no-repeat;
+                background-size: contain;
+                animation: startShape 8s infinite linear;
+            }
+    
+            @keyframes startShape {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+
+    .recent-project-left-column,
+    .recent-project-right-column {
+        display: grid;
+        gap: 80px;
+    }
+    
+    .recent-project-left-column {
+        margin-top: -140px;
+    }
+    
+
+    .single-recent-project-image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .single-recent-project-content {
+        margin-top: 40px;
+        h4, p {
+            line-height: 1.5em;
+        }
+        h4 {
+            margin-bottom: 5px;
+        }
+        
+    }
+
+}
+// Recent projects - End
+
+.ui-ux-design-text-carousel {
+    .text-carousel-heading {
+        text-transform: uppercase !important;
+        padding-right: 40px;
+    }
+    .splide__slide {
+        .social-media-right-arrow  {
+            transition: all 230ms ease-in-out;
+        }
+        &:hover {
+            .social-media-right-arrow {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+}
+
+// working-process-area - start
+.working-process-area {
+    padding-block: 140px 20px;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 240px;
+        background: linear-gradient(0deg, #001447 0%, rgba(0, 20, 71, 0.80) 52.08%, rgba(0, 20, 71, 0.00) 100%);
+    }
+
+    .section-heading {
+        h2 {
+            font-size: 132px;
+            line-height: 1.22em;
+        }
+        margin-bottom: 70px;
+    }
+
+    .working-process-item-wrap {
+
+        position: relative;
+        padding-block: 50px;
+        &::after {
+            position: absolute;
+            content: '';
+            left: 60px;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: hsla(225, 100%, 96%, 0.1);
+        }
+
+        .working-process-heading {
+            gap: 40px;
+            
+            h4 {
+                font-size: 36px;
+                line-height: 1.27em;
+            }
+        }
+    }
+}
+// working-process-area - End
+
+/* ==================================
+= Ui Ux Design page style -/ End
 ================================== */
