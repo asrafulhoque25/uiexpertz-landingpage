@@ -368,20 +368,20 @@ $(window).on("load", function () {
 
 
 
-      // Function to handle scroll event
-      function handleScroll() {
-        // Get the scroll position
-        const scrollTop = window.scrollY - 300;
+      // // Function to handle scroll event
+      // function handleScroll() {
+      //   // Get the scroll position
+      //   const scrollTop = window.scrollY - 300;
         
-        // Calculate blur amount based on scroll position
-        const blurValue = (scrollTop / 100) * 2; // You can adjust the factor for blur effect
+      //   // Calculate blur amount based on scroll position
+      //   const blurValue = (scrollTop / 100) * 2; // You can adjust the factor for blur effect
         
-        // Apply blur using GSAP to the banner section
-        gsap.to('.banner', { filter: `blur(${blurValue}px)`, ease: 'power4.out' });
-      }
+      //   // Apply blur using GSAP to the banner section
+      //   gsap.to('.banner', { filter: `blur(${blurValue}px)`, ease: 'power4.out' });
+      // }
     
-      // Listen for scroll event and call the handleScroll function
-      window.addEventListener('scroll', handleScroll);
+      // // Listen for scroll event and call the handleScroll function
+      // window.addEventListener('scroll', handleScroll);
     
 });
 
