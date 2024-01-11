@@ -1544,12 +1544,15 @@ body {
 
 .text-carousel {
   padding-block: 35px;
+  background: linear-gradient(291deg, #F1FF48 7.28%, #F6FACA 32.76%, #DE59FF 58.24%, #C5C0FF 87.48%);
 
   .text-carousel-heading {
       font-size: 78px;
       line-height: 1.17em;
+      text-transform: uppercase;
   }
 }
+
 
 /* ==================================
 = Text carousel -/ End

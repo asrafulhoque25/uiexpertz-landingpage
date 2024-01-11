@@ -263,23 +263,6 @@
 
 
 
-/* ==================================
-= Text carousel -/ Start
-================================== */
-
-.text-carousel {
-    padding-block: 35px;
-
-    .text-carousel-heading {
-        font-size: 78px;
-        line-height: 1.17em;
-    }
-}
-
-/* ==================================
-= Text carousel -/ End
-================================== */
-
 
 
 
@@ -1135,7 +1118,6 @@
 
 // about-text-carousel
 .about-text-carousel {
-    background: radial-gradient(142.12% 142.12% at 86.5% 77%, #F1FF48 0%, #F6FACA 31.77%, #D7A4E4 63.54%, #C5C0FF 100%) !important;
     .splide__slide {
         svg * {
             fill: var(--nevi-blue) !important;
@@ -1470,10 +1452,10 @@
 
     @keyframes conversionBgCircle {
         0% {
-            transform: rotate(0deg);
+            transform: rotate(0deg) translateY(15px);
         }
         100% {
-            transform: rotate(360deg);
+            transform: rotate(360deg) translateY(0px);
         }
     }
 }
