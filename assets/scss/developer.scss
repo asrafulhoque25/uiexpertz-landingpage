@@ -1435,6 +1435,50 @@
 }
 // working-process-area - End
 
+
+//conversion-driven-area -Start
+.conversion-driven-area {
+    .section-heading {
+        h2 {
+            font-size: 68px;
+            line-height: 1.32em;
+        }
+    }
+    .conversion-driven-content {
+        margin-top: 70px;
+
+        p {
+            &:first-child {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .conversion-driven-right-shape {
+        right: -51px;
+        top: 116px;
+    }
+    .conversion-driven-left-round-shape {
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(143deg, #F1FF48 -55.73%, #F6FACA -11.72%, #D7A4E4 32.28%, #C5C0FF 82.77%);
+        border-radius: 50%;
+        left: -117px;
+        bottom: 164px;
+        animation: conversionBgCircle 30s infinite linear;
+    }
+
+    @keyframes conversionBgCircle {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+//conversion-driven-area -End
+
 /* ==================================
 = Ui Ux Design page style -/ End
 ================================== */
