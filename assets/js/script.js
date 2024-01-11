@@ -480,11 +480,7 @@ $(window).on("load", function () {
 
 
   
-  // animation
-  let scene = document.getElementById('js-scene1');
-  let parallax = new Parallax(scene);
-  // let scene = document.getElementById('js-scene2');
-  // let parallax = new Parallax(scene);
+
 
 
 // gsap hover animation
@@ -889,3 +885,8 @@ gsap.to("#animated-path", {
 
 
 
+  // animation
+  let scene = document.getElementById('js-scene1');
+  let parallax = new Parallax(scene);
+  // let scene = document.getElementById('js-scene2');
+  // let parallax = new Parallax(scene);
