@@ -196,79 +196,96 @@ for (const star of document.getElementsByClassName("magic-star")) {
 
 // =============================== Particles =============================== //
 
-particlesJS("particles-js", {
-	particles: {
-		number: {
-			value: 400,
-			density: {
-				enable: true,
-				value_area: 2800
-			}
-		},
-		color: {
-			value: "#FFFFFF"
-		},
-		shape: {
-			type: "circle",
-			stroke: {
-				width: 0.5,
-				color: "#152166"
-			},
-			image: {
-				src: "",
-				width: 1,
-				height: 1
-			}
-		},
-		opacity: {
-			value: 1,
-			random: true,
-			anim: {
-				enable: true,
-				speed: 1,
-				opacity_min: 0,
-				sync: false
-			}
-		},
-		size: {
-			value: 2,
-			random: true,
-			anim: {
-				enable: true,
-				speed: 2,
-				size_min: 0,
-				sync: false
-			}
-		},
-		line_linked: {
-			enable: false,
-			distance: 80,
-			color: "#3c2876",
-			opacity: 0,
-			width: 0
-		},
-		move: {
-			enable: true,
-			speed: 0.1,
-			direction: "none",
-			random: true,
-			straight: true,
-			out_mode: "out",
-			bounce: false,
-			attract: {
-				enable: false,
-				rotateX: 1000,
-				rotateY: 2200
-			}
-		}
-	}
-});
+// particlesJS("particles-js", {
+// 	particles: {
+// 		number: {
+// 			value: 400,
+// 			density: {
+// 				enable: true,
+// 				value_area: 2800
+// 			}
+// 		},
+// 		color: {
+// 			value: "#FFFFFF"
+// 		},
+// 		shape: {
+// 			type: "circle",
+// 			stroke: {
+// 				width: 0.5,
+// 				color: "#152166"
+// 			},
+// 			image: {
+// 				src: "",
+// 				width: 1,
+// 				height: 1
+// 			}
+// 		},
+// 		opacity: {
+// 			value: 1,
+// 			random: true,
+// 			anim: {
+// 				enable: true,
+// 				speed: 1,
+// 				opacity_min: 0,
+// 				sync: false
+// 			}
+// 		},
+// 		size: {
+// 			value: 2,
+// 			random: true,
+// 			anim: {
+// 				enable: true,
+// 				speed: 2,
+// 				size_min: 0,
+// 				sync: false
+// 			}
+// 		},
+// 		line_linked: {
+// 			enable: false,
+// 			distance: 80,
+// 			color: "#3c2876",
+// 			opacity: 0,
+// 			width: 0
+// 		},
+// 		move: {
+// 			enable: true,
+// 			speed: 0.1,
+// 			direction: "none",
+// 			random: true,
+// 			straight: true,
+// 			out_mode: "out",
+// 			bounce: false,
+// 			attract: {
+// 				enable: false,
+// 				rotateX: 1000,
+// 				rotateY: 2200
+// 			}
+// 		}
+// 	}
+// });
 
 
 
 
   });
   
+
+  gsap.registerPlugin(ScrollTrigger);
+
+const textElements = gsap.utils.toArray('.text');
+
+textElements.forEach(text => {
+  gsap.to(text, {
+    backgroundSize: '100%',
+    ease: 'none',
+    scrollTrigger: {
+      trigger: text,
+      start: 'center 80%',
+      end: 'center 20%',
+      scrub: true,
+    },
+  });
+});
 
 
 
@@ -464,8 +481,8 @@ $(window).on("load", function () {
 
   
   // animation
-  // let scene = document.getElementById('js-scene1');
-  // let parallax = new Parallax(scene);
+  let scene = document.getElementById('js-scene1');
+  let parallax = new Parallax(scene);
   // let scene = document.getElementById('js-scene2');
   // let parallax = new Parallax(scene);
 
@@ -868,4 +885,7 @@ gsap.to("#animated-path", {
     markers:false,
   }
 });
+
+
+
 
