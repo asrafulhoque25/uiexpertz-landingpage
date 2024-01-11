@@ -602,5 +602,254 @@
 /* ==================================
 = Invention section -/ End
 ================================== */
+.lorem-text-cl {
+  background: var(--diamond-cta, radial-gradient(closest-side, #f1ff48 0%, #f6faca 31.7708343267%, #d7a4e4 63.5416686535%, #c5c0ff 100%));
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
+  position: relative; }
+
+/* ==================================
+= About page style -/ Start
+================================== */
+.sub-page-banner-area {
+  min-height: 550px;
+  display: grid;
+  background: url("../img/sub-page-banner-bg-img.png"), linear-gradient(180deg, #4033D9 0%, #5648FF 100%);
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .sub-page-banner-area .sub-page-banner-heading h1 {
+    font-size: 82px;
+    line-height: 1.12em;
+    text-wrap: balance; }
+  .sub-page-banner-area .sub-page-banner-wrap {
+    display: grid;
+    align-content: space-between; }
+    .sub-page-banner-area .sub-page-banner-wrap .page-breadcrumbs {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 30px; }
+      .sub-page-banner-area .sub-page-banner-wrap .page-breadcrumbs ul {
+        gap: 10px; }
+        .sub-page-banner-area .sub-page-banner-wrap .page-breadcrumbs ul li a {
+          transition: all 130ms ease-in-out; }
+          .sub-page-banner-area .sub-page-banner-wrap .page-breadcrumbs ul li a:hover {
+            color: var(--nevi-blue) !important; }
+
+.award-winning-area .award-winning-content h2 {
+  font-size: 48px;
+  line-height: 1.25em;
+  margin-bottom: 30px; }
+.award-winning-area .award-winning-content p {
+  line-height: 1.6em;
+  max-width: 650px; }
+.award-winning-area .award-winning-content .award-winning-list-wrap {
+  max-width: 630px;
+  margin-top: 38px; }
+  .award-winning-area .award-winning-content .award-winning-list-wrap .award-winning-list-item {
+    line-height: 1.5em;
+    gap: 24px;
+    border-bottom: 1px solid rgba(0, 22, 77, 0.15);
+    padding-block: 20px; }
+    .award-winning-area .award-winning-content .award-winning-list-wrap .award-winning-list-item:last-child {
+      border-bottom: 0px; }
+    .award-winning-area .award-winning-content .award-winning-list-wrap .award-winning-list-item span {
+      font-size: 48px;
+      line-height: 1.25em;
+      min-width: 150px; }
+
+.about-text-carousel {
+  background: radial-gradient(142.12% 142.12% at 86.5% 77%, #F1FF48 0%, #F6FACA 31.77%, #D7A4E4 63.54%, #C5C0FF 100%) !important; }
+  .about-text-carousel .splide__slide svg * {
+    fill: var(--nevi-blue) !important; }
+  .about-text-carousel .text-carousel-heading {
+    color: var(--nevi-blue) !important; }
+
+.mission-vision-area {
+  padding-block: 140px 44px; }
+  .mission-vision-area .section-heading {
+    margin-bottom: 120px; }
+    .mission-vision-area .section-heading h2 {
+      font-size: 152px;
+      line-height: 1.06em;
+      text-wrap: balance; }
+
+.benefit-area .row {
+  --bs-gutter-y: 80px
+  ; }
+.benefit-area .section-heading {
+  margin-bottom: 74px; }
+  .benefit-area .section-heading h2 {
+    font-size: 68px;
+    line-height: 1.32em;
+    text-wrap: balance;
+    max-width: 1026px; }
+.benefit-area .benefit-single-item .benefit-item-icon {
+  margin-bottom: 57px; }
+.benefit-area .benefit-single-item h3 {
+  font-size: 36px;
+  line-height: 1.27em;
+  margin-bottom: 30px; }
+.benefit-area .benefit-single-item p {
+  line-height: 1.62em; }
+
+.mission-vision-area .section-heading {
+  position: relative;
+  z-index: 999; }
+  .mission-vision-area .section-heading .vision-star-shape {
+    position: relative; }
+    .mission-vision-area .section-heading .vision-star-shape::after {
+      position: absolute;
+      content: '';
+      top: 40px;
+      left: calc(50% - 22px);
+      width: 44px;
+      height: 44px;
+      background: url('data:image/svg+xml,<svg width="48" height="46" viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.70719 19.3814L16.0819 25.5727L8.09167 39.0309L13.6697 43.0835L24 31.3256L34.3303 43.0835L39.9083 39.0309L31.9181 25.5727L46.2928 19.3814L44.1622 12.8241L28.8936 16.2645L27.4474 0.680078H20.5526L19.1064 16.2645L3.8378 12.8241L1.70719 19.3814Z" fill="%23D4F941" stroke="%2300154C" stroke-width="6.92443"/></svg>');
+      background-repeat: no-repeat;
+      background-size: contain;
+      animation: startShape 8s infinite linear; }
+@keyframes startShape {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.mission-vision-area .mission-and-vision-slide-wrap {
+  margin-top: -200px;
+  position: relative; }
+  .mission-vision-area .mission-and-vision-slide-wrap::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 233px;
+    background: linear-gradient(180deg, #001549 0%, rgba(0, 21, 73, 0.8) 52.08%, rgba(0, 15, 53, 0) 100%, rgba(0, 21, 73, 0) 100%);
+    z-index: 99; }
+  .mission-vision-area .mission-and-vision-slide-wrap::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 233px;
+    background: linear-gradient(0deg, #001549 0%, rgba(0, 21, 73, 0.8) 52.08%, rgba(0, 15, 53, 0) 100%, rgba(0, 21, 73, 0) 100%);
+    z-index: 99; }
+  .mission-vision-area .mission-and-vision-slide-wrap .mission-vision-slide-item div {
+    gap: 83px; }
+  .mission-vision-area .mission-and-vision-slide-wrap .mission-vision-slide-item h3 {
+    font-size: 36px;
+    line-height: 1.27em;
+    color: #36B7FF; }
+  .mission-vision-area .mission-and-vision-slide-wrap .mission-vision-slide-item p {
+    font-size: 24px;
+    line-height: 1.58em;
+    color: #9DB9FF; }
+  .mission-vision-area .mission-and-vision-slide-wrap .blank-space-200 {
+    min-height: 285px; }
+  .mission-vision-area .mission-and-vision-slide-wrap .splide__slide {
+    transform: translateX(174px);
+    transition: all 370ms linear; }
+    .mission-vision-area .mission-and-vision-slide-wrap .splide__slide.is-active {
+      transform: translateX(0);
+      transition: all 270ms linear; }
+    .mission-vision-area .mission-and-vision-slide-wrap .splide__slide.is-prev {
+      transform: translateX(174px);
+      transition: all 370ms linear; }
+    .mission-vision-area .mission-and-vision-slide-wrap .splide__slide.is-next {
+      transform: translateX(174px);
+      transition: all 370ms linear; }
+
+/* ==================================
+= About page style -/ End
+================================== */
+/* ==================================
+= Ui Ux Design page style -/ Start
+================================== */
+.recent-projects-area .row {
+  --bs-gutter-x: 110px;
+  --bs-gutter-y: 110px; }
+.recent-projects-area .section-heading {
+  margin-bottom: 110px; }
+  .recent-projects-area .section-heading h2 {
+    font-size: 132px;
+    line-height: 1.22em; }
+  .recent-projects-area .section-heading .heading-inner-star-shape {
+    position: relative; }
+    .recent-projects-area .section-heading .heading-inner-star-shape::after {
+      position: absolute;
+      content: '';
+      top: 32px;
+      left: 34px;
+      width: 49px;
+      height: 49px;
+      background: url('data:image/svg+xml,<svg width="51" height="49" viewBox="0 0 51 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.0107 0.768991L21.2575 19.6607L2.74865 15.4902L1.21018 20.2252L18.6355 27.7304L8.94959 44.0446L12.9774 46.971L25.5 32.7177L38.0226 46.971L42.0504 44.0446L32.3645 27.7304L49.7898 20.2252L48.2514 15.4902L29.7425 19.6607L27.9893 0.768991H23.0107Z" fill="%235648FF" stroke="white" stroke-width="5"/></svg>');
+      background-repeat: no-repeat;
+      background-size: contain;
+      animation: startShape 8s infinite linear; }
+@keyframes startShape {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.recent-projects-area .recent-project-left-column,
+.recent-projects-area .recent-project-right-column {
+  display: grid;
+  gap: 80px; }
+.recent-projects-area .recent-project-left-column {
+  margin-top: -140px; }
+.recent-projects-area .single-recent-project-image img {
+  width: 100%; }
+.recent-projects-area .single-recent-project-content {
+  margin-top: 40px; }
+  .recent-projects-area .single-recent-project-content h4, .recent-projects-area .single-recent-project-content p {
+    line-height: 1.5em; }
+  .recent-projects-area .single-recent-project-content h4 {
+    margin-bottom: 5px; }
+
+.ui-ux-design-text-carousel .text-carousel-heading {
+  text-transform: uppercase !important;
+  padding-right: 40px; }
+.ui-ux-design-text-carousel .splide__slide .social-media-right-arrow {
+  transition: all 230ms ease-in-out; }
+.ui-ux-design-text-carousel .splide__slide:hover .social-media-right-arrow {
+  transform: rotate(45deg); }
+
+.working-process-area {
+  padding-block: 140px 20px;
+  position: relative; }
+  .working-process-area::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(0deg, #001447 0%, rgba(0, 20, 71, 0.8) 52.08%, rgba(0, 20, 71, 0) 100%); }
+  .working-process-area .section-heading {
+    margin-bottom: 70px; }
+    .working-process-area .section-heading h2 {
+      font-size: 132px;
+      line-height: 1.22em; }
+  .working-process-area .working-process-item-wrap {
+    position: relative;
+    padding-block: 50px; }
+    .working-process-area .working-process-item-wrap::after {
+      position: absolute;
+      content: '';
+      left: 60px;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: rgba(235, 240, 255, 0.1); }
+    .working-process-area .working-process-item-wrap .working-process-heading {
+      gap: 40px; }
+      .working-process-area .working-process-item-wrap .working-process-heading h4 {
+        font-size: 36px;
+        line-height: 1.27em; }
+
+/* ==================================
+= Ui Ux Design page style -/ End
+================================== */
 
 /*# sourceMappingURL=developer.css.map */

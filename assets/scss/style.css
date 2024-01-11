@@ -23,7 +23,8 @@ body {
   --primary-2: #d4f941;
   --primary: #5648ff;
   --gray-5: #e3e8f8;
-  --nevi-blue2: #384973; }
+  --nevi-blue2: #384973;
+  --dark-navy-blue: #001447; }
 
 /* reset, root - END */
 @media (min-width: 1400px) {
@@ -43,6 +44,12 @@ body {
 .text-clr-gray5 {
   color: var(--gray-5); }
 
+.text-clr-navy-blue2 {
+  color: var(--nevi-blue2); }
+
+.text-clr-dark-navy-blue {
+  color: var(--dark-navy-blue); }
+
 .bg-clr-neviBlue {
   background-color: var(--nevi-blue); }
 
@@ -51,6 +58,9 @@ body {
 
 .bg-clr-primary {
   background-color: var(--primary); }
+
+.bg-clr-dark-navy-blue {
+  background-color: var(--dark-navy-blue); }
 
 /* Font family */
 .ff-sg-light-25 {
@@ -324,6 +334,85 @@ body {
       z-index: -22;
       transform: scale(0.5);
       transition: 0.3s all ease-in-out; }
+  .banner .carousel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: space-around; }
+  .banner .carousel__list {
+    display: flex;
+    list-style: none;
+    position: relative;
+    justify-content: center;
+    right: 150px;
+    top: -150px; }
+  .banner .carousel__item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 31vw;
+    height: 365px;
+    max-width: 31vw;
+    aspect-ratio: 1.77/1;
+    border-radius: 20px;
+    position: absolute;
+    background-color: BLACK;
+    transition: all 0.25s ease-in-out; }
+  .banner .carousel__item:hover {
+    transition: all 0.25s ease-in-out; }
+  @media screen and (max-width: 1000px) {
+    .banner .carousel__item {
+      width: calc(100vw - 10rem); } }
+  @media screen and (max-width: 768px) {
+    .banner .carousel__item {
+      width: calc(100vw - 2rem);
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+  .banner .carousel__item:nth-child(1) {
+    background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+    background-position: center;
+    background-size: cover; }
+  .banner .carousel__item:nth-child(2) {
+    background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+    background-position: center;
+    background-size: cover; }
+  .banner .carousel__item:nth-child(3) {
+    background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+    background-position: center;
+    background-size: cover; }
+  .banner .carousel__item:nth-child(4) {
+    background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+    background-position: center;
+    background-size: cover; }
+  .banner .carousel__item:nth-child(5) {
+    background-image: url(https://i.postimg.cc/9MYpQkjy/case-studies-img.png);
+    background-position: center;
+    background-size: cover; }
+  .banner .carousel__item[data-pos="0"] {
+    z-index: 5; }
+  .banner .carousel__item[data-pos="-1"],
+  .banner .carousel__item[data-pos="1"] {
+    filter: brightness(50%); }
+  .banner .carousel__item[data-pos="-1"] {
+    transform: translateX(-15%) scale(0.9);
+    z-index: 4; }
+  .banner .carousel__item[data-pos="1"] {
+    transform: translateX(15%) scale(0.9);
+    z-index: 4; }
+  .banner .carousel__item[data-pos="-2"],
+  .banner .carousel__item[data-pos="2"] {
+    filter: brightness(20%); }
+  .banner .carousel__item[data-pos="-2"] {
+    transform: translateX(-25%) scale(0.8);
+    z-index: 3; }
+  .banner .carousel__item[data-pos="2"] {
+    transform: translateX(25%) scale(0.8);
+    z-index: 3; }
+  .banner #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2; }
   .banner .card.animate-leave {
     animation: leave .3s;
     animation-fill-mode: both;
@@ -414,37 +503,108 @@ body {
 
 /* text animation */
 /* banner  - END*/
-.tabSliderWrap .splide {
-  width: 250px;
-  height: 120px; }
-.tabSliderWrap .splide__pagination {
-  display: none; }
 .tabSliderWrap .splide__slide {
   display: flex;
   align-items: center;
   justify-content: end !important; }
+  .tabSliderWrap .splide__slide div {
+    color: rgba(255, 255, 255, 0.4);
+    transition: all 150ms ease-in-out; }
   .tabSliderWrap .splide__slide.is-active div {
-    background: var(--Diamond-CTA, linear-gradient(to bottom right, #f1ff48 0%, #f6faca 16%, #d7a4e4 32%, #c5c0ff 50%) bottom right/50% 50% no-repeat, linear-gradient(to bottom left, #f1ff48 0%, #f6faca 16%, #d7a4e4 32%, #c5c0ff 50%) bottom left/50% 50% no-repeat, linear-gradient(to top left, #f1ff48 0%, #f6faca 16%, #d7a4e4 32%, #c5c0ff 50%) top left/50% 50% no-repeat, linear-gradient(to top right, #f1ff48 0%, #f6faca 16%, #d7a4e4 32%, #c5c0ff 50%) top right/50% 50% no-repeat);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 36px !important;
     font-weight: 500;
-    line-height: 52px; }
+    line-height: 52px;
+    transition: all 150ms ease-in-out;
+    background: linear-gradient(157deg, #F1FF48 -6.07%, #F6FACA 20.83%, #D7A4E4 36.81%, #C5C0FF 50.83%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 .tabSliderWrap .splide__arrow {
   background-color: transparent !important; }
   .tabSliderWrap .splide__arrow.splide__arrow--prev {
     position: absolute;
     left: calc(100% + 20px);
-    top: 44%; }
+    top: 29%; }
   .tabSliderWrap .splide__arrow.splide__arrow--next {
     position: absolute;
     left: calc(100% + 20px);
-    top: 60%; }
+    top: 46%; }
 
-.splide__arrow:disabled {
-  opacity: 1 !important; }
+/** ==================================
+* Cost snapshot section style -/Start
+====================================*/
+.cost-snapshot {
+  padding-block: 10px; }
+  .cost-snapshot .pricing-section-bg-shape {
+    bottom: 180px;
+    left: 115px;
+    animation: pricingBgShape 4.5s ease infinite; }
+@keyframes pricingBgShape {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(25px); }
+  100% {
+    transform: translateY(0px); } }
+  .cost-snapshot .pricing-lets-talk-btn {
+    margin-top: 60px; }
+  .cost-snapshot .pricing-table-wrapper .pricing-table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px; }
+  .cost-snapshot .pricing-table-wrapper .single-pricing-table {
+    padding: 50px;
+    border-radius: 36px; }
+    .cost-snapshot .pricing-table-wrapper .single-pricing-table:hover .single-pricing-plan-icon {
+      animation-play-state: running; }
+    .cost-snapshot .pricing-table-wrapper .single-pricing-table .single-pricing-plan-icon {
+      animation: planIcon 1.5s ease infinite;
+      animation-play-state: paused; }
+@keyframes planIcon {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-15px); }
+  100% {
+    transform: translateY(0px); } }
+    .cost-snapshot .pricing-table-wrapper .single-pricing-table .plan-price {
+      margin-top: 27px; }
+      .cost-snapshot .pricing-table-wrapper .single-pricing-table .plan-price p {
+        font-size: 24px;
+        line-height: 1.41em;
+        margin-bottom: 10px; }
+      .cost-snapshot .pricing-table-wrapper .single-pricing-table .plan-price h3 {
+        font-size: 36px;
+        line-height: 1.27em; }
+    .cost-snapshot .pricing-table-wrapper .single-pricing-table .pricing-plan-service-list ul {
+      gap: 8px;
+      margin-top: 20px; }
+      .cost-snapshot .pricing-table-wrapper .single-pricing-table .pricing-plan-service-list ul li {
+        gap: 10px;
+        font-size: 18px;
+        line-height: 1.55em; }
+  .cost-snapshot .common-btn {
+    height: 80px;
+    padding: 10px 50px !important; }
+    .cost-snapshot .common-btn svg * {
+      fill: var(--nevi-blue); }
+    .cost-snapshot .common-btn::after {
+      background-color: var(--primary) !important; }
+    .cost-snapshot .common-btn:hover {
+      color: #fff !important; }
+      .cost-snapshot .common-btn:hover svg {
+        transform: rotate(45deg); }
+      .cost-snapshot .common-btn:hover svg * {
+        fill: #ffffff !important; }
+      .cost-snapshot .common-btn:hover::after {
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        border-radius: 100px; }
 
+/** ==================================
+* Cost snapshot section style -/End
+====================================*/
 /* Initially hide all content items */
 .tab-content-item {
   display: none; }
@@ -576,7 +736,7 @@ body {
     width: 100%;
     max-height: 768px;
     height: 100%;
-    padding: 50px; }
+    padding: 40px; }
     .inventions-area .invention-inner-slide-section .invention-inner-slider-wrap .invention-inner-slide-item.invention-main-slide-bg-1 {
       border-radius: 62px;
       background: linear-gradient(270deg, #424242 1.51%, #1A1A1A 98.58%); }
