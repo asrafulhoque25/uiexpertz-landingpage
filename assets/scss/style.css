@@ -447,7 +447,7 @@ body {
   position: relative;
   transition: all 0.2s linear;
   z-index: 10;
-  height: 60px;
+  height: 80px;
   padding: 0 40px; }
   .common-btn svg {
     transition: all 0.3s linear; }
@@ -918,10 +918,12 @@ body {
 = Text carousel -/ Start
 ================================== */
 .text-carousel {
-  padding-block: 35px; }
+  padding-block: 35px;
+  background: linear-gradient(291deg, #F1FF48 7.28%, #F6FACA 32.76%, #DE59FF 58.24%, #C5C0FF 87.48%); }
   .text-carousel .text-carousel-heading {
     font-size: 78px;
-    line-height: 1.17em; }
+    line-height: 1.17em;
+    text-transform: uppercase; }
 
 /* ==================================
 = Text carousel -/ End
@@ -1278,5 +1280,11 @@ body {
 /* ==================================
 = Footer section -/ End
 ================================== */
+.casse-studies-image .Pcard.invention-inner-slide-item {
+  max-width: 1024px;
+  width: 100%;
+  max-height: 768px;
+  height: 100%;
+  padding: 40px; }
 
 /*# sourceMappingURL=style.css.map */

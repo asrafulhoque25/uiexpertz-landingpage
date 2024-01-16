@@ -1043,43 +1043,6 @@
 = About page style -/ Start
 ================================== */
 
-//Sub page banner style -/Start
-.sub-page-banner-area {
-    min-height: 550px;
-    display: grid;
-
-    background: url('../img/sub-page-banner-bg-img.png'), linear-gradient(180deg, #4033D9 0%, #5648FF 100%);
-    background-repeat: no-repeat;
-    background-position: center center;
-    .sub-page-banner-heading {
-        h1 {
-            font-size: 82px;
-            line-height: 1.12em;
-            text-wrap: balance;
-        }
-    }
-
-    .sub-page-banner-wrap {
-        display: grid;
-        align-content: space-between;
-        .page-breadcrumbs {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 30px;
-            ul {
-                gap: 10px;
-                li {
-                    a {
-                        transition: all 130ms ease-in-out;
-                        &:hover {
-                            color: var(--nevi-blue) !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 //Sub page banner style -/End
 
 .award-winning-area {
