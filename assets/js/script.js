@@ -98,6 +98,46 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
+  // Find the element with the target class
+  var award = document.querySelector(".award-winning-area");
+
+  // Check if the element was found
+  if (award) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const rotatingElement = document.querySelector('.award-winning-section-img');
+  
+    gsap.to(rotatingElement, {
+      rotation: 360,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: rotatingElement,
+        start: 'top 50%', // Adjust as needed
+        end: 'bottom 20%', // Adjust as needed
+        scrub: true,
+      },
+    });
+  }
+
+
+
+  $(window).scroll(function() {
+
+  var mission = document.querySelector(".mission-vision-area");
+  if (mission) {
+  var $window = $(window),
+      $panel = $('.section');
+  var scroll = $window.scrollTop() + ($window.height() / 4);
+	$('.section').removeClass('active');
+  $panel.each(function () {
+    var $this = $(this);
+    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+      $this.addClass('active');
+    }
+  });    
+  }
+
+}).scroll();
 
 
   
