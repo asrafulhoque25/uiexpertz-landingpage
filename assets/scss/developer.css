@@ -600,30 +600,6 @@
 /* ==================================
 = About page style -/ Start
 ================================== */
-.sub-page-banner-area {
-  min-height: 550px;
-  display: grid;
-  background: url("../img/sub-page-banner-bg-img.png"), linear-gradient(180deg, #4033D9 0%, #5648FF 100%);
-  background-repeat: no-repeat;
-  background-position: center center; }
-  .sub-page-banner-area .sub-page-banner-heading h1 {
-    font-size: 82px;
-    line-height: 1.12em;
-    text-wrap: balance; }
-  .sub-page-banner-area .sub-page-banner-wrap {
-    display: grid;
-    align-content: space-between; }
-    .sub-page-banner-area .sub-page-banner-wrap .page-breadcrumbs {
-      display: flex;
-      justify-content: center;
-      padding-bottom: 30px; }
-      .sub-page-banner-area .sub-page-banner-wrap .page-breadcrumbs ul {
-        gap: 10px; }
-        .sub-page-banner-area .sub-page-banner-wrap .page-breadcrumbs ul li a {
-          transition: all 130ms ease-in-out; }
-          .sub-page-banner-area .sub-page-banner-wrap .page-breadcrumbs ul li a:hover {
-            color: var(--nevi-blue) !important; }
-
 .award-winning-area .award-winning-content h2 {
   font-size: 48px;
   line-height: 1.25em;
@@ -700,52 +676,6 @@
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
-.mission-vision-area .mission-and-vision-slide-wrap {
-  margin-top: -200px;
-  position: relative; }
-  .mission-vision-area .mission-and-vision-slide-wrap::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 233px;
-    background: linear-gradient(180deg, #001549 0%, rgba(0, 21, 73, 0.8) 52.08%, rgba(0, 15, 53, 0) 100%, rgba(0, 21, 73, 0) 100%);
-    z-index: 99; }
-  .mission-vision-area .mission-and-vision-slide-wrap::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 233px;
-    background: linear-gradient(0deg, #001549 0%, rgba(0, 21, 73, 0.8) 52.08%, rgba(0, 15, 53, 0) 100%, rgba(0, 21, 73, 0) 100%);
-    z-index: 99; }
-  .mission-vision-area .mission-and-vision-slide-wrap .mission-vision-slide-item div {
-    gap: 83px; }
-  .mission-vision-area .mission-and-vision-slide-wrap .mission-vision-slide-item h3 {
-    font-size: 36px;
-    line-height: 1.27em;
-    color: #36B7FF; }
-  .mission-vision-area .mission-and-vision-slide-wrap .mission-vision-slide-item p {
-    font-size: 24px;
-    line-height: 1.58em;
-    color: #9DB9FF; }
-  .mission-vision-area .mission-and-vision-slide-wrap .blank-space-200 {
-    min-height: 285px; }
-  .mission-vision-area .mission-and-vision-slide-wrap .splide__slide {
-    transform: translateX(174px);
-    transition: all 370ms linear; }
-    .mission-vision-area .mission-and-vision-slide-wrap .splide__slide.is-active {
-      transform: translateX(0);
-      transition: all 270ms linear; }
-    .mission-vision-area .mission-and-vision-slide-wrap .splide__slide.is-prev {
-      transform: translateX(174px);
-      transition: all 370ms linear; }
-    .mission-vision-area .mission-and-vision-slide-wrap .splide__slide.is-next {
-      transform: translateX(174px);
-      transition: all 370ms linear; }
-
 /* ==================================
 = About page style -/ End
 ================================== */
