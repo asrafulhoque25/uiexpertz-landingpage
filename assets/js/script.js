@@ -23,10 +23,10 @@ gsap.utils.toArray('.img-container').forEach(container => {
   });
 
   tl.fromTo(img, {
-    yPercent: -20,
+    yPercent: -5,
     ease: 'none'
   }, {
-    yPercent: 20,
+    yPercent: 5,
     ease: 'none'
   });
 });
@@ -142,7 +142,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const rotatingElement = document.querySelector('.award-winning-section-img');
   
     gsap.to(rotatingElement, {
-      rotation: 360,
+      rotation: 100,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: rotatingElement,
+        start: 'top 50%', // Adjust as needed
+        end: 'bottom 20%', // Adjust as needed
+        scrub: true,
+      },
+    });
+  }
+  // Find the element with the target class
+  var award = document.querySelector(".faq");
+
+  // Check if the element was found
+  if (award) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const rotatingElement = document.querySelector('.faqshape');
+  
+    gsap.to(rotatingElement, {
+      rotation: 100,
       ease: 'none',
       scrollTrigger: {
         trigger: rotatingElement,
@@ -549,6 +569,32 @@ document.addEventListener("DOMContentLoaded", function () {
       pagination: false,
       autoScroll: {
         speed: -0.6,
+      },
+    });
+
+    splide.mount(window.splide.Extensions);
+  });
+});
+
+
+//workingprocess slider 
+
+document.addEventListener("DOMContentLoaded", function () {
+  let splideElements = document.querySelectorAll("#workingprocess");
+
+  splideElements.forEach(function (element) {
+    let splide = new Splide(element, {
+      type: "loop",
+      drag: "free",
+      perPage: 4,
+      gap: "1.875rem",
+      direction: "ttb",
+      height: "60rem",
+      arrows: false,
+      pagination: false,
+      focus: "center",
+      autoScroll: {
+        speed: 1,
       },
     });
 
