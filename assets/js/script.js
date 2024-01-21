@@ -586,10 +586,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let splide = new Splide(element, {
       type: "loop",
       drag: "free",
-      perPage: 4,
+      perPage: 3,
       gap: "1.875rem",
       direction: "ttb",
-      height: "60rem",
+      height: "45rem",
       arrows: false,
       pagination: false,
       focus: "center",
