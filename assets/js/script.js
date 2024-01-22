@@ -132,6 +132,82 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
+  //title left to right 
+  var targetElement3 = document.querySelector(".project-overview");
+  if (targetElement3) {
+    // Execute your JavaScript code here
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".projecttitle-overview", {
+      scrollTrigger: {
+        trigger: "#projecttitle-overview",
+        start: "top 60%",
+        end: "bottom 50%",
+        scrub: true,
+        markers: false,
+      },
+      x: 700,
+    });
+
+  }
+  // overview img
+  var targetElement19 = document.querySelector(".overviewImg");
+  if (targetElement19) {
+    gsap.to(".overviewImg", {
+      duration: 70, rotation: 1000, transformOrigin: "50% 50%", repeat: -1
+  });
+  
+
+  }
+  // scroll zoom image
+  var casestudy = document.querySelector(".case-details");
+  if (casestudy) {
+    const growTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#grow",
+        scrub: 1.5,
+        start: "top center",
+        end: "+=400",
+        ease: "power1.out"
+      }
+    });
+    growTl.to("#grow", {
+      duration: 1,
+      scale: 1
+    });
+    growTl.to("#grow-tagline", {
+      duration: 0.4,
+      delay: -0.7,
+      opacity: 1,
+      y: 0
+    });
+    
+    const shrinkTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#shrink",
+        scrub: 1.5,
+        start: "top center",
+        end: "+=400",
+        ease: "power1.in"
+      }
+    });
+    
+    shrinkTl.to("#shrink", {
+      duration: 2,
+      scale: 0.8,
+      filter: "blur(0px)"
+    });
+    shrinkTl.to("#shrink-tagline", {
+      duration: 0.4,
+      delay: -0.7,
+      opacity: 1,
+      y: 0,
+      ease: "power2.out"
+    });
+    
+
+  }
+
   // Find the element with the target class
   var award = document.querySelector(".award-winning-area");
 
@@ -215,8 +291,6 @@ if (targetElement4) {
   runSplit();
 
   gsap.registerPlugin(ScrollTrigger);
-
-  // Create staggered animation
   function createAnimation() {
     let allMasks = $(".word")
       .map(function () {
@@ -240,6 +314,36 @@ if (targetElement4) {
     });
   }
 }
+
+
+
+
+// text scroll animation start
+var textscroll = document.querySelector(".text-scroll-animation");
+if (textscroll) {
+  gsap.registerPlugin(ScrollTrigger);
+
+  let tl12 = gsap.timeline();
+  tl12.to("#scrollingText", {
+    x:1000,
+    duration:50,
+    // repeat:-1,
+    ease:'linear'
+  })
+  let tl13 = gsap.timeline();
+  tl13.to('#scrollingText', {
+    xPercent: -15,
+    scrollTrigger:{
+      trigger:"#scrollingText",
+      scrub:1
+    }
+  })
+  
+}
+
+// text scroll animation end
+
+
 
 
 //quote
