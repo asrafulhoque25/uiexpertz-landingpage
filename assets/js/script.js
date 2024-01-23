@@ -33,14 +33,14 @@ gsap.utils.toArray('.img-container').forEach(container => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const element = document.querySelector(".fill");
-  if (element) {
-    setTimeout(function () {
-      element.classList.add("active");
-    }, 1000);
-  } else {
-    console.error('Element with class ".fill" not found');
-  }
+  // const element = document.querySelector(".fill");
+  // if (element) {
+  //   setTimeout(function () {
+  //     element.classList.add("active");
+  //   }, 1000);
+  // } else {
+  //   console.error('Element with class ".fill" not found');
+  // }
 
   // all gsap code here
 
