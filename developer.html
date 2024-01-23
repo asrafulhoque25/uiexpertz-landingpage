@@ -271,10 +271,10 @@
     <section class="inventions-area section-padding-140">
         <div class="container">
             <div class="section-heading">
-                    <h2 class="spl-title text-center ff-sg-thin-25">
-                        Our inventi<span class="position-relative">o<img src="assets/img/star.svg" alt="icon"
-                                class="star-icon position-absolute end-0 img-fluid" /></span>ns
-                    </h2>
+                <h2 class="spl-title text-center ff-sg-thin-25">
+                    Our inventi<span class="position-relative">o<img src="assets/img/star.svg" alt="icon"
+                            class="star-icon position-absolute end-0 img-fluid" /></span>ns
+                </h2>
             </div>
         </div>
 
@@ -1200,6 +1200,150 @@
         </div>
     </section>
     <!-- FAQ section -/ End -->
+
+
+    <div class="">
+
+        <a href="#" class="lp-common-btn text-decoration-none mt-5 d-flex align-items-center gap-0">
+            <img src="assets/img/btnarrow2.svg" class="icon-scale is-1" />
+            <div class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase ff-sg-medium-20 btn-flow btn-flow-fill is-shadow button-effect reverse"
+                href="#">Let’s talk</div>
+            <img src="assets/img/btnarrow.svg" class="icon-scale is-2" />
+        </a>
+
+        <style>
+            .lp-common-btn {
+                width: 266px;
+                overflow: hidden;
+                position: relative;
+                z-index: 22;
+                cursor: pointer;
+
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+
+            }
+
+            .lp-common-btn .btn-info {
+                color: #ffffff;
+                border-radius: 50%;
+                text-transform: uppercase;
+
+            }
+
+            .lp-common-btn:hover {
+                transition: 0.3s all linear;
+            }
+
+            .lp-common-btn:hover .btn-info {
+                transform: translateX(80px);
+            }
+
+            .is-1 {
+                transition: 0.3s all ease-in-out;
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                left: 20px;
+                z-index: -22;
+                width: 50px;
+            }
+
+            .class1-for-img1 {
+                visibility: visible;
+                opacity: 1;
+                left: 0;
+                transform: scale(1);
+                width: 80px;
+            }
+
+            .class1-for-img2 {
+                z-index: -22;
+                transform: scale(0.5);
+                transition: 0.3s all ease-in-out;
+            }
+            .btn-flow {
+                --btn-flow-size: 16px;
+                --btn-flow-height: 42px;
+                height: var(--btn-flow-height);
+                font-size: var(--btn-flow-size);
+                display: inline-flex;
+                align-items: center;
+                padding: 7px 24px !important;
+                color: mediumvioletred;
+                transition: all 0.3s;
+            }
+            .btn-flow.btn-flow-fill {
+                background-color: red !important;
+                color: #fff;
+            }
+            .btn-flow.btn-flow-fill:hover {
+                background-color: yellow !important;
+                color: blue !important;
+            }
+
+            .button-effect {
+                --background: yellow;
+                --font-size: var(--btn-flow-size);
+                --text: currentColor;
+                --duration: 0.44s;
+                --move-hover: -4px;
+                line-height: var(--font-size);
+                border: 0;
+                outline: none;
+                text-decoration: none;
+                transform: translateY(var(--y));
+                transition: all 0.3s;
+
+
+
+                &:hover {
+                    --shadow: var(--shadow-hover);
+
+                    span {
+                    --m: calc(var(--font-size) * -1);
+                    }
+                }
+
+                &.reverse {
+                    --font-shadow: calc(var(--font-size) * -1);
+
+                    &:hover {
+                    span {
+                        --m: calc(var(--font-size));
+                    }
+                    }
+                }
+            }
+            .button-effect div {
+                display: flex;
+                overflow: hidden;
+                text-shadow: 0 var(--font-shadow) 0 var(--text);
+            }
+            /* .button-effect div span{
+                display: block;
+                backface-visibility: hidden;
+                font-style: normal;
+                transition: transform var(--duration) ease;
+                transform: translateY(var(--m));
+                $i: 1;
+
+                + span {
+                    margin-left: 5px;
+                }
+
+                @while $i < 12 {
+                    &:nth-child(#{$i}) {
+                    transition-delay: $i / 20 + s;
+                    }
+
+                    $i: $i + 1;
+                }
+            } */
+        </style>
+
+    </div>
 
 
 
