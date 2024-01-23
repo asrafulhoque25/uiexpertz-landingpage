@@ -1002,6 +1002,7 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "loop",
     rewind: true,
     focus: "center",
+    isNavigation: true,
     wheel: true,
     pagination: false,
     perPage: 3,

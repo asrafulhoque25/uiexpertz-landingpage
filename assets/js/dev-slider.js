@@ -4,28 +4,26 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "loop",
     perPage: 5,
     perMove: 1,
-    gap: "4rem",
+    gap: "30px",
     pagination: false,
     direction: "ttb",
-    height: "35rem",
-    autoHeight: true,
+    height: "39.75rem",
+    wheel: true,
     isNavigation: true,
-    focus: 'center',
+    focus: "center",
     arrows: false,
     cover: true,
-    autoplay: true,
+    autoplay: false,
     speed: 1200,
   });
 
   var category_project_slider = new Splide("#wp_project_slider", {
     type: "loop",
-    perPage: 2,
+    perPage: 1,
     gap: "60px",
-    padding: "8.75rem",
     pagination: false,
     arrows: false,
-    autoplay: true,
-    speed: 1000,
+    autoplay: false,
     rewind: true,
     focus: "center",
     cover: true,
@@ -41,3 +39,32 @@ document.addEventListener("DOMContentLoaded", function () {
   category_project_slider.mount();
 });
 /* Wordpress development projects slider -/End */
+
+// Mission & Vision slider - Start
+document.addEventListener("DOMContentLoaded", function () {
+  let splideElements = document.querySelectorAll(
+    "#wp_project_individual_category_slider"
+  );
+
+  splideElements.forEach(function (element) {
+    let splide = new Splide(element, {
+      type: "loop",
+      perPage: 2,
+      perMove: 1,
+      padding: "10rem",
+      arrows: false,
+      pagination: false,
+      gap: "1.54rem",
+      autoWidth: true,
+      drag: "free",
+      focus: "center",
+      autoScroll: {
+        speed: 1,
+        pauseOnHover: true,
+      },
+    });
+
+    splide.mount(window.splide.Extensions);
+  });
+});
+// Mission & Vision slider - End
