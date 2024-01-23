@@ -359,6 +359,52 @@ if (textscroll) {
   
 }
 
+// text scroll animation 1 start
+var textscroll1 = document.querySelector(".scrollTextAnimation");
+if (textscroll1) {
+  gsap.registerPlugin(ScrollTrigger);
+
+  let tl12 = gsap.timeline();
+  tl12.to("#scrollingText1", {
+    x:-500,
+    duration:50,
+    // repeat:-1,
+    ease:'linear'
+  })
+  let tl13 = gsap.timeline();
+  tl13.to('#scrollingText1', {
+    xPercent: 20,
+    scrollTrigger:{
+      trigger:"#scrollingText1",
+      scrub:1
+    }
+  })
+  
+}
+
+// text scroll animation 1 start
+var textscroll2 = document.querySelector(".scrollTextAnimation");
+if (textscroll2) {
+  gsap.registerPlugin(ScrollTrigger);
+
+  let tl12 = gsap.timeline();
+  tl12.to("#scrollingText2", {
+    x:1000,
+    duration:50,
+    // repeat:-1,
+    ease:'linear'
+  })
+  let tl13 = gsap.timeline();
+  tl13.to('#scrollingText2', {
+    xPercent: -20,
+    scrollTrigger:{
+      trigger:"#scrollingText1",
+      scrub:1
+    }
+  })
+  
+}
+
 // text scroll animation end
 
 

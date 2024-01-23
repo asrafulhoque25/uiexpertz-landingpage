@@ -4641,40 +4641,7 @@ body::-webkit-scrollbar-corner {
 
 
 
-/* ==================================
-= make fan -/ start
-================================== */
-.make-sure {
-  min-height: 970px;
-  background-color: #5648FF;
-  position: relative;
-  z-index: 55;
 
-  .textup{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -5;
-  }
-  .textdown{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -5;
-  }
-
-  .stroke-text {
-    font-size: 502.621px;
-    line-height: 380px;
-    color: #5648FF;
-    -webkit-text-stroke: 2px #fff;
-    text-wrap: nowrap;
-  }
-}
-
-/* ==================================
-= make fan -/ end
-================================== */
 
 
 // 22/01/2024
@@ -5120,3 +5087,48 @@ body::-webkit-scrollbar-corner {
 
 
 // blog-content-wrapper
+/* ==================================
+= make fan -/ start
+================================== */
+.make-sure {
+  min-height: 970px;
+  background-color: #5648FF;
+  position: relative;
+  z-index: 55;
+
+  .textup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+  }
+  .textdown{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
+  }
+
+  .stroke-text {
+    font-size: 502.621px;
+    line-height: 380px;
+    color: #5648FF;
+    -webkit-text-stroke: 2px #fff;
+    text-wrap: nowrap;
+  }
+}
+
+/* ==================================
+= make fan -/ end
+================================== */
+
+// scroll text animation
+
+  .scrollTextAnimation{
+    #scrollingText2{
+      width: 320vw;
+      left: -80px;
+    }
+  }
+
+// scroll text animation
