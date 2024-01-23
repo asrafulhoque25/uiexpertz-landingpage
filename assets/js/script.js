@@ -33,14 +33,14 @@ gsap.utils.toArray('.img-container').forEach(container => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  // const element = document.querySelector(".fill");
-  // if (element) {
-  //   setTimeout(function () {
-  //     element.classList.add("active");
-  //   }, 1000);
-  // } else {
-  //   console.error('Element with class ".fill" not found');
-  // }
+  const element = document.querySelector(".fill");
+  if (element) {
+    setTimeout(function () {
+      element.classList.add("active");
+    }, 1000);
+  } else {
+    console.error('Element with class ".fill" not found');
+  }
 
   // all gsap code here
 
@@ -140,13 +140,31 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".projecttitle-overview", {
       scrollTrigger: {
-        trigger: "#projecttitle-overview",
-        start: "top 60%",
-        end: "bottom 50%",
+        trigger: ".projecttitle-overview",
+        start: "top 80%",
+        end: "bottom 20%",
         scrub: true,
         markers: false,
       },
-      x: 700,
+      x: 300,
+    });
+
+  }
+  //title left to right 
+  var styleguide = document.querySelector(".commonsec");
+  if (styleguide) {
+    // Execute your JavaScript code here
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".common-space", {
+      scrollTrigger: {
+        trigger: ".common-space",
+        start: "top 80%",
+        end: "bottom 0%",
+        scrub: true,
+        markers: false,
+      },
+      x: 300,
     });
 
   }
