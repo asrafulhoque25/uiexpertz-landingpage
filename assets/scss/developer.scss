@@ -132,6 +132,32 @@
 }
 
 
+/* Begin Projects slider */
+.projects-slider-wrap {
+    .project-category-slider-wrap {
+        .project-category-slide-item {
+            h2 {
+                color: #ffffff;
+                font-size: 52px;
+                line-height: 1.19em;
+                text-align: center;
+            }
+        }
+    }
+
+    .wp-projects-slider-wrap {
+        margin-top: 120px;
+        #wp_project_slider {
+            .wp-projects-slide-item {
+                img {
+                    border-radius: 36px;
+                }
+            }
+        }
+    }
+}
+
+
 /*=======================
 - Wordpress Development - End
 =======================*/
