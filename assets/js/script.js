@@ -968,6 +968,7 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,
     speed: 1000,
     rewind: true,
+    isNavigation: true,
     focus: "center",
     cover: true,
     dragMinThreshold: {

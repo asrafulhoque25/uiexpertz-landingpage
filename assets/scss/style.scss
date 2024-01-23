@@ -3457,6 +3457,12 @@ body::-webkit-scrollbar-corner {
 = Client testimonial section -/ Start
 ================================== */
 
+/* Slide active item border remove */
+.splide__track--nav>.splide__list>.splide__slide {
+  border: 0px !important;
+}
+/* Slide active item border remove */
+
 .client-testimonial {
   .client-testimonial-header-left {
     .client-testimonial-heading {
