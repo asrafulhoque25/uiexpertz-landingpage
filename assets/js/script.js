@@ -954,6 +954,7 @@ document.addEventListener("DOMContentLoaded", function () {
         speed: 1,
         pauseOnHover: true,
       },
+   
     });
 
     splide.mount(window.splide.Extensions);
@@ -1002,7 +1003,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: "4rem",
     pagination: false,
     direction: "ttb",
-    height:$(window).width() > 1300 ? "30rem" : $(window).width()< 1100  ? "30rem" : "39rem" , 
+    height:$(window).width() > 1300 ? "32rem" : $(window).width()< 1100  ? "30rem" : "39rem" , 
     autoHeight: true,
     arrows: false,
     cover: true,
@@ -1027,6 +1028,16 @@ document.addEventListener("DOMContentLoaded", function () {
       mouse: 4,
       touch: 10,
     },
+    breakpoints: {
+      991: {
+        perPage: 3,
+        padding: "2.75rem",
+      },
+      667: {
+        perPage: 2,
+        padding: "0.75rem",
+      },
+    }
   });
 
   main.sync(thumbnails);
