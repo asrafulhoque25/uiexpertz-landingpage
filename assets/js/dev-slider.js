@@ -7,14 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: "30px",
     pagination: false,
     direction: "ttb",
-    height: "39.75rem",
+    height: "36rem",
     wheel: true,
     isNavigation: true,
     focus: "center",
     arrows: false,
     cover: true,
     autoplay: false,
-    speed: 1200,
+    speed: 170,
+    // waitForTransition: false,
   });
 
   var category_project_slider = new Splide("#wp_project_slider", {
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     rewind: true,
     focus: "center",
     cover: true,
+    speed: 1500,
     autoWidth: true,
     dragMinThreshold: {
       mouse: 4,
