@@ -131,6 +131,32 @@
     }
 }
 
+.heading-inner-star-shape {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 32px;
+        left: 34px;
+        width: 49px;
+        height: 49px;
+        background: url('data:image/svg+xml,<svg width="51" height="49" viewBox="0 0 51 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.0107 0.768991L21.2575 19.6607L2.74865 15.4902L1.21018 20.2252L18.6355 27.7304L8.94959 44.0446L12.9774 46.971L25.5 32.7177L38.0226 46.971L42.0504 44.0446L32.3645 27.7304L49.7898 20.2252L48.2514 15.4902L29.7425 19.6607L27.9893 0.768991H23.0107Z" fill="%235648FF" stroke="white" stroke-width="5"/></svg>');
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: startShape 8s infinite linear;
+    }
+
+    @keyframes startShape {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
 
 /* Begin Projects slider */
 .projects-slider-wrap {
@@ -188,6 +214,28 @@
     outline: none !important;
 }
 
+
+/*
+*  Why Choose UiExpertz - /Start
+*/
+
+.why-choose-uiexpertz-area {
+
+    background-image: url('../img/wp-why-choose-us-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .section-heading {
+        h2 {
+            
+        }
+    }
+}
+
+/*
+*  Why Choose UiExpertz - /End
+*/
 
 
 /*=======================
