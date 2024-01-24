@@ -921,6 +921,12 @@ document.addEventListener("DOMContentLoaded", function () {
         speed: 0.6,
         pauseOnHover: false,
       },
+      breakpoints: {
+        991: {
+          perPage: 3,
+    
+        },
+      }
     });
 
     splide.mount(window.splide.Extensions);
@@ -996,7 +1002,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: "4rem",
     pagination: false,
     direction: "ttb",
-    height:$(window).width() > 1300 ? "30rem" : "39rem" , 
+    height:$(window).width() > 1300 ? "30rem" : $(window).width()< 1100  ? "30rem" : "39rem" , 
     autoHeight: true,
     arrows: false,
     cover: true,
