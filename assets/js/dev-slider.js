@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     arrows: false,
     autoplay: false,
     rewind: true,
+    speed: 1500,
     focus: "center",
     cover: true,
-    speed: 1500,
     autoWidth: true,
     dragMinThreshold: {
       mouse: 4,
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /* Wordpress development projects slider -/End */
 
-// Mission & Vision slider - Start
+// Wordpress Development project individual category slider - Start
 document.addEventListener("DOMContentLoaded", function () {
   let splideElements = document.querySelectorAll(
     "#wp_project_individual_category_slider"
@@ -69,4 +69,32 @@ document.addEventListener("DOMContentLoaded", function () {
     splide.mount(window.splide.Extensions);
   });
 });
-// Mission & Vision slider - End
+// Wordpress Development project individual category slider - End
+
+// Wordpress Development project individual category slider - Start
+document.addEventListener("DOMContentLoaded", function () {
+  let splideElements = document.querySelectorAll("#wp_why_choose_slider");
+
+  splideElements.forEach(function (element) {
+    let splide = new Splide(element, {
+      type: "loop",
+      perPage: 3,
+      perMove: 1,
+      padding: "18rem",
+      arrows: false,
+      pagination: false,
+      gap: "80px",
+      focus: "center",
+      rewind: true,
+      isNavigation: true,
+      speed: 1200,
+      autoScroll: {
+        speed: 0.8,
+        pauseOnHover: true,
+      },
+    });
+
+    splide.mount(window.splide.Extensions);
+  });
+});
+// Wordpress Development project individual category slider - End
