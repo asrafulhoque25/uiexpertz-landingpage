@@ -161,7 +161,7 @@
 
 #wp_project_category_slider .splide__list .is-active .project-category-slide-item h2 {
     font-size: 122px !important;
-    line-height: 1.08em !important;
+    line-height: 1.58em !important;
     background: linear-gradient(111deg, #F1FF48 -3.51%, #F6FACA 23.37%, #DE59FF 50.24%, #C5C0FF 81.08%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -174,11 +174,20 @@
     line-height: 1.13em; /* 113.889% */
 }
 
+#wp_project_category_slider .splide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 // 
+.splide__track--nav>.splide__list>.splide__slide.is-active {
+    border: none;
+}
 .splide__slide:focus-visible {
     outline: none !important;
 }
+
 
 
 /*=======================
