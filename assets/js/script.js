@@ -996,7 +996,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: "4rem",
     pagination: false,
     direction: "ttb",
-    height: "30rem",
+    height:$(window).width() > 1300 ? "30rem" : "39rem" , 
     autoHeight: true,
     arrows: false,
     cover: true,
