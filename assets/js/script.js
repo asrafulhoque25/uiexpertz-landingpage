@@ -1101,6 +1101,16 @@ document.addEventListener("DOMContentLoaded", function () {
         speed: 0.9,
         pauseOnHover: true,
       },
+      breakpoints: {
+        991: {
+          perPage: 2,
+          padding: "0rem",
+        },
+        667: {
+          perPage: 1,
+          padding: "0.75rem",
+        },
+      }
     });
 
     splide.mount(window.splide.Extensions);
