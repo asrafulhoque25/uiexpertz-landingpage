@@ -167,6 +167,7 @@
                 font-size: 52px !important;
                 line-height: 1.19em;
                 text-align: center;
+                
             }
         }
     }
@@ -192,6 +193,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
 #wp_project_category_slider .splide__list .is-prev .project-category-slide-item h2,
@@ -226,9 +228,102 @@
     background-size: cover;
     background-position: center center;
 
-    .section-heading {
-        h2 {
-            
+
+    .why-choose-image-box-wrap {
+        margin-top: 70px;
+        #wp_why_choose_slider {
+            .why-choose-image-box-item {
+                
+                transform: translateY(150px);
+                position: relative;
+                transition: all 500ms ease-in-out;
+                overflow: hidden;
+                height: 100%;
+                min-height: 420px;
+                
+                .why-choose-image-box-heading {
+                    max-width: 250px;
+                    line-height: 1.44em;
+                    transform: translateX(125px);
+                    transition: all 500ms ease-in-out;
+                }
+                .why-choose-image {
+                    margin-bottom: 40px;
+                    position: absolute;
+                    left: 0px;
+                    width: 205px;
+                    top: 0;
+                    transition: all 700ms ease-in-out;
+                    z-index: 9;
+                    img {
+                        width: 100%;
+                        max-width: 110px;
+                        transition: all 700ms ease-in-out;
+                        animation: whyChooseBunch 2.5s ease infinite;
+                        animation-play-state: paused;
+                    }
+                    @keyframes whyChooseBunch {
+                        0% {
+                            transform: translateY(0px);
+                        }
+                
+                        50% {
+                            transform: translateY(20px);
+                        }
+                
+                        100% {
+                            transform: translateY(0px);
+                        }
+                    }
+                }
+                .why-choose-content-wrap {
+                    p {
+                        transform: translateY(80px);
+                        transition: all 400ms ease-in-out;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition-delay: 230ms;
+                        filter: blur(10px);
+                    }
+                }
+
+                // &:hover {
+
+                // }
+
+            }
+        }
+    }
+
+}
+
+#wp_why_choose_slider {
+    .is-active {
+        transform: translateY(-150px);
+        .why-choose-image-box-item {
+            padding-left: 0 !important;
+            padding-top: 220px !important;
+            .why-choose-image {
+                left: 0 !important;
+                top: 0px !important;
+                width: 205px !important;
+                img {
+                    max-width: 290px !important;
+                    animation-play-state: running !important;
+                }
+
+            }
+            .why-choose-content-wrap {
+                p {
+                    transform: translateY(0px) !important;
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                    filter: blur(0px) !important;
+                }
+            }
+            .why-choose-image-box-heading {
+                transform: translateX(0px) !important;
+            }
         }
     }
 }
