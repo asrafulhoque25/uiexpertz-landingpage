@@ -10,11 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
     height: "36rem",
     wheel: true,
     isNavigation: true,
+    width: "1100px",
+    autoWidth: true,
     focus: "center",
     arrows: false,
     cover: true,
     autoplay: false,
-    speed: 170,
+    speed: 1000,
+    dragMinThreshold: {
+      mouse: 1,
+      touch: 1,
+    },
     // waitForTransition: false,
   });
 
@@ -26,13 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
     arrows: false,
     autoplay: false,
     rewind: true,
-    speed: 1500,
+    speed: 3500,
     focus: "center",
     cover: true,
     autoWidth: true,
     dragMinThreshold: {
-      mouse: 4,
-      touch: 10,
+      mouse: 1,
+      touch: 1,
     },
   });
 
@@ -56,10 +62,11 @@ document.addEventListener("DOMContentLoaded", function () {
       padding: "10rem",
       arrows: false,
       pagination: false,
-      gap: "1.54rem",
+      gap: "60px",
       autoWidth: true,
       drag: "free",
       focus: "center",
+      speed: 3500,
       autoScroll: {
         speed: 1,
         pauseOnHover: true,
