@@ -82,7 +82,7 @@
                 z-index: 9;
                 top: calc(50%);
                 transform: translateY(-50%);
-                transition: all 230ms ease-in-out;
+                transition: all 430ms ease-in-out;
                 transition-delay: 130ms;
             }
             p {
@@ -91,7 +91,7 @@
                 visibility: hidden;
                 opacity: 0;
                 transform: translateY(50%);
-                transition: all 230ms ease-in-out;
+                transition: all 430ms ease-in-out;
                 transition-delay: 150ms;
                 margin-top: 15px;
                 filter: blur(10px);
@@ -242,7 +242,7 @@
                 min-height: 420px;
                 
                 .why-choose-image-box-heading {
-                    max-width: 250px;
+                    max-width: 320px;
                     line-height: 1.44em;
                     transform: translateX(125px);
                     transition: all 500ms ease-in-out;
