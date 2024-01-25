@@ -774,6 +774,14 @@ document.addEventListener("DOMContentLoaded", function () {
       autoScroll: {
         speed: 1,
       },
+      breakpoints: {
+        776: {
+          height: "40rem",
+        },
+        600: {
+          height: "35rem",
+        }
+      }
     });
 
     splide.mount(window.splide.Extensions);
@@ -915,30 +923,41 @@ card.forEach((el) => {
 //gsap scroll
 
 //Partners Carousel - Start
+//Partners Carousel - Start
+//Partners Carousel - Start
 document.addEventListener("DOMContentLoaded", function () {
   let splideElements = document.querySelectorAll("#partnersCarousel");
 
   splideElements.forEach(function (element) {
     let splide = new Splide(element, {
       type: "loop",
-      perPage: 5,
-      perMove: 1,
       arrows: false,
       pagination: false,
+      padding: "180px",
       height: "27.5rem",
       drag: "free",
+      grid: {
+        rows: 2,
+        cols: 4,
+      },
       autoScroll: {
         speed: 0.6,
         pauseOnHover: false,
       },
       breakpoints: {
         991: {
-          perPage: 3,
-          height: "22.5rem",
+          padding: "50px",
+          grid: {
+            rows: 2,
+            cols: 2,
+          },
         },
-        667: {
-          perPage: 2,
-          height: "16.5rem",
+        575: {
+          padding: "0px",
+          grid: {
+            rows: 2,
+            cols: 2,
+          },
         },
       }
     });
@@ -946,6 +965,8 @@ document.addEventListener("DOMContentLoaded", function () {
     splide.mount(window.splide.Extensions);
   });
 });
+//Partners Carousel - Start
+//Partners Carousel - Start
 //Partners Carousel - Start
 
 // FAQ Accordion slider - Start
@@ -1017,7 +1038,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: "4rem",
     pagination: $(window).width() > 767 ? "false" : "true",
     direction: $(window).width() > 767 ? "ttb" : "ltr" ,
-    height:$(window).width() > 1300 ? "32rem" : $(window).width()< 1100  ? "26rem" : "39rem" , 
+    height:$(window).width() > 1300 ? "32rem" : $(window).width()< 1100  ? "27rem" : "39rem" , 
     autoHeight: true,
     arrows: false,
     cover: true,
