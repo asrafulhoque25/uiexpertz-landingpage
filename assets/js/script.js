@@ -714,6 +714,11 @@ document.addEventListener("DOMContentLoaded", function () {
       autoScroll: {
         speed: 0.6,
       },
+      breakpoints: {
+        776: {
+          height: "45rem",
+        },
+      }
     });
 
     splide.mount(window.splide.Extensions);
@@ -738,6 +743,11 @@ document.addEventListener("DOMContentLoaded", function () {
       autoScroll: {
         speed: -0.6,
       },
+      breakpoints: {
+        776: {
+          height: "45rem",
+        },
+      }
     });
 
     splide.mount(window.splide.Extensions);
@@ -924,7 +934,11 @@ document.addEventListener("DOMContentLoaded", function () {
       breakpoints: {
         991: {
           perPage: 3,
-    
+          height: "22.5rem",
+        },
+        667: {
+          perPage: 2,
+          height: "16.5rem",
         },
       }
     });
@@ -1001,9 +1015,9 @@ document.addEventListener("DOMContentLoaded", function () {
     perPage: 1,
     perMove: 1,
     gap: "4rem",
-    pagination: false,
-    direction: "ttb",
-    height:$(window).width() > 1300 ? "32rem" : $(window).width()< 1100  ? "30rem" : "39rem" , 
+    pagination: $(window).width() > 767 ? "false" : "true",
+    direction: $(window).width() > 767 ? "ttb" : "ltr" ,
+    height:$(window).width() > 1300 ? "32rem" : $(window).width()< 1100  ? "26rem" : "39rem" , 
     autoHeight: true,
     arrows: false,
     cover: true,
@@ -1107,8 +1121,14 @@ document.addEventListener("DOMContentLoaded", function () {
           padding: "0rem",
         },
         667: {
-          perPage: 1,
+          perPage: 2,
           padding: "0.75rem",
+          gap: "1rem",
+        },
+        576: {
+          perPage: 1,
+          padding: "3.75rem",
+          gap: "1rem",
         },
       }
     });

@@ -211,7 +211,7 @@ body {
     line-height: 57px;
 
   }
-  @media (max-width:476px) {
+  @media (max-width:576px) {
     font-size: 36px;
     line-height: 47px;
 
@@ -544,6 +544,9 @@ body {
     @media (max-width:1500px) {
       height: 70px;
     }
+    @media (max-width:776px) {
+      height: 52px;
+    }
 
 
     &.btn-flow-fill {
@@ -644,12 +647,20 @@ body {
     @media (max-width:776px) {
       margin: auto !important;
       padding-top: 40px;
+      width: 237px;
     }
 
     @media (max-width:1500px) {
       width: 256px;
       .icon-scale{
         max-width: 70px;
+        width: 100%;
+      }
+    }
+    @media (max-width: 776px) {
+      width: 256px;
+      .icon-scale{
+        max-width: 52px;
         width: 100%;
       }
     }
@@ -661,6 +672,9 @@ body {
         transform: translateX(80px);
         @media (max-width:1500px) {
           transform: translateX(70px);
+        }
+        @media (max-width:776px) {
+          transform: translateX(52px);
         }
       }
     }
@@ -896,6 +910,9 @@ body {
   @media (max-width:1100px) {
     height: 70px;
   }
+  @media (max-width: 576px) {
+    height: 48px;
+  }
 
   svg {
     transition: all 0.3s linear;
@@ -1052,6 +1069,16 @@ body {
       margin-bottom: 40px;
     }
 }
+@media (max-width:580px) {
+    .splide__arrow {
+      &.splide__arrow--prev{
+        display: none;
+      }
+      &.splide__arrow--next{
+        display: none;
+      }
+    }
+}
 
 .cost-snapshot {
   padding-block: 10px;
@@ -1165,6 +1192,9 @@ body {
             @media (max-width:1300px) {
               font-size: 16px;
             }
+            @media (max-width:667px) {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -1178,6 +1208,10 @@ body {
   .common-btn {
     height: 80px;
     padding: 10px 50px !important;
+
+    @media (max-width:776px) {
+      height: 52px;
+    }
 
     svg * {
       fill: var(--nevi-blue);
@@ -1314,12 +1348,20 @@ body {
   @media (max-width: 1300px) {
     padding: 25px 30px;
   }
+  @media (max-width: 576px) {
+    padding: 20px;
+  }
 
   &.open {
     border: 0;
 
     .ni-minus {
       background-image: url(../img/minus-icon.svg);
+      margin-top: 8px;
+
+      @media (max-width:576px) {
+        background-image: url(../img/minusMobile.svg);
+      }
     }
 
     border-radius: 24px;
@@ -1338,6 +1380,9 @@ body {
     @media (max-width: 991px) {
       font-size: 20px !important;
     }
+    @media (max-width: 576px) {
+      font-size: 16px !important;
+    }
 
     .ni {
       background-repeat: no-repeat;
@@ -1347,6 +1392,9 @@ body {
       &.ni-plus {
         background-image: url(../img/pluse-icon.svg);
         background-position: center;
+        @media (max-width:576px) {
+          background-image: url(../img/plusMobile.svg);
+        }
       }
     }
   }
@@ -1358,6 +1406,7 @@ body {
 
     @media (max-width: 991px) {
       font-size: 16px;
+      line-height: 24px;
     }
   }
 }
@@ -1424,6 +1473,9 @@ body {
       @media (max-width: 776px) {
         font-size: 52px;
       }
+      @media (max-width: 540px) {
+        font-size: 36px;
+      }
     }
   }
 
@@ -1446,29 +1498,69 @@ body {
         height: 100%;
         padding: 40px;
 
+        @media (max-width:1200px) {
+          max-height: 580px;
+
+          .invention-in-slider-item{
+            img{
+              height: 500px;
+            }
+          }
+        }
+        @media (max-width:776px) {
+          max-height: 380px;
+          padding: 20px;
+
+          .invention-in-slider-item{
+            img{
+              height: 300px;
+            }
+          }
+        }
+
         &.invention-main-slide-bg-1 {
           border-radius: 62px;
           background: linear-gradient(270deg, #424242 1.51%, #1a1a1a 98.58%);
+          @media (max-width:776px) {
+            border-radius: 24px;
+            
+          }
         }
 
         &.invention-main-slide-bg-2 {
           border-radius: 62px;
           background: #979aa1;
+          @media (max-width:776px) {
+            border-radius: 24px;
+            
+          }
         }
 
         &.invention-main-slide-bg-3 {
           border-radius: 62px;
           background: #c3c3c8;
+          @media (max-width:776px) {
+            border-radius: 24px;
+            
+          }
         }
 
         &.invention-main-slide-bg-4 {
           border-radius: 62px;
           background: linear-gradient(270deg, #424242 1.51%, #1a1a1a 98.58%);
+          @media (max-width:776px) {
+            border-radius: 24px;
+            
+          }
         }
 
         &.invention-main-slide-bg-5 {
           border-radius: 62px;
           background: #c3c3c8;
+          @media (max-width:776px) {
+            border-radius: 24px;
+            
+          }
         }
       }
     }
@@ -1479,7 +1571,6 @@ body {
   .invention-in-slider-container {
     //scroller
     max-width: 1024px;
-
     .scroller__inner {
       //ul
       display: flex;
@@ -1534,6 +1625,9 @@ body {
     }
     @media (max-width: 776px) {
       font-size: 38px;
+    }
+    @media (max-width: 576px) {
+      font-size: 28px;
     }
   }
 
@@ -1600,7 +1694,7 @@ body {
       font-size: 62px;
       line-height: 1em;
     }
-    @media (max-width:1100px) {
+    @media (max-width:1200px) {
       font-size: 47px;
       line-height: 1em;
     }
@@ -1657,9 +1751,15 @@ body {
   position: relative !important;
   transition: all 100ms linear;
 
-  @media (max-width:1100px) {
+  @media (max-width:1200px) {
     padding: 30px;
     gap: 20px;
+  }
+  @media (max-width:776px) {
+    height: 230px;
+   img{
+    max-width: 34%;
+   }
   }
 
   &:hover {
@@ -1687,7 +1787,7 @@ body {
   p {
     font-size: 28px;
     line-height: 1.5em;
-    @media (max-width:1100px) {
+    @media (max-width:1200px) {
       font-size: 20px;
     }
   }
@@ -1779,6 +1879,9 @@ body {
       @media (max-width:776px) {
         font-size: 38px;
       }
+      @media (max-width:576px) {
+        font-size: 28px;
+      }
     }
   }
 }
@@ -1795,12 +1898,19 @@ body {
   top: 70%;
   left: 20%;
   // animation: cta-left-shape 20s ease 0s infinite normal none;
+
+  @media (max-width:991px) {
+    display: none ;
+  }
 }
 
 #call-right-shape {
   right: 350px;
   top: 100px;
   // animation: cta-right-shape 30s ease 0s infinite normal none;
+  @media (max-width:991px) {
+    display: none ;
+  }
 }
 
 // @keyframes cta-left-shape {
@@ -1994,7 +2104,12 @@ body {
             padding-right: 0;
             padding-left: 130px;
             padding-top: 30px;
-            color: var(--gray-1) !important;
+           
+            color: #5648FF !important;
+            font-family: "Sharp Grotesk Medium 20";
+            &.collapsed {
+              color: var(--gray-1) !important;
+            }
 
             @media (max-width:1300px) {
               font-size: 26px;
@@ -2018,7 +2133,7 @@ body {
               position: absolute;
               width: 62px;
               height: 62px;
-              background: url('data:image/svg+xml,<svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="31" cy="31" r="31" fill="%23D4F941"/><path d="M31.7071 18.2929C31.3166 17.9024 30.6834 17.9024 30.2929 18.2929L23.9289 24.6569C23.5384 25.0474 23.5384 25.6805 23.9289 26.0711C24.3195 26.4616 24.9526 26.4616 25.3431 26.0711L31 20.4142L36.6569 26.0711C37.0474 26.4616 37.6805 26.4616 38.0711 26.0711C38.4616 25.6805 38.4616 25.0474 38.0711 24.6569L31.7071 18.2929ZM32 43L32 19L30 19L30 43L32 43Z" fill="%2300154C"/></svg>');
+              background: url('../img/faq-top.png');
               left: 37px;
               top: 30px;
               transition: all 300ms ease-in-out;
@@ -2049,6 +2164,7 @@ body {
           padding-left: 130px;
 
           &.accordion-button {
+            
             color: var(--gray-1);
           }
 
@@ -2089,6 +2205,11 @@ body {
 
     .footer-widget-heading {
       padding-bottom: 25px;
+
+      @media (max-width:576px) {
+        font-size: 20px !important;
+        padding-bottom: 16px;
+      }
     }
 
     .footer-widget-menu {
@@ -2283,6 +2404,14 @@ body {
       font-size: 72px;
       line-height: 1.27em;
 
+      @media (max-width:991px) {
+        font-size: 52px !important;
+      }
+
+      @media (max-width:667px) {
+        font-size: 42px !important;
+      }
+
       color: #ffffff;
       background: -webkit-linear-gradient(174deg,
           rgba(241, 255, 72, 1) 0%,
@@ -2363,6 +2492,37 @@ body {
         rgba(215, 164, 228, 0.5) 32%,
         rgba(197, 192, 255, 0.5) 50%) top right / 50% 50% no-repeat;
     filter: blur(100px);
+  }
+
+  .footer-bottom{
+    .footer-dot{
+      width: 5px;
+height: 5px;
+background-color: var(--gray-2);
+border-radius: 100px;
+    }
+    .footer-bottom-link{
+      color: #AAB4CF;
+      transition: .3s all linear;
+
+      &:hover{
+        background: -webkit-linear-gradient(132deg,
+        rgba(241, 255, 72, 1) 0%,
+        rgba(246, 250, 202, 1) 16%,
+        rgba(215, 164, 228, 1) 32%,
+        rgba(197, 192, 255, 1) 50%);
+    background: linear-gradient(132deg,
+        rgba(241, 255, 72, 1) 0%,
+        rgba(246, 250, 202, 1) 16%,
+        rgba(215, 164, 228, 1) 32%,
+        rgba(197, 192, 255, 1) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: transparent;
+    // text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -2897,6 +3057,10 @@ body::-webkit-scrollbar-corner {
       top: 17px;
       left: 22px;
     }
+    @media (max-width:540px) {
+      top: 7px;
+      left: 09px;
+    }
   }
 
   @keyframes startShape {
@@ -2978,7 +3142,7 @@ body::-webkit-scrollbar-corner {
       ul {
         padding: 0;
         list-style: none;
-        gap: 16px;
+        gap: 15px;
 
         li {
           .footer-address {
@@ -2988,11 +3152,18 @@ body::-webkit-scrollbar-corner {
 
           a {
             text-decoration: none;
-            color: #aab4cf;
+            color: #fff;
             font-family: "Sharp Grotesk Book 20";
             line-height: 1.66em;
             font-size: 18px;
             transition: all 300ms linear;
+
+            @media (max-width: 768px) {
+              font-size: 16px;
+            }
+            @media (max-width:576px) {
+              font-size: 14px;
+            }
 
             &:hover {
               background: -webkit-linear-gradient(132deg,
@@ -3192,11 +3363,14 @@ body::-webkit-scrollbar-corner {
   .footer-copyright {
     position: relative;
     z-index: 99999;
-
     padding-block: 32px;
     color: #97a3c1;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.55em;
+
+    @media (max-width:991px) {
+      
+    }
   }
 
   .footer-bg-shape {
@@ -3263,7 +3437,27 @@ body::-webkit-scrollbar-corner {
 }
 /* Slide active item border remove */
 
+@media (max-width: 767px) {
+  .client-testimonial-thumbnail-wrap{
+    display: none !important;
+  }
+}
+.splide__pagination__page.is-active{
+  background:#5648FF !important;
+}
 .client-testimonial {
+
+  @media (min-width:767px) {
+    .splide__pagination{
+      display: none !important;
+    }
+    .splide__pagination__page{
+      background:#E3E8F8;
+
+   
+    }
+    
+  }
   .client-testimonial-header-left {
     .client-testimonial-heading {
       font-size: 78px;
@@ -3275,6 +3469,11 @@ body::-webkit-scrollbar-corner {
       }
       @media (max-width:767px) {
         font-size: 42px;
+        padding-bottom: 10px;
+      }
+      @media (max-width:567px) {
+        font-size: 28px;
+        padding-bottom: 10px;
       }
     }
   }
@@ -3282,6 +3481,10 @@ body::-webkit-scrollbar-corner {
   .client-testimonial-full-card-wrap {
     .client-testimonial-user-img {
       margin-bottom: 40px;
+      @media (max-width:676px) {
+        width: 70px;
+        margin-bottom: 20px;
+      }
     }
 
     .client-review-star-wrap {
@@ -3309,8 +3512,9 @@ body::-webkit-scrollbar-corner {
         font-size: 20px;
         line-height: 1.6em;
         margin-bottom: 20px;
-        @media (max-width:492px) {
-          font-size: 18px;
+        @media (max-width:576px) {
+          font-size: 14px;
+          line-height: 24px;
         }
       }
     }
@@ -3439,7 +3643,7 @@ body::-webkit-scrollbar-corner {
       width: 200px;
 
       @media (max-width:667px) {
-        width: 130px;
+        width: 142px;
         height: 140px;
         margin-bottom: 50px;
       }
@@ -4492,6 +4696,21 @@ body::-webkit-scrollbar-corner {
   @media (max-width: 1200px) {
     font-size: 26px;
     list-style: 36px;
+  }
+  @media (max-width: 576px) {
+    font-size: 22px;
+    list-style: 32px;
+  }
+}
+
+.fs-4{
+  @media (max-width:576px) {
+    font-size: 14px !important;
+  }
+}
+.fs-6{
+  @media (max-width:576px) {
+    font-size: 14px !important;
   }
 }
 
