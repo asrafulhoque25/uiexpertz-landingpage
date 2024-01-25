@@ -85,12 +85,12 @@ document.addEventListener("DOMContentLoaded", function () {
   splideElements.forEach(function (element) {
     let splide = new Splide(element, {
       type: "loop",
-      perPage: 3,
+      perPage: 2,
       perMove: 1,
-      padding: "18rem",
+      padding: "28rem",
       arrows: false,
       pagination: false,
-      gap: "80px",
+      gap: "120px",
       focus: "center",
       rewind: true,
       isNavigation: true,
