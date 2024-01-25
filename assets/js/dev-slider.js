@@ -21,6 +21,24 @@ document.addEventListener("DOMContentLoaded", function () {
       mouse: 1,
       touch: 1,
     },
+    breakpoints: {
+      1199: {
+        height: "24rem",
+        gap: "20px",
+      },
+      991: {
+        height: "20rem",
+        gap: "15px",
+      },
+      767: {
+        height: "18rem",
+        gap: "10px",
+      },
+      576: {
+        height: "14rem",
+        gap: "10px",
+      },
+    },
     // waitForTransition: false,
   });
 
@@ -71,6 +89,20 @@ document.addEventListener("DOMContentLoaded", function () {
         speed: 1,
         pauseOnHover: true,
       },
+      breakpoints: {
+        1199: {
+          gap: "45px",
+          padding: "5rem",
+        },
+        991: {
+          gap: "35px",
+          padding: "0rem",
+        },
+        767: {
+          gap: "30px",
+          padding: "0rem",
+        },
+      },
     });
 
     splide.mount(window.splide.Extensions);
@@ -94,10 +126,26 @@ document.addEventListener("DOMContentLoaded", function () {
       focus: "center",
       rewind: true,
       isNavigation: true,
-      speed: 1200,
+      speed: 3200,
       autoScroll: {
         speed: 0.8,
         pauseOnHover: true,
+      },
+      breakpoints: {
+        1199: {
+          gap: "85px",
+          padding: "15rem",
+        },
+        991: {
+          gap: "55px",
+          perPage: 2,
+          padding: "5rem",
+        },
+        767: {
+          gap: "80px",
+          padding: "5rem",
+          perPage: 1,
+        },
       },
     });
 
