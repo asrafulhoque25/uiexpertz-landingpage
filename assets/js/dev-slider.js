@@ -95,11 +95,15 @@ document.addEventListener("DOMContentLoaded", function () {
           padding: "5rem",
         },
         991: {
-          gap: "35px",
+          gap: "30px",
           padding: "0rem",
         },
         767: {
-          gap: "30px",
+          gap: "20px",
+          padding: "0rem",
+        },
+        575: {
+          gap: "10px",
           padding: "0rem",
         },
       },
@@ -127,24 +131,48 @@ document.addEventListener("DOMContentLoaded", function () {
       rewind: true,
       isNavigation: true,
       speed: 3200,
+      autoStart: false,
       autoScroll: {
-        speed: 0.8,
+        speed: 0.9,
         pauseOnHover: true,
       },
       breakpoints: {
-        1199: {
+        1550: {
           gap: "85px",
           padding: "15rem",
+          perPage: 2,
+        },
+        1370: {
+          gap: "70px",
+          padding: "10rem",
+          perPage: 2,
+        },
+        1199: {
+          gap: "80px",
+          padding: "2rem",
+          perPage: 2,
+          autoScroll: true,
         },
         991: {
-          gap: "55px",
+          gap: "80px",
           perPage: 2,
-          padding: "5rem",
+          padding: "3rem",
+          autoScroll: false,
+          focus: false,
+          pagination: true,
+          speed: 2200,
+          autoplay: true,
+          interval: 5000,
         },
         767: {
           gap: "80px",
-          padding: "5rem",
           perPage: 1,
+          padding: "3rem",
+          autoScroll: false,
+          focus: false,
+        },
+        575: {
+          padding: "2rem",
         },
       },
     });

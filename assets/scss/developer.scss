@@ -18,6 +18,65 @@
     }
     .section-heading {
         position: relative;
+        h2 {
+            @media (max-width: 991px) {
+                &.fs-132 {
+                    font-size: 60px;
+                    line-height: 1.28em;
+                }
+                .heading-inner-star-shape {
+                    &::after {
+                        // display: none;
+                        width: 25px;
+                        height: 25px;
+                        top: 15px;
+                        left: 15px;
+                    }
+                }
+                img {
+                    max-width: 80px;
+                }
+            }
+            @media (max-width: 767px) {
+                &.fs-132 {
+                    font-size: 42px;
+                    line-height: 1.28em;
+                }
+                .heading-inner-star-shape {
+                    &::after {
+                        width: 18px;
+                        height: 18px;
+                        top: 10px;
+                        left: 10px;
+                    }
+                }
+                img {
+                    max-width: 60px;
+                }
+            }
+            @media (max-width: 575px) {
+                &.fs-132 {
+                    font-size: 28px;
+                    line-height: 1.28em;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }
+                .heading-inner-star-shape {
+                    &::after {
+                        display: none;
+                    }
+                }
+                img {
+                    max-width: 44px;
+                }
+            }
+            @media (max-width: 430px) {
+                &.fs-132 {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+            }
+        }
 
         .heading-inner-star-shape {
             position: relative;
@@ -73,13 +132,15 @@
             min-height: 286px;
             height: 100%;
             overflow: hidden;
+
             @media (max-width: 767px) {
                 padding: 25px;
                 max-width: 320px;
                 margin: 0 auto;
+                min-height: 230px;
             }
             @media (max-width: 575px) {
-                min-height: 230px;
+                min-height: 200px;
             }
 
             h3 {
@@ -99,10 +160,13 @@
                 }
                 @media (max-width: 767px) {
                     top: calc(40%);
+                    font-size: 18px;
+                    
                 }
                 @media (max-width: 575px) {
-                    max-width: 240px;
+                    max-width: 200px;
                     top: calc(45%);
+                    font-size: 16px;
                 }
             }
             p {
@@ -118,6 +182,9 @@
                 margin-bottom: 0;
                 @media (max-width: 991px) {
                     font-size: 14px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 12px;
                 }
             }
             &:hover {
@@ -257,6 +324,29 @@
             .wp-projects-slide-item {
                 img {
                     border-radius: 36px;
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    @media (max-width: 1199px) {
+                        max-height: 620px;
+                        height: auto;
+                        border-radius: 34px;
+                    }
+                    @media (max-width: 991px) {
+                        max-height: 550px;
+                        height: auto;
+                        border-radius: 28px;
+                    }
+                    @media (max-width: 991px) {
+                        max-height: 450px;
+                        height: auto;
+                        border-radius: 22px;
+                    }
+                    @media (max-width: 575px) {
+                        max-height: 312px;
+                        height: auto;
+                        border-radius: 16px;
+                    }
                 }
             }
         }
@@ -331,9 +421,42 @@
     background-size: cover;
     background-position: center center;
 
+    .section-heading {
+        h2 {
+            @media (max-width: 991px) {
+                &.fs-132 {
+                    font-size: 60px;
+                    line-height: 1.28em;
+                }
+            }
+            @media (max-width: 767px) {
+                &.fs-132 {
+                    font-size: 42px;
+                    line-height: 1.28em;
+                }
+            }
+            @media (max-width: 575px) {
+                &.fs-132 {
+                    font-size: 28px;
+                    line-height: 1.28em;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }
+            }
+            @media (max-width: 430px) {
+                &.fs-132 {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
 
     .why-choose-image-box-wrap {
         margin-top: 70px;
+        @media (max-width: 991px) {
+            margin-top: 0px;
+        }
         #wp_why_choose_slider {
             .why-choose-image-box-item {
                 
@@ -343,12 +466,31 @@
                 overflow: hidden;
                 height: 100%;
                 min-height: 420px;
+
+                @media (max-width: 991px) {
+                    transform: translateY(100px);
+                }
                 
                 .why-choose-image-box-heading {
                     max-width: 320px;
                     line-height: 1.44em;
                     transform: translateX(125px);
                     transition: all 500ms ease-in-out;
+                    @media (max-width: 991px) {
+                        font-size: 22px;
+                        transform: translateX(80px);
+                        max-width: 260px;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 26px;
+                        transform: translateX(80px);
+                        max-width: 260px;
+                    }
+                    @media (max-width: 575px) {
+                        font-size: 22px;
+                        transform: translateX(80px);
+                        max-width: 260px;
+                    }
                 }
                 .why-choose-image {
                     margin-bottom: 40px;
@@ -358,12 +500,19 @@
                     top: 0;
                     transition: all 700ms ease-in-out;
                     z-index: 9;
+                    @media (max-width: 991px) {
+                        width: 200px;
+                        margin-bottom: 10px;
+                    }
                     img {
                         width: 100%;
                         max-width: 110px;
                         transition: all 700ms ease-in-out;
                         animation: whyChooseBunch 2.5s ease infinite;
                         animation-play-state: paused;
+                        @media (max-width: 991px) {
+                            max-width: 60px;
+                        }
                     }
                     @keyframes whyChooseBunch {
                         0% {
@@ -398,21 +547,70 @@
         }
     }
 
+    .splide__pagination {
+        bottom: -60px !important;
+        
+        .splide__pagination__page {
+            width: 8px !important;
+            height: 8px !important;
+            border-radius: 50px !important;
+            background: #AAB4CF !important;
+            margin-inline: 5px !important;
+            &.is-active {
+                background: #5648FF !important;
+                transform: translateY(0px) !important;
+            }
+        }
+        
+    }
+
 }
 
 #wp_why_choose_slider {
     .is-active {
         transform: translateY(-150px);
+        @media (max-width: 1199px) {
+            transform: translateY(-150px);
+        }
+        @media (max-width: 991px) {
+            transform: translateY(-50px);
+        }
+        
         .why-choose-image-box-item {
-            padding-left: 0 !important;
-            padding-top: 220px !important;
+            padding-left: 0;
+            padding-top: 220px;
+            @media (max-width: 1199px) {
+                padding-top: 180px;
+            }
+            @media (max-width: 991px) {
+                padding-top: 130px;
+            }
+            @media (max-width: 767px) {
+                padding-top: 160px;
+            }
+            @media (max-width: 575px) {
+                padding-top: 140px;
+            }
             .why-choose-image {
                 left: 0 !important;
                 top: 0px !important;
                 width: 205px !important;
+                @media (max-width: 575px) {
+                    width: 205px !important;
+                }
                 img {
-                    max-width: 290px !important;
+                    max-width: 290px;
                     animation-play-state: running !important;
+                    @media (max-width: 1199px) {
+                        margin-bottom: 30px;
+                        max-width: 165px !important;
+                        width: 100% !important;
+                    }
+                    @media (max-width: 991px) {
+                        margin-bottom: 30px;
+                        max-width: 125px !important;
+                        width: 100% !important;
+                    }
                 }
 
             }
@@ -422,12 +620,27 @@
                     opacity: 1 !important;
                     visibility: visible !important;
                     filter: blur(0px) !important;
+                    @media (max-width: 991px) {
+                        max-width: 450px;
+                    }
+                    @media (max-width: 767px) {
+                        font-size: 14px !important;
+                    }
                 }
             }
             .why-choose-image-box-heading {
                 transform: translateX(0px) !important;
+                @media (max-width: 767px) {
+                    font-size: 26px !important;
+                    line-height: 1.45em;
+                }
+                @media (max-width: 575px) {
+                    font-size: 22px !important;
+                    line-height: 1.45em;
+                }
             }
         }
+
     }
 }
 
