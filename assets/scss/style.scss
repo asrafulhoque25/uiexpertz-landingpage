@@ -2868,6 +2868,12 @@ body::-webkit-scrollbar-corner {
         top: 10px !important;
         left: 12px;
       }
+      @media (max-width: 576px) {
+        width: 20px;
+        height: 20px;
+        top: 2px !important;
+        left: 2px;
+      }
     }
   }
   
@@ -2918,6 +2924,10 @@ body::-webkit-scrollbar-corner {
       @media (max-width: 991px) {
         font-size: 46px;
         padding-bottom:30px;;
+      }
+      @media (max-width: 576px) {
+        font-size: 28px;
+        padding-bottom:30px;
       }
     }
   }
@@ -2985,6 +2995,7 @@ body::-webkit-scrollbar-corner {
     @media (max-width: 540px) {
       top: 7px;
       left: 09px;
+      
     }
   }
 
@@ -3695,7 +3706,7 @@ body::-webkit-scrollbar-corner {
     }
 
     .award-winning-list-wrap {
-      max-width: 630px;
+      width: 100%;
       margin-top: 38px;
 
       .award-winning-list-item {
@@ -4132,6 +4143,10 @@ body::-webkit-scrollbar-corner {
       max-width: 366px;
       height: 366px;
     }
+    @media (max-width:576px) {
+      max-width: 290px;
+      height: 290px;
+    }
 
     .icon-block {
       position: absolute;
@@ -4150,6 +4165,11 @@ body::-webkit-scrollbar-corner {
         top: 96%;
         right: -67%;
         transform: translate(-50%, -50%);
+
+        @media (max-width:576px) {
+          top: 96%;
+          right: -136%;
+        }
       }
 
       &:nth-child(2) {
@@ -4613,6 +4633,23 @@ body::-webkit-scrollbar-corner {
     font-family: "Sharp Grotesk Thin 25";
     font-size: 132px;
     line-height: 162px;
+
+    @media (max-width: 1400px) {
+      font-size: 100px;
+      line-height: 120px;
+    }
+  
+    @media (max-width: 1200px) {
+      font-size: 85px;
+    }
+  
+    @media (max-width: 991px) {
+      font-size: 75px;
+    }
+  
+    @media (max-width: 575px) {
+      font-size: 65px;
+    }
   }
 
   .projecttitle-overview {
@@ -4629,6 +4666,23 @@ body::-webkit-scrollbar-corner {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 1400px) {
+      font-size: 100px;
+      line-height: 120px;
+    }
+  
+    @media (max-width: 1200px) {
+      font-size: 85px;
+    }
+  
+    @media (max-width: 991px) {
+      font-size: 75px;
+    }
+  
+    @media (max-width: 575px) {
+      font-size: 65px;
+    }
   }
 }
 
