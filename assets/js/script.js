@@ -1,3 +1,27 @@
+
+// hamburger menu
+$(window).scroll(function () {
+  var scrollTop = $(window).scrollTop();
+  if (scrollTop > 100) {
+    $(".navbar").addClass("fixed");
+  } else {
+    $(".navbar").removeClass("fixed");
+  }
+});
+
+$(document).ready(function () {
+
+  $('.hamburger').click(function () {
+    $(this).toggleClass("is-active");
+    $('body').toggleClass('body-active');
+    $('.navbar').toggleClass('hamburger-fixed');
+    $('html').toggleClass('no-js lenis lenis-smooth lenis-scrolling');
+  });
+
+});
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const lenis = new Lenis({
@@ -1059,31 +1083,16 @@ if (targetElement5) {
 }
 
 
+
+
 // animation
-let scene = document.getElementById("js-scene1");
-let parallax = new Parallax(scene);
+const banner = document.querySelector(".banner");
+if (banner) {
+  let scene = document.getElementById("js-scene1");
+  let parallax = new Parallax(scene);
+} 
+
 // let scene = document.getElementById('js-scene2');
 // let parallax = new Parallax(scene);
 
 
-
-// hamburger menu
-$(window).scroll(function () {
-  var scrollTop = $(window).scrollTop();
-  if (scrollTop > 100) {
-    $(".navbar").addClass("fixed");
-  } else {
-    $(".navbar").removeClass("fixed");
-  }
-});
-
-$(document).ready(function () {
-
-  $('.hamburger').click(function () {
-    $(this).toggleClass("is-active");
-    $('body').toggleClass('body-active');
-    $('.navbar').toggleClass('hamburger-fixed');
-    $('html').toggleClass('no-js lenis lenis-smooth lenis-scrolling');
-  });
-
-});
