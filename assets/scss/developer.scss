@@ -599,7 +599,8 @@
                     width: 205px !important;
                 }
                 img {
-                    max-width: 290px;
+                    max-width: 190px !important;
+                    width: 100%;
                     animation-play-state: running !important;
                     @media (max-width: 1199px) {
                         margin-bottom: 30px;
@@ -652,3 +653,5 @@
 /*=======================
 - Wordpress Development - End
 =======================*/
+
+
