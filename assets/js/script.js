@@ -341,14 +341,14 @@ if (textscroll) {
 
   let tl12 = gsap.timeline();
   tl12.to("#scrollingText", {
-    x:1000,
-    duration:50,
+    x:$(window).width() > 1400 ? "1000" : $(window).width()< 991  ? "400" : "800" ,
+    duration:10,
     // repeat:-1,
     ease:'linear'
   })
   let tl13 = gsap.timeline();
   tl13.to('#scrollingText', {
-    xPercent: -15,
+    xPercent: $(window).width() > 1300 ? "-15" : $(window).width()< 1100  ? "-25" : "-20" ,
     scrollTrigger:{
       trigger:"#scrollingText",
       scrub:1
@@ -387,7 +387,7 @@ if (textscroll2) {
 
   let tl12 = gsap.timeline();
   tl12.to("#scrollingText2", {
-    x:1000,
+    x:$(window).width() > 1400 ? "1000" : $(window).width()< 991  ? "400" : "800" ,
     duration:50,
     // repeat:-1,
     ease:'linear'
@@ -1064,3 +1064,26 @@ let scene = document.getElementById("js-scene1");
 let parallax = new Parallax(scene);
 // let scene = document.getElementById('js-scene2');
 // let parallax = new Parallax(scene);
+
+
+
+// hamburger menu
+$(window).scroll(function () {
+  var scrollTop = $(window).scrollTop();
+  if (scrollTop > 100) {
+    $(".navbar").addClass("fixed");
+  } else {
+    $(".navbar").removeClass("fixed");
+  }
+});
+
+$(document).ready(function () {
+
+  $('.hamburger').click(function () {
+    $(this).toggleClass("is-active");
+    $('body').toggleClass('body-active');
+    $('.navbar').toggleClass('hamburger-fixed');
+    $('html').toggleClass('no-js lenis lenis-smooth lenis-scrolling');
+  });
+
+});
