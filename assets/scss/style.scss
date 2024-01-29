@@ -2094,6 +2094,10 @@ body.body-active {
       rgba(0, 21, 76, 0.8) 52.08%,
       rgba(0, 21, 76, 0) 100%
     );
+
+    @media (max-width:991px) {
+      height: 182px !important;
+    }
   }
 
   &::before {
@@ -2110,6 +2114,9 @@ body.body-active {
       rgba(0, 21, 76, 0) 100%
     );
     z-index: 9;
+    @media (max-width:991px) {
+      height: 182px !important;
+    }
   }
 }
 
@@ -2599,12 +2606,16 @@ body.body-active {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 99;
 
     @media (max-width:1200px) {
       max-width: 700px;
     }
     @media (max-width:800px) {
-      max-width: 360px;
+      max-width: 400px;
+    }
+    @media (max-width:450px) {
+      max-width: 270px;
     }
 
     .icon-block {
@@ -2624,11 +2635,15 @@ body.body-active {
         top: 50%;
         left: 0%;
         transform: translate(-50%, -50%);
-        z-index: 333;
+        z-index: -33;
 
         @media (max-width:800px) {
           top: 49%;
           left:18%;
+        }
+        @media (max-width:450px) {
+          top: 45%;
+          left: 11%;
         }
 
       }
@@ -2638,10 +2653,13 @@ body.body-active {
         top: 80%;
         right: 2%;
         transform: translate(50%, -50%);
-        z-index: 333;
+        z-index: -33;
 
         @media (max-width:1200px) {
           right: 3%;
+        }
+        @media (max-width:450px) {
+          right: -13%;
         }
       }
     }
