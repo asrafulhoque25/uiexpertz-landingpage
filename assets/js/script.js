@@ -1,25 +1,4 @@
 
-// hamburger menu
-$(window).scroll(function () {
-  var scrollTop = $(window).scrollTop();
-  if (scrollTop > 100) {
-    $(".navbar").addClass("fixed");
-  } else {
-    $(".navbar").removeClass("fixed");
-  }
-});
-
-$(document).ready(function () {
-
-  $('.hamburger').click(function () {
-    $(this).toggleClass("is-active");
-    $('body').toggleClass('body-active');
-    $('.navbar').toggleClass('hamburger-fixed');
-    $('html').toggleClass('no-js lenis lenis-smooth lenis-scrolling');
-  });
-
-});
-
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -1096,3 +1075,26 @@ if (banner) {
 // let parallax = new Parallax(scene);
 
 
+//navbar
+
+
+// hamburger menu
+$(window).scroll(function () {
+  var scrollTop = $(window).scrollTop();
+  if (scrollTop > 100) {
+    $(".navbar").addClass("fixed");
+  } else {
+    $(".navbar").removeClass("fixed");
+  }
+});
+
+$(document).ready(function () {
+
+  $('.hamburger').click(function () {
+    $(this).toggleClass("is-active");
+    $('body').toggleClass('body-active');
+    $('.navbar').toggleClass('hamburger-fixed');
+    $('html').toggleClass('no-js lenis lenis-smooth lenis-scrolling');
+  });
+
+});

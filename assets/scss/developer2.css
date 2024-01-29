@@ -78,8 +78,7 @@ body {
 
 /* Font family */
 .fs-78 {
-  font-size: 78px; 
-}
+  font-size: 78px; }
 
 .fs-36 {
   font-size: 36px;
@@ -422,5 +421,124 @@ body {
   font-weight: 100; }
   .spl-title .star-icon {
     top: 48px; }
+
+/*=======================
+- Blog page style - Start
+=======================*/
+.search-bar-wrapper .search-field {
+  background-size: contain; }
+
+@media (max-width: 1199px) {
+  .search-bar-wrapper .search-field {
+    background-size: 80px 80px;
+    padding-left: 120px; } }
+@media (max-width: 767px) {
+  .search-bar-wrapper .search-field {
+    background-size: 60px 60px;
+    padding-left: 90px;
+    font-size: 32px; } }
+@media (max-width: 575px) {
+  .search-bar-wrapper .search-field {
+    background-size: 50px 50px;
+    padding-left: 70px;
+    font-size: 24px; } }
+@media (max-width: 420px) {
+  .search-bar-wrapper .search-field {
+    background-size: 40px 40px;
+    padding-left: 50px;
+    font-size: 20px; } }
+@media (max-width: 991px) {
+  .blog-page .row {
+    padding-top: 180px !important; } }
+@media (max-width: 767px) {
+  .blog-page .row {
+    padding-top: 140px !important; } }
+@media (max-width: 575px) {
+  .blog-page .row {
+    padding-top: 100px !important; } }
+
+/*
+* Category slider responsive style
+*/
+@media (max-width: 1199px) {
+  .blog-categorise-list .categorise-list-item .categorise-btn {
+    padding: 30px 60px; } }
+@media (max-width: 991px) {
+  .blog-categorise-list .categorise-list-item .categorise-btn {
+    padding: 25px 45px; } }
+@media (max-width: 767px) {
+  .blog-categorise-list .categorise-list-item .categorise-btn {
+    padding: 20px 40px;
+    font-size: 16px; } }
+@media (max-width: 767px) {
+  .blog-categorise-list .categorise-list-item .categorise-btn {
+    padding: 15px 30px;
+    font-size: 14px; } }
+@media (max-width: 575px) {
+  .blog-categorise-list .categorise-list-item .categorise-btn {
+    padding: 10px 20px;
+    font-size: 14px; } }
+
+@media (max-width: 1199px) {
+  .tab-content-wrapper .row {
+    --bs-gutter-y: 40px; }
+  .tab-content-wrapper .blog-title a {
+    line-height: 1.4em; } }
+@media (max-width: 991px) {
+  .tab-content-wrapper .row {
+    --bs-gutter-y: 30px; } }
+
+@media (max-width: 1599px) {
+  .blog-pagination .common-btn {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 60px; } }
+@media (max-width: 1199px) {
+  .blog-pagination .common-btn {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 54px; } }
+@media (max-width: 991px) {
+  .blog-pagination .common-btn {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 45px; } }
+@media (max-width: 767px) {
+  .blog-pagination .common-btn {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 36px;
+    padding: 20px; }
+    .blog-pagination .common-btn.next-btn svg, .blog-pagination .common-btn.prev-btn svg {
+      max-width: 18px !important; } }
+@media (max-width: 575px) {
+  .blog-pagination .common-btn {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    padding: 12px; }
+    .blog-pagination .common-btn.next-btn svg, .blog-pagination .common-btn.prev-btn svg {
+      max-width: 15px !important; } }
+@media (max-width: 450px) {
+  .blog-pagination .common-btn {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    padding: 12px; }
+    .blog-pagination .common-btn.next-btn svg, .blog-pagination .common-btn.prev-btn svg {
+      max-width: 12px !important; } }
+
+/*
+* Category slider responsive style
+*/
+/*=======================
+- Blog page style - End
+=======================*/
 
 /*# sourceMappingURL=developer2.css.map */
